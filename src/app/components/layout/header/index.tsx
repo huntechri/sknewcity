@@ -6,12 +6,9 @@ import { useTheme } from 'next-themes'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import NavLink from './navigation/NavLink'
-import { signOut, useSession } from 'next-auth/react'
 
 const Header: React.FC = () => {
-  const { data: session } = useSession();
-  const [navLinks, setNavLinks] = useState<any>(null);
-  const [user, setUser] = useState<{ user: any } | null>(null);
+  const [navLinks, setNavLinks] = useState<null | any[]>(null);
   const [sticky, setSticky] = useState(false)
   const [navbarOpen, setNavbarOpen] = useState(false)
   const { theme, setTheme } = useTheme()
@@ -46,10 +43,6 @@ const Header: React.FC = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
     document.addEventListener('mousedown', handleClickOutside)
-    const storedUser = localStorage.getItem("user");
-    if (storedUser) {
-      setUser(JSON.parse(storedUser));
-    }
 
     return () => {
       window.removeEventListener('scroll', handleScroll)
@@ -57,15 +50,7 @@ const Header: React.FC = () => {
     }
   }, [pathname, handleScroll])
 
-  const isHomepage = pathname === '/'
-  const isRenovationPage = pathname === '/apartment-renovation'
-  const isHeroHeader = isHomepage || isRenovationPage
-
-  const handleSignOut = () => {
-    localStorage.removeItem("user");
-    signOut();
-    setUser(null);
-  };
+  const isHeroHeader = pathname === '/' || pathname === '/apartment-renovation'
 
   return (
     <header className={`fixed h-20 sm:h-24 py-1 z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-3 sm:px-4 ${sticky ? "top-2 sm:top-3" : "top-0"}`}>
@@ -119,16 +104,7 @@ const Header: React.FC = () => {
               />
             </button>
 
-            {(user?.user || session?.user) &&
-              <div className="relative group flex items-center justify-center">
-                <Image src={"/images/avatar/avatar_1.jpg"} alt="avatar" width={32} height={32} className="rounded-full w-8 h-8 sm:w-9 sm:h-9" />
-                <p
-                  className="absolute w-fit text-xs sm:text-sm font-medium text-center z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-200 bg-primary dark:bg-middlegreen text-creamwhite py-1 px-2 min-w-24 sm:min-w-28 rounded-xl shadow-2xl top-full left-1/2 transform -translate-x-1/2 mt-3"
-                >
-                  {user?.user || session?.user?.name}
-                </p>
-              </div>
-            }
+
 
             <div className={`hidden md:block`}>
               <Link href='#' className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${isHeroHeader
@@ -201,22 +177,6 @@ const Header: React.FC = () => {
                 {navLinks && navLinks?.map((item: any, index: any) => (
                   <NavLink key={index} item={item} onClick={() => setNavbarOpen(false)} />
                 ))}
-                {user?.user || session?.user ? (
-                  <>
-                    <button onClick={() => handleSignOut()} className='py-4 px-8 bg-primary text-base leading-4 block w-fit text-white rounded-full border border-primary font-semibold mt-3 hover:bg-transparent hover:text-primary duration-300 cursor-pointer'>
-                      Sign Out
-                    </button>
-                  </>
-                ) : (
-                  <li className='flex items-center gap-4'>
-                    <Link onClick={() => setNavbarOpen(false)} href="/signin" className='py-4 px-8 bg-primary text-base leading-4 block w-fit text-white rounded-full border border-primary font-semibold mt-3 hover:bg-transparent hover:text-primary duration-300'>
-                      Sign In
-                    </Link>
-                    <Link onClick={() => setNavbarOpen(false)} href="/signup" className='py-4 px-8 bg-transparent border border-primary text-base leading-4 block w-fit text-primary rounded-full font-semibold mt-3 hover:bg-primary hover:text-white duration-300'>
-                      Sign up
-                    </Link>
-                  </li>
-                )}
               </ul>
             </nav>
           </div>

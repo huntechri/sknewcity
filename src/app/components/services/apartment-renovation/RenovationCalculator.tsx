@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { Slider } from "@/app/components/ui/slider";
 import { Card } from "@/app/components/ui/card";
@@ -134,9 +135,11 @@ const RenovationCalculator = () => {
                                     </div>
                                 </div>
 
-                                <button className="w-full bg-white text-primary py-4 sm:py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-black hover:text-white transition-all duration-500 shadow-2xl active:scale-[0.97] mt-6 lg:mt-0">
-                                    Получить смету
-                                </button>
+                                <Link href="/contactus" className="w-full">
+                                    <button className="w-full bg-white text-primary py-4 sm:py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-black hover:text-white transition-all duration-500 shadow-2xl active:scale-[0.97] mt-6 lg:mt-0">
+                                        Получить смету
+                                    </button>
+                                </Link>
 
                                 <p className="text-center text-[10px] text-white/50 leading-relaxed italic uppercase tracking-tighter">
                                     * Предварительный расчет, не является публичной офертой.

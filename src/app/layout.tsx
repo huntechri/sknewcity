@@ -5,7 +5,7 @@ import { ThemeProvider } from 'next-themes'
 import NextTopLoader from 'nextjs-toploader';
 import Header from './components/layout/header';
 import Footer from './components/layout/footer';
-import SessionProviderComp from '../providers/SessionProvider';
+
 import ScrollToTop from './components/scroll-to-top';
 import SmoothScrollProvider from '@/providers/SmoothScrollProvider';
 
@@ -25,19 +25,19 @@ export default function RootLayout({
     <html lang='en' suppressHydrationWarning>
       <body className={`${font.className} bg-white dark:bg-black antialiased`}>
         <NextTopLoader color="#07be8a" />
-        <SessionProviderComp>
-          <SmoothScrollProvider>
-            <ThemeProvider
-              attribute='class'
-              enableSystem={true}
-              defaultTheme='light'>
-              <Header />
-              {children}
-              <Footer />
-              <ScrollToTop />
-            </ThemeProvider>
-          </SmoothScrollProvider>
-        </SessionProviderComp>
+
+        <SmoothScrollProvider>
+          <ThemeProvider
+            attribute='class'
+            enableSystem={true}
+            defaultTheme='light'>
+            <Header />
+            {children}
+            <Footer />
+            <ScrollToTop />
+          </ThemeProvider>
+        </SmoothScrollProvider>
+
       </body>
     </html>
   )
