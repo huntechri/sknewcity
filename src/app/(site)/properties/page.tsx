@@ -1,17 +1,23 @@
 import { Metadata } from "next";
 import PropertiesListing from "@/app/components/properties/property-list";
-import { Suspense } from "react";
+
 export const metadata: Metadata = {
     title: "Проекты ремонта | Homely",
+    description: "Портфолио Homely Renovation: реальные проекты ремонта квартир и коммерческих помещений с фото, метражом и форматом работ.",
+    alternates: {
+        canonical: "/properties",
+    },
 };
 
-const page = () => {
+type PropertiesPageProps = {
+    searchParams: Promise<{ category?: string }>;
+};
+
+const page = async ({ searchParams }: PropertiesPageProps) => {
+    const params = await searchParams;
+
     return (
-        <>
-            <Suspense fallback={<div>Loading...</div>}>
-                <PropertiesListing />
-            </Suspense>
-        </>
+        <PropertiesListing categoryParam={params.category} />
     );
 };
 

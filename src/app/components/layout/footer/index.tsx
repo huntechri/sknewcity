@@ -1,28 +1,8 @@
-"use client";
 import Link from "next/link";
 import { Icon } from "@iconify/react"
-import { useEffect, useState } from "react";
-
-interface FooterLink {
-  label: string;
-  href: string;
-}
+import { footerLinks } from "@/lib/layout-data";
 
 const Footer = () => {
-  const [footerLinks, setFooterLinks] = useState<FooterLink[] | null>(null);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/layout-data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setFooterLinks(data?.footerLinks)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-    fetchData()
-  }, [])
   return (
     <footer className="relative z-10 bg-dark">
       <div className="container mx-auto max-w-8xl pt-14 px-4 sm:px-6 lg:px-0">
@@ -65,7 +45,7 @@ const Footer = () => {
             </div>
             <div className="md:col-span-3 sm:col-span-6 col-span-12">
               <div className="flex flex-col gap-3 w-fit">
-                {footerLinks?.slice(0, 4)?.map((item: FooterLink, index: number) => (
+                {footerLinks.slice(0, 4).map((item, index: number) => (
                   <div key={index}>
                     <Link href={item.href} className="text-white/40 text-xs sm:text-xm hover:text-white">
                       {item.label}
@@ -76,7 +56,7 @@ const Footer = () => {
             </div>
             <div className="md:col-span-2 sm:col-span-6 col-span-12">
               <div className="flex flex-col gap-3 w-fit">
-                {footerLinks?.slice(4, 8)?.map((item: FooterLink, index: number) => (
+                {footerLinks.slice(4, 8).map((item, index: number) => (
                   <div key={index}>
                     <Link href={item.href} className="text-white/40 text-xs sm:text-xm hover:text-white">
                       {item.label}

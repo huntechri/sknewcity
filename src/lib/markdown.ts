@@ -11,6 +11,9 @@ export function getPostSlugs() {
 export function getPostBySlug(slug: string, fields: string[] = []) {
   const realSlug = slug.replace(/\.mdx$/, "");
   const fullPath = join(postsDirectory, `${realSlug}.mdx`);
+  if (!fs.existsSync(fullPath)) {
+    return null;
+  }
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
@@ -22,9 +25,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   const items: any = {};
 
   function processImages(content: string) {
-    // You can modify this function to handle image processing
-    // For example, replace image paths with actual HTML image tags
-    return content.replace(/!\[.*?\]\((.*?)\)/g, '<img src="$1" alt="" />');
+    return content.replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="$2" alt="$1" />');
   }
 
   // Ensure only the minimal needed data is exposed
@@ -54,6 +55,7 @@ export function getAllPosts(fields: string[] = []) {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
+    .filter((post): post is Record<string, any> => post !== null)
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
 

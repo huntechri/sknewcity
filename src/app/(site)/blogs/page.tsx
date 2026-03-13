@@ -6,6 +6,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title:
     "Блог о ремонте | Homely",
+    description: "Статьи Homely о ремонте квартир: бюджет, сроки, материалы, дизайн-проект и практические советы по отделке.",
+    alternates: {
+        canonical: "/blogs",
+    },
 };
 
 const Blog = () => {
@@ -15,6 +19,7 @@ const Blog = () => {
                 title="Статьи о ремонте квартир"
                 description="Практические советы, чек-листы и разборы типовых ошибок."
                 badge="Blog"
+                as="h1"
             />
             <BlogList />
         </>
