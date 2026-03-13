@@ -25,14 +25,14 @@ const Footer = () => {
           <p className="text-white text-sm lg:max-w-1/5">
             Получайте новости, полезные советы и специальные предложения.
           </p>
-          <div className="flex lg:flex-row flex-col items-center lg:gap-10 gap-3">
-            <div className="flex gap-2 lg:order-1 order-2">
-              <input type="email" placeholder="Введите email" className="rounded-full py-4 px-6 bg-white/10 placeholder:text-white text-white focus-visible:outline-0" />
-              <button className="text-dark bg-white py-4 px-8 font-semibold rounded-full hover:bg-primary hover:text-white duration-300 hover:cursor-pointer">
+          <div className="flex lg:flex-row flex-col items-center lg:gap-10 gap-2 sm:gap-3">
+            <div className="flex gap-2 lg:order-1 order-2 flex-col sm:flex-row w-full sm:w-auto">
+              <input type="email" placeholder="Введите email" className="rounded-full py-2 sm:py-4 px-3 sm:px-6 bg-white/10 placeholder:text-white text-white focus-visible:outline-0 text-sm sm:text-base" />
+              <button className="text-dark bg-white py-2 sm:py-4 px-4 sm:px-8 font-semibold rounded-full hover:bg-primary hover:text-white duration-300 hover:cursor-pointer text-sm sm:text-base">
                 Подписаться
               </button>
             </div>
-            <p className="text-white/40 text-sm lg:max-w-[45%] order-1 lg:order-2">
+            <p className="text-white/40 text-xs sm:text-sm lg:max-w-[45%] order-1 lg:order-2">
               Подписываясь, вы соглашаетесь получать письма. Можно отписаться в любой момент.
             </p>
           </div>
@@ -48,21 +48,21 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="py-16 border-b border-white/10">
-          <div className="grid grid-cols-12 sm:gap-10 gap-y-6">
+        <div className="py-10 sm:py-16 border-b border-white/10">
+          <div className="grid grid-cols-12 gap-3 sm:gap-6 md:gap-10">
             <div className="md:col-span-7 col-span-12">
-              <h2 className="text-white leading-[1.2] text-40 font-medium mb-6 lg:max-w-3/4">
+              <h2 className="text-white leading-[1.2] text-2xl sm:text-3xl md:text-5xl lg:text-40 font-medium mb-4 sm:mb-6 lg:max-w-3/4">
                 Готовы к ремонту без стресса? Свяжитесь с нами сегодня.
               </h2>
-              <Link href="/contactus" className="bg-primary text-base font-semibold py-4 px-8 rounded-full text-white hover:bg-white hover:text-dark duration-300 hover:cursor-pointer">
+              <Link href="/contactus" className="bg-primary text-sm sm:text-base font-semibold py-3 sm:py-4 px-5 sm:px-8 rounded-full text-white hover:bg-white hover:text-dark duration-300 hover:cursor-pointer">
                 Получить консультацию
               </Link>
             </div>
             <div className="md:col-span-3 sm:col-span-6 col-span-12">
-              <div className="flex flex-col gap-4 w-fit">
+              <div className="flex flex-col gap-3 w-fit">
                 {footerLinks?.slice(0, 4)?.map((item:any, index:any) => (
                   <div key={index}>
-                    <Link href={item.href} className="text-white/40 text-xm hover:text-white">
+                    <Link href={item.href} className="text-white/40 text-xs sm:text-xm hover:text-white">
                       {item.label}
                     </Link>
                   </div>
@@ -70,10 +70,10 @@ const Footer = () => {
               </div>
             </div>
             <div className="md:col-span-2 sm:col-span-6 col-span-12">
-              <div className="flex flex-col gap-4 w-fit">
+              <div className="flex flex-col gap-3 w-fit">
                 {footerLinks?.slice(4, 8)?.map((item:any, index:any) => (
                   <div key={index}>
-                    <Link href={item.href} className="text-white/40 text-xm hover:text-white">
+                    <Link href={item.href} className="text-white/40 text-xs sm:text-xm hover:text-white">
                       {item.label}
                     </Link>
                   </div>

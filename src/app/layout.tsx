@@ -7,6 +7,7 @@ import Header from './components/layout/header';
 import Footer from './components/layout/footer';
 import SessionProviderComp from '../providers/SessionProvider';
 import ScrollToTop from './components/scroll-to-top';
+import SmoothScrollProvider from '@/providers/SmoothScrollProvider';
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
@@ -17,25 +18,25 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  session,
 }: Readonly<{
   children: React.ReactNode
-  session: any
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' suppressHydrationWarning>
       <body className={`${font.className} bg-white dark:bg-black antialiased`}>
         <NextTopLoader color="#07be8a" />
-        <SessionProviderComp session={session}>
-          <ThemeProvider
-            attribute='class'
-            enableSystem={true}
-            defaultTheme='light'>
-            <Header />
-            {children}
-            <Footer />
-            <ScrollToTop />
-          </ThemeProvider>
+        <SessionProviderComp>
+          <SmoothScrollProvider>
+            <ThemeProvider
+              attribute='class'
+              enableSystem={true}
+              defaultTheme='light'>
+              <Header />
+              {children}
+              <Footer />
+              <ScrollToTop />
+            </ThemeProvider>
+          </SmoothScrollProvider>
         </SessionProviderComp>
       </body>
     </html>

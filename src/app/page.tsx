@@ -16,7 +16,7 @@ export default function Home() {
       <Properties />
       <FeaturedProperty />
       <ResidentialComplexes />
-      <Testimonial />
+      {/* <Testimonial /> */}
       {/* <BlogSmall /> */}
       <GetInTouch />
       <FAQ />

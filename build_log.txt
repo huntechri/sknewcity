@@ -1,0 +1,29 @@
+
+> homely-nextjs@1.0.0 build C:\Users\Admin\Desktop\Homely-nextjs-tailwind-main\Homely-nextjs-tailwind-main\package
+> next build
+
+   ▲ Next.js 15.5.12
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.9s
+   Skipping linting
+   Checking validity of types ...
+Failed to compile.
+
+.next/types/validator.ts:202:31
+Type error: Type 'typeof import("C:/Users/Admin/Desktop/Homely-nextjs-tailwind-main/Homely-nextjs-tailwind-main/package/src/app/layout")' does not satisfy the constraint 'LayoutConfig<"/">'.
+  Types of property 'default' are incompatible.
+    Type '({ children, session, }: Readonly<{ children: ReactNode; session: any; }>) => Element' is not assignable to type 'ComponentType<LayoutProps<"/">> | ((props: LayoutProps<"/">) => void | ReactNode | Promise<ReactNode> | Promise<...>)'.
+      Type '({ children, session, }: Readonly<{ children: ReactNode; session: any; }>) => Element' is not assignable to type 'FunctionComponent<LayoutProps<"/">>'.
+        Types of parameters '__0' and 'props' are incompatible.
+          Property 'session' is missing in type 'LayoutProps<"/">' but required in type 'Readonly<{ children: ReactNode; session: any; }>'.
+
+[0m [90m 200 |[39m   type __IsExpected[33m<[39m[33mSpecific[39m [36mextends[39m [33mLayoutConfig[39m[33m<[39m[32m"/"[39m[33m>>[39m [33m=[39m [33mSpecific[39m
+ [90m 201 |[39m   [36mconst[39m handler [33m=[39m {} [36mas[39m [36mtypeof[39m [36mimport[39m([32m"../../src/app/layout.js"[39m)
+[31m[1m>[22m[39m[90m 202 |[39m   type __Check [33m=[39m __IsExpected[33m<[39m[36mtypeof[39m handler[33m>[39m
+ [90m     |[39m                               [31m[1m^[22m[39m
+ [90m 203 |[39m   [90m// @ts-ignore[39m
+ [90m 204 |[39m   type __Unused [33m=[39m __Check
+ [90m 205 |[39m }[0m
+Next.js build worker exited with code: 1 and signal: null
+ ELIFECYCLE  Command failed with exit code 1.

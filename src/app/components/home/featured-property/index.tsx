@@ -46,8 +46,8 @@ const FeaturedProperty: React.FC = () => {
 
   return (
     <section>
-      <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
-        <div className="grid lg:grid-cols-2 gap-10">
+      <div className="container max-w-8xl mx-auto px-3 sm:px-5 2xl:px-0">
+        <div className="grid lg:grid-cols-2 gap-5 sm:gap-10">
           <div className="relative">
             <Carousel
               setApi={setApi}
@@ -70,7 +70,7 @@ const FeaturedProperty: React.FC = () => {
                 ))}
               </CarouselContent>
             </Carousel>
-            <div className="absolute left-2/5 bg-dark/50 rounded-full py-2.5 bottom-10 flex justify-center mt-4 gap-2.5 px-2.5">
+            <div className="absolute left-2/5 sm:left-2/5 md:left-2/5 bg-dark/50 rounded-full py-1.5 sm:py-2.5 bottom-5 sm:bottom-10 flex justify-center mt-2 sm:mt-4 gap-1.5 sm:gap-2.5 px-2 sm:px-2.5">
               {Array.from({ length: count }).map((_, index) => (
                 <button
                   key={index}
@@ -84,25 +84,25 @@ const FeaturedProperty: React.FC = () => {
           </div>
           <div className="flex flex-col gap-10">
             <div>
-              <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
-                <Icon icon="ph:house-simple-fill" className="text-2xl text-primary " />
-                Проект месяца
+              <p className="text-dark/75 dark:text-white/75 text-sm sm:text-base font-semibold flex gap-2 items-center">
+                <Icon icon="ph:house-simple-fill" className="text-lg sm:text-2xl text-primary " />
+                <span>Проект месяца</span>
               </p>
-              <h2 className="lg:text-52 text-40 font-medium text-dark dark:text-white">
+              <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-52 font-medium text-dark dark:text-white">
                 Сканди-минимализм, 68 м²
               </h2>
               <div className="flex items-center gap-2.5">
-                <Icon icon="ph:map-pin" width={28} height={26} className="text-dark/50 dark:text-white/50" />
-                <p className="text-dark/50 dark:text-white/50 text-base">
+                <Icon icon="ph:map-pin" width={24} height={24} className="text-dark/50 dark:text-white/50 text-sm sm:text-lg" />
+                <p className="text-dark/50 dark:text-white/50 text-sm sm:text-base">
                   ЖК «Северный парк», Москва
                 </p>
               </div>
             </div>
-            <p className="text-base text-dark/50 dark:text-white/50">
+            <p className="text-base text-dark/50 dark:text-white/50 text-sm sm:text-base leading-6 sm:leading-7">
               Комплексный ремонт квартиры с разработкой проекта, заменой инженерии и подбором материалов. Выполнили
               демонтаж, черновые работы, электрику, сантехнику, финишную отделку и комплектацию.
             </p>
-            <div className="grid grid-cols-2 gap-10">
+            <div className="grid grid-cols-2 gap-4 sm:gap-10">
               <div className="flex items-center gap-4">
                 <div className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]">
                   <Image
@@ -188,15 +188,15 @@ const FeaturedProperty: React.FC = () => {
                 <h6 className="">Гарантия 2 года</h6>
               </div>
             </div>
-            <div className="flex gap-10">
-              <Link href="/contactus" className="py-4 px-8 bg-primary hover:bg-dark duration-300 rounded-full text-white">
+            <div className="flex gap-4 sm:gap-10 flex-col sm:flex-row">
+              <Link href="/contactus" className="py-3 sm:py-4 px-6 sm:px-8 bg-primary hover:bg-dark duration-300 rounded-full text-white text-sm sm:text-base">
                 Получить смету
               </Link>
               <div>
-                <h4 className="text-3xl text-dark dark:text-white font-medium">
+                <h4 className="text-2xl sm:text-3xl text-dark dark:text-white font-medium">
                   от 1 250 000 ₽
                 </h4>
-                <p className="text-base text-dark/50">
+                <p className="text-xs sm:text-base text-dark/50">
                   Стоимость работ
                 </p>
               </div>

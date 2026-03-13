@@ -99,22 +99,22 @@ const Hero: React.FC = () => {
   return (
     <section className='!py-0'>
       <div className='bg-gradient-to-b from-skyblue via-lightskyblue dark:via-[#4298b0] to-white/10 dark:to-black/10 overflow-hidden relative'>
-        <div className='container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-60 md:pb-68'>
+        <div className='container max-w-8xl mx-auto px-3 sm:px-5 2xl:px-0 pt-20 sm:pt-32 md:pt-60 md:pb-68'>
           <div className='relative text-white dark:text-dark text-center md:text-start z-10'>
-            <p className='text-inherit text-xm font-medium'>Москва и МО</p>
-            <h1 className='text-inherit text-6xl sm:text-9xl font-semibold tracking-wide md:max-w-45p mt-4 mb-6'>
-              Строительная компания
+            <p className='text-inherit text-xs sm:text-xm font-medium'>Строительная компания</p>
+            <h1 className='text-inherit text-3xl xs:text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold uppercase tracking-wider mt-2 sm:mt-4 mb-4 sm:mb-6 leading-tight'>
+              SK NEW CITY
             </h1>
-            <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4'>
-              <Link href="/contactus" className='px-8 py-4 border border-white dark:border-dark bg-white dark:bg-dark text-dark dark:text-white duration-300 dark:hover:text-dark hover:bg-transparent hover:text-white text-base font-semibold rounded-full hover:cursor-pointer'>
+            <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-3 sm:gap-4'>
+              <Link href="/contactus" className='px-6 sm:px-8 py-3 sm:py-4 border border-white dark:border-black bg-white dark:bg-black text-dark dark:text-white duration-300 dark:hover:text-dark hover:bg-transparent hover:text-white text-sm sm:text-base font-semibold rounded-full hover:cursor-pointer'>
                 Рассчитать стоимость
               </Link>
-              <Link href={"/properties"} className='px-8 py-4 border border-white dark:border-dark bg-transparent text-white dark:text-dark hover:bg-white dark:hover:bg-dark dark:hover:text-white hover:text-dark duration-300 text-base font-semibold rounded-full hover:cursor-pointer'>
+              <Link href={"/properties"} className='px-6 sm:px-8 py-3 sm:py-4 border border-white dark:border-black bg-transparent text-white dark:text-dark hover:bg-white dark:hover:bg-black dark:hover:text-white hover:text-dark duration-300 text-sm sm:text-base font-semibold rounded-full hover:cursor-pointer'>
                 Смотреть проекты
               </Link>
             </div>
           </div>
-          <div className='hidden md:block absolute -top-2 -right-68'>
+          <div className='hidden md:block absolute top-[92px] -right-68'>
             <Image
               src={'/images/hero/heroBanner.png'}
               alt='heroImg'
@@ -127,22 +127,22 @@ const Hero: React.FC = () => {
         </div>
         <div
           ref={statsRef}
-          className='md:absolute bottom-0 md:-right-68 xl:right-0 bg-white dark:bg-black py-12 px-8 mobile:px-16 md:pl-16 md:pr-[295px] rounded-2xl md:rounded-none md:rounded-tl-2xl mt-24'
+          className='md:absolute bottom-0 md:-right-68 xl:right-0 bg-white dark:bg-black py-8 sm:py-12 px-4 sm:px-8 mobile:px-6 sm:mobile:px-16 md:pl-16 md:pr-[295px] rounded-2xl md:rounded-none md:rounded-tl-2xl mt-16 sm:mt-24 z-10'
         >
-          <div className='grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 dark:text-white text-black'>
+          <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 md:gap-10 dark:text-white text-black'>
             {stats.map((item, index) => (
-              <div key={item.label} className='flex flex-col items-center gap-3 rounded-2xl bg-white/0 dark:bg-white/0 text-center'>
-                <div className='bg-dark/5 dark:bg-white/5 p-2.5 rounded-[10px] w-fit'>
+              <div key={item.label} className='flex flex-col items-center gap-2 sm:gap-3 rounded-2xl bg-white/0 dark:bg-white/0 text-center'>
+                <div className='bg-dark/5 dark:bg-white/5 p-1.5 sm:p-2.5 rounded-[10px] w-fit'>
                   <Icon
                     icon={item.icon}
-                    width={28}
-                    height={28}
-                    className='text-dark dark:text-white'
+                    width={24}
+                    height={24}
+                    className='text-dark dark:text-white sm:w-7 sm:h-7'
                     aria-hidden='true'
                   />
                 </div>
-                <p className='text-2xl sm:text-3xl font-medium text-inherit leading-none w-full'>
-                  <span className='inline-flex items-baseline justify-center gap-0 min-h-[2.25rem] w-full'>
+                <p className='text-lg sm:text-2xl md:text-3xl font-medium text-inherit leading-none w-full'>
+                  <span className='inline-flex items-baseline justify-center gap-0 min-h-6 sm:min-h-9 md:w-[200px] w-full'>
                     {item.prefix}
                     <span className='inline-block tabular-nums text-center'>
                       {counts[index].toLocaleString('ru-RU')}

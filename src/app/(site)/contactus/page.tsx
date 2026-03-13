@@ -13,7 +13,7 @@ export default function ContactUs() {
   })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prevData) => ({
       ...prevData,
@@ -30,10 +30,10 @@ export default function ContactUs() {
     })
   }
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
-    fetch('https://formsubmit.co/ajax/bhainirav772@gmail.com', {
+    fetch(`https://formsubmit.co/ajax/${process.env.NEXT_PUBLIC_CONTACT_FORM_EMAIL || 'bhainirav772@gmail.com'}`, {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({
@@ -45,12 +45,11 @@ export default function ContactUs() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data)
         setSubmitted(data.success)
         reset()
       })
-      .catch((error) => {
-        console.log(error.message)
+      .catch(() => {
+        // Handle error silently or show user message
       })
   }
 

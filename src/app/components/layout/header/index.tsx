@@ -55,9 +55,11 @@ const Header: React.FC = () => {
       window.removeEventListener('scroll', handleScroll)
       document.removeEventListener('mousedown', handleClickOutside)
     }
-  }, [pathname,handleScroll])
+  }, [pathname, handleScroll])
 
   const isHomepage = pathname === '/'
+  const isRenovationPage = pathname === '/apartment-renovation'
+  const isHeroHeader = isHomepage || isRenovationPage
 
   const handleSignOut = () => {
     localStorage.removeItem("user");
@@ -66,26 +68,26 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className={`fixed h-24 py-1 z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-4 ${sticky ? "top-3" : "top-0"}`}>
-      <nav className={`container mx-auto max-w-8xl flex items-center justify-between py-4 duration-300 ${sticky ? "shadow-lg bg-white dark:bg-dark rounded-full top-5 px-4 " : "shadow-none top-0"}`}>
+    <header className={`fixed h-20 sm:h-24 py-1 z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-3 sm:px-4 ${sticky ? "top-2 sm:top-3" : "top-0"}`}>
+      <nav className={`container mx-auto max-w-8xl flex items-center justify-between py-2 sm:py-4 duration-300 ${sticky ? "shadow-lg bg-white dark:bg-dark rounded-full top-5 px-3 sm:px-4 " : "shadow-none top-0"}`}>
         <div className='flex justify-between items-center gap-2 w-full'>
           <div>
             <Link href='/'>
               <Image
                 src={'/images/header/dark-logo.svg'}
                 alt='logo'
-                width={150}
-                height={68}
+                width={120}
+                height={54}
                 unoptimized={true}
-                className={`${isHomepage ? sticky ? "block dark:hidden" : "hidden" : sticky ? "block dark:hidden" : "block dark:hidden"}`}
+                className={`w-28 sm:w-40 h-auto ${isHeroHeader ? sticky ? "block dark:hidden" : "hidden" : sticky ? "block dark:hidden" : "block dark:hidden"}`}
               />
               <Image
                 src={'/images/header/logo.svg'}
                 alt='logo'
-                width={150}
-                height={68}
+                width={120}
+                height={54}
                 unoptimized={true}
-                className={`${isHomepage ? sticky ? "hidden dark:block" : "block" : sticky ? "dark:block hidden" : "dark:block hidden"}`}
+                className={`w-28 sm:w-40 h-auto ${isHeroHeader ? sticky ? "hidden dark:block" : "block" : sticky ? "dark:block hidden" : "dark:block hidden"}`}
               />
             </Link>
           </div>
@@ -102,7 +104,7 @@ const Header: React.FC = () => {
                 icon={'solar:sun-bold'}
                 width={32}
                 height={32}
-                className={`dark:hidden block ${isHomepage
+                className={`dark:hidden block ${isHeroHeader
                   ? sticky
                     ? 'text-dark'
                     : 'text-white'
@@ -118,18 +120,18 @@ const Header: React.FC = () => {
             </button>
 
             {(user?.user || session?.user) &&
-                <div className="relative group flex items-center justify-center">
-                  <Image src={"/images/avatar/avatar_1.jpg"} alt="avatar" width={35} height={35} className="rounded-full" />
-                  <p
-                    className="absolute w-fit text-sm font-medium text-center z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-200 bg-primary dark:bg-middlegreen text-creamwhite py-1 px-2 min-w-28 rounded-xl shadow-2xl top-full left-1/2 transform -translate-x-1/2 mt-3"
-                  >
-                    {user?.user || session?.user?.name}
-                  </p>
-                </div>
+              <div className="relative group flex items-center justify-center">
+                <Image src={"/images/avatar/avatar_1.jpg"} alt="avatar" width={32} height={32} className="rounded-full w-8 h-8 sm:w-9 sm:h-9" />
+                <p
+                  className="absolute w-fit text-xs sm:text-sm font-medium text-center z-10 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-200 bg-primary dark:bg-middlegreen text-creamwhite py-1 px-2 min-w-24 sm:min-w-28 rounded-xl shadow-2xl top-full left-1/2 transform -translate-x-1/2 mt-3"
+                >
+                  {user?.user || session?.user?.name}
+                </p>
+              </div>
             }
 
             <div className={`hidden md:block`}>
-              <Link href='#' className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${isHomepage
+              <Link href='#' className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${isHeroHeader
                 ? sticky
                   ? 'text-dark dark:text-white hover:text-primary border-dark dark:border-white'
                   : 'text-white hover:text-primary'
@@ -143,7 +145,7 @@ const Header: React.FC = () => {
             <div>
               <button
                 onClick={() => setNavbarOpen(!navbarOpen)}
-                className={`flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border ${isHomepage
+                className={`flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border ${isHeroHeader
                   ? sticky
                     ? 'text-white bg-dark dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-dark dark:border-white'
                     : 'text-dark bg-white dark:text-dark hover:bg-transparent hover:text-white border-white'
@@ -169,7 +171,7 @@ const Header: React.FC = () => {
 
       <div
         ref={sideMenuRef}
-        className={`fixed top-0 right-0 h-full w-full bg-dark shadow-lg transition-transform duration-300 max-w-2xl ${navbarOpen ? 'translate-x-0' : 'translate-x-full'} z-50 px-20 overflow-auto no-scrollbar`}
+        className={`fixed top-0 right-0 h-full w-full bg-dark shadow-lg transition-transform duration-300 max-w-sm sm:max-w-2xl ${navbarOpen ? 'translate-x-0' : 'translate-x-full'} z-50 px-6 sm:px-16 md:px-20 overflow-auto no-scrollbar`}
       >
         <div className="flex flex-col h-full justify-between">
           <div className="">

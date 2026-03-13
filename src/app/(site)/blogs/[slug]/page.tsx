@@ -1,17 +1,17 @@
+import { Metadata } from "next";
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from '@iconify/react'
-import { getAllPosts, getPostBySlug } from "@/lib/markdown";
+import { getPostBySlug } from "@/lib/markdown";
 import markdownToHtml from "@/lib/markdownToHtml";
 
 type Props = {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 };
 
-export async function generateMetadata({ params }: any) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const data = await params;
-    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
     const post = getPostBySlug(data.slug, [
         "title",
         "author",
@@ -23,9 +23,9 @@ export async function generateMetadata({ params }: any) {
     const authorName = process.env.AUTHOR_NAME || "Your Author Name";
 
     if (post) {
-        const metadata = {
+        const metadata: Metadata = {
             title: `${post.title || "Single Post Page"} | ${siteName}`,
-            author: authorName,
+            authors: [{ name: authorName }],
             robots: {
                 index: true,
                 follow: true,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: any) {
         return {
             title: "Not Found",
             description: "No blog article has been found",
-            author: authorName,
+            authors: [{ name: authorName }],
             robots: {
                 index: false,
                 follow: false,
@@ -62,9 +62,8 @@ export async function generateMetadata({ params }: any) {
     }
 }
 
-export default async function Post({ params }: any) {
+export default async function Post({ params }: Props) {
     const data = await params;
-    const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
     const post = getPostBySlug(data.slug, [
         "title",
         "author",
@@ -80,7 +79,7 @@ export default async function Post({ params }: any) {
 
     return (
         <>
-            <section className="relative !pt-44 pb-0!">
+            <section className="relative pt-44! pb-0!">
                 <div className="container max-w-8xl mx-auto md:px-0 px-4">
                     <div>
                         <div>
@@ -105,7 +104,7 @@ export default async function Post({ params }: any) {
                                 <Image
                                     src={post.authorImage}
                                     alt="image"
-                                    className="bg-no-repeat bg-contain inline-block rounded-full !w-12 !h-12"
+                                    className="bg-no-repeat bg-contain inline-block rounded-full w-12! h-12!"
                                     width={48}
                                     height={48}
                                     quality={100}

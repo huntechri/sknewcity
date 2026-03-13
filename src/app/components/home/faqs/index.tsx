@@ -17,15 +17,15 @@ const FAQ: React.FC = () => {
                             unoptimized={true}
                         />
                     </div>
-                    <div className='lg:px-12'>
-                        <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
-                            <Icon icon="ph:house-simple-fill" className="text-2xl text-primary " />
+                    <div className='lg:px-12 px-3 sm:px-5'>
+                        <p className="text-dark/75 dark:text-white/75 text-sm sm:text-base font-semibold flex gap-2">
+                            <Icon icon="ph:house-simple-fill" className="text-lg sm:text-2xl text-primary " />
                             FAQs
                         </p>
-                        <h2 className='lg:text-52 text-40 leading-[1.2] font-medium text-dark dark:text-white'>
+                        <h2 className='text-2xl sm:text-3xl md:text-5xl lg:text-52 leading-[1.2] font-medium text-dark dark:text-white'>
                             Всё о ремонте квартир
                         </h2>
-                        <p className='text-dark/50 dark:text-white/50 pr-20'>
+                        <p className='text-dark/50 dark:text-white/50 text-sm sm:text-base md:text-base sm:pr-8 md:pr-20'>
                             Собрали ответы на частые вопросы о сроках, смете, материалах и гарантиях.
                         </p>
                         <div className="my-8">

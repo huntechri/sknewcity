@@ -1,0 +1,97 @@
+
+> homely-nextjs@1.0.0 lint C:\Users\Admin\Desktop\Homely-nextjs-tailwind-main\Homely-nextjs-tailwind-main\package
+> next lint
+
+`next lint` is deprecated and will be removed in Next.js 16.
+For new projects, use create-next-app to choose your preferred linter.
+For existing projects, migrate to the ESLint CLI:
+npx @next/codemod@canary next-lint-to-eslint-cli .
+
+
+./src/app/(site)/blogs/[slug]/page.tsx
+8:6  Warning: 'Props' is defined but never used.  @typescript-eslint/no-unused-vars
+12:52  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+14:11  Warning: 'posts' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+65:48  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+67:11  Warning: 'posts' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./src/app/(site)/contactus/page.tsx
+16:28  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+33:34  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/(site)/privacy-policy/page.tsx
+19:249  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+19:252  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+19:255  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+19:258  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+19:261  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+19:265  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+19:270  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+19:289  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+20:309  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+20:318  Error: `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`.  react/no-unescaped-entities
+
+./src/app/components/auth/sign-in/index.tsx
+43:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/app/components/auth/sign-up/index.tsx
+54:14  Warning: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/app/components/documentation/Introduction.tsx
+3:8  Warning: 'nextImg' is defined but never used.  @typescript-eslint/no-unused-vars
+4:8  Warning: 'reactImg' is defined but never used.  @typescript-eslint/no-unused-vars
+5:8  Warning: 'tailwindImg' is defined but never used.  @typescript-eslint/no-unused-vars
+6:8  Warning: 'nextauthImg' is defined but never used.  @typescript-eslint/no-unused-vars
+7:8  Warning: 'typescriptImg' is defined but never used.  @typescript-eslint/no-unused-vars
+8:8  Warning: 'axiosImg' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/app/components/documentation/PackageStructure.tsx
+2:8  Warning: 'Image' is defined but never used.  @typescript-eslint/no-unused-vars
+3:8  Warning: 'tline' is defined but never used.  @typescript-eslint/no-unused-vars
+4:8  Warning: 't_half_line' is defined but never used.  @typescript-eslint/no-unused-vars
+5:8  Warning: 'straight_line' is defined but never used.  @typescript-eslint/no-unused-vars
+6:8  Warning: 'small_straight_line' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/app/components/home/featured-property/index.tsx
+3:21  Warning: 'useState' is defined but never used.  @typescript-eslint/no-unused-vars
+13:64  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+59:64  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+59:75  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/components/home/properties/index.tsx
+8:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+49:67  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+49:79  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/components/home/testimonial/index.tsx
+11:60  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+74:67  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+74:79  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/components/layout/footer/index.tsx
+7:50  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+63:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+63:65  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+74:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+74:65  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/components/layout/header/index.tsx
+13:44  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+14:44  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+201:51  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+201:63  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/components/properties/property-list/index.tsx
+9:54  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+31:18  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+63:46  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/page.tsx
+6:8  Warning: 'Testimonial' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/lib/markdown.ts
+17:8  Warning: 'Items' is defined but never used.  @typescript-eslint/no-unused-vars
+22:16  Warning: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+ ELIFECYCLE  Command failed with exit code 1.

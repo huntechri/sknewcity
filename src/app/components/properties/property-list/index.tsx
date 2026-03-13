@@ -3,6 +3,7 @@ import { useEffect, useState, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import PropertyCard from "../../home/properties/card/Card";
 import HeroSub from "../../shared/hero-sub";
+import UnderDevelopment from "../../shared/under-development";
 
 const PropertiesListing: React.FC = () => {
   const [propertyHomes, setPropertyHomes] = useState<any[]>([]);
@@ -55,13 +56,17 @@ const PropertiesListing: React.FC = () => {
       />
       <section className='pt-0!'>
         <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
-          <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10'>
-            {filteredProperties.map((item: any, index: number) => (
-              <div key={index}>
-                <PropertyCard item={item} />
-              </div>
-            ))}
-          </div>
+          {categoryParam && ['commercial', 'designer', 'capital'].includes(categoryParam.toLowerCase()) ? (
+            <UnderDevelopment categoryName={formatCategory(categoryParam)} />
+          ) : (
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10'>
+              {filteredProperties.map((item: any, index: number) => (
+                <div key={index}>
+                  <PropertyCard item={item} />
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </>
