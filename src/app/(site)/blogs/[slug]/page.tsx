@@ -6,6 +6,8 @@ import { Icon } from '@iconify/react'
 import { getPostBySlug, getPostSlugs } from "@/lib/markdown";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { notFound } from "next/navigation";
+import StructuredData from "@/app/components/seo/StructuredData";
+import { getArticleSchema, getBreadcrumbSchema } from "@/lib/seo";
 
 type Props = {
     params: Promise<{ slug: string }>;
@@ -26,18 +28,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "detail",
     ]);
 
-    const siteName = process.env.SITE_NAME || "Homely Renovation";
+    const siteName = process.env.SITE_NAME || "SK New City";
 
     if (post) {
         const metadata: Metadata = {
             title: `${post.title || "Статья"} | ${siteName}`,
-            description: typeof post.detail === "string" ? post.detail : "Полезная статья о ремонте квартир от Homely.",
+            description: typeof post.detail === "string" ? post.detail : "Полезная статья о ремонте квартир и отделочных работах от SK New City.",
             alternates: {
                 canonical: `/blogs/${data.slug}`,
             },
             openGraph: {
                 title: `${post.title || "Статья"} | ${siteName}`,
-                description: typeof post.detail === "string" ? post.detail : "Полезная статья о ремонте квартир от Homely.",
+                description: typeof post.detail === "string" ? post.detail : "Полезная статья о ремонте квартир и отделочных работах от SK New City.",
                 images: typeof post.coverImage === "string" ? [post.coverImage] : [],
             },
             robots: {
@@ -91,9 +93,25 @@ export default async function Post({ params }: Props) {
     }
 
     const content = await markdownToHtml(post.content || "");
+    const structuredData = [
+        getArticleSchema({
+            title: post.title || "Статья",
+            description: post.detail || "Полезная статья о ремонте квартир.",
+            path: `/blogs/${data.slug}`,
+            image: post.coverImage,
+            publishedTime: post.date,
+            author: post.author || "SK New City",
+        }),
+        getBreadcrumbSchema([
+            { name: "Главная", path: "/" },
+            { name: "Блог", path: "/blogs" },
+            { name: post.title || "Статья", path: `/blogs/${data.slug}` },
+        ]),
+    ];
 
     return (
         <>
+            <StructuredData data={structuredData} />
             <section className="relative pt-44! pb-0!">
                 <div className="container max-w-8xl mx-auto md:px-0 px-4">
                     <div>
@@ -105,7 +123,7 @@ export default async function Post({ params }: Props) {
                                     height={20}
                                     className=''
                                 />
-                                <span>Go Back</span>
+                                <span>Назад к статьям</span>
                             </Link>
                             <h1 className="text-dark dark:text-white md:text-52 text-40 leading-[1.2] font-semibold pt-7">
                                 {post.title}

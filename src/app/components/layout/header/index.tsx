@@ -118,7 +118,7 @@ const Header: React.FC = () => {
                 <span>
                   <Icon icon={'ph:list'} width={24} height={24} />
                 </span>
-                <span className='hidden sm:block'>Menu</span>
+                <span className='hidden sm:block'>Меню</span>
               </button>
             </div>
           </div>
@@ -168,9 +168,7 @@ const Header: React.FC = () => {
           </div>
 
           <div className='flex flex-col gap-1 my-16 text-white'>
-            <p className='text-base sm:text-xm font-normal text-white/40'>
-              Contact
-            </p>
+            <p className='text-base sm:text-xm font-normal text-white/40'>Контакты</p>
             <Link href="mailto:info@sk-new-city.ru" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
               info@sk-new-city.ru
             </Link>

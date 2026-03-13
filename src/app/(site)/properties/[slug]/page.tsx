@@ -1,8 +1,10 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Details from "@/app/components/properties/property-detail";
+import StructuredData from "@/app/components/seo/StructuredData";
 import { testimonials } from "@/lib/page-data";
 import { getPropertyBySlug, propertyHomes } from "@/lib/property-data";
+import { getBreadcrumbSchema, getServiceSchema } from "@/lib/seo";
 
 type Props = {
     params: Promise<{ slug: string }>;
@@ -18,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     if (!item) {
         return {
-            title: "Проект не найден | Homely",
+            title: "Проект не найден | SK New City",
             robots: {
                 index: false,
                 follow: false,
@@ -27,14 +29,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: `${item.name} | ${item.location} | Homely`,
-        description: item.description?.[0] ?? `Проект ${item.name} от Homely в ${item.location}. Фото, объём работ и стоимость ремонта.`,
+        title: `${item.name} | ${item.location} | SK New City`,
+        description: item.description?.[0] ?? `Проект ремонта ${item.name} от СК Новый Город в ${item.location}. Фото, объём работ, отделка и стоимость ремонта.`,
         alternates: {
             canonical: `/properties/${item.slug}`,
         },
         openGraph: {
-            title: `${item.name} | Homely`,
-            description: item.description?.[0] ?? `Реализованный проект ремонта ${item.name}.`,
+            title: `${item.name} | SK New City`,
+            description: item.description?.[0] ?? `Реализованный проект ремонта квартиры от СК Новый Город.`,
             images: item.images[0] ? [item.images[0].src] : [],
         },
     };
@@ -48,7 +50,25 @@ const page = async ({ params }: Props) => {
         notFound();
     }
 
-    return <Details item={item} testimonials={testimonials} />;
+    const structuredData = [
+        getServiceSchema({
+            name: `${item.name} — проект ремонта`,
+            description: item.description?.[0] ?? `Проект ремонта ${item.name} в ${item.location}.`,
+            path: `/properties/${item.slug}`,
+        }),
+        getBreadcrumbSchema([
+            { name: "Главная", path: "/" },
+            { name: "Проекты", path: "/properties" },
+            { name: item.name, path: `/properties/${item.slug}` },
+        ]),
+    ];
+
+    return (
+        <>
+            <StructuredData data={structuredData} />
+            <Details item={item} testimonials={testimonials} />
+        </>
+    );
 };
 
 export default page;

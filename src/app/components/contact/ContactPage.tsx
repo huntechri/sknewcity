@@ -95,7 +95,7 @@ export default function ContactPage() {
           <div className='relative w-fit'>
             <Image
               src={'/images/contactUs/contactUs.jpg'}
-              alt='Команда Homely на консультации по ремонту'
+              alt='Команда SK New City на консультации по ремонту квартиры'
               width={497}
               height={535}
               className='rounded-2xl brightness-50 h-full'

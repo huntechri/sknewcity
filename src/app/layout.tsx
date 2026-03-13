@@ -15,10 +15,10 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sk-new-city.ru';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Ремонт квартир под ключ в Москве | Homely Renovation',
+    default: 'Ремонт квартир под ключ в Москве | SK New City | СК Новый Город',
     template: '%s',
   },
-  description: 'Homely Renovation выполняет ремонт квартир и коммерческих помещений в Москве: смета, дизайн, инженерия, отделка и комплектация под ключ.',
+  description: 'СК Новый Город (SK New City) выполняет ремонт квартир под ключ в Москве: черновая и чистовая отделка, капитальный и дизайнерский ремонт, инженерия, комплектация и авторский контроль.',
   alternates: {
     canonical: '/',
   },
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ru_RU',
     url: siteUrl,
-    title: 'Ремонт квартир под ключ в Москве | Homely Renovation',
-    description: 'Проекты и услуги по ремонту квартир: дизайн, отделка, инженерия и комплектация.',
-    siteName: 'Homely Renovation',
+    title: 'Ремонт квартир под ключ в Москве | SK New City | СК Новый Город',
+    description: 'СК Новый Город: ремонт квартир, отделочные работы, инженерия, дизайн-проект и реализованные объекты в Москве.',
+    siteName: 'SK New City',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ремонт квартир под ключ в Москве | Homely Renovation',
-    description: 'Проекты и услуги по ремонту квартир: дизайн, отделка, инженерия и комплектация.',
+    title: 'Ремонт квартир под ключ в Москве | SK New City',
+    description: 'Ремонт квартир и отделочные работы в Москве от СК Новый Город.',
   },
   robots: {
     index: true,

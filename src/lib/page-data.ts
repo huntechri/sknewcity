@@ -17,7 +17,7 @@ export const featuredProperty: FeaturedProperty[] = [
   },
   {
     scr: '/images/featuredproperty/image-4.jpg',
-    alt: 'Детали отделки и декора в проекте Homely',
+    alt: 'Детали отделки и декора в проекте SK New City',
   },
 ];
 

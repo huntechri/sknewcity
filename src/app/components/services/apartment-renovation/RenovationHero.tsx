@@ -49,7 +49,7 @@ const RenovationHero = () => {
                 <div className="grow flex flex-col justify-center py-20">
                     <div className="container max-w-8xl mx-auto px-3 sm:px-5 2xl:px-0 relative z-10 text-white dark:text-white transition-colors duration-300">
                         <div className="relative text-inherit text-center md:text-start z-10 md:mb-12">
-                            <p className='text-inherit text-xs sm:text-xm font-medium uppercase tracking-widest invisible mb-2' aria-hidden="true">Услуги Homely</p>
+                            <p className='text-inherit text-xs sm:text-xm font-medium uppercase tracking-widest invisible mb-2' aria-hidden="true">Услуги SK New City</p>
                             <h1 className="text-4xl xs:text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-semibold tracking-wide text-inherit md:max-w-45p mb-4 sm:mb-6 leading-tight drop-shadow-lg">
                                 Ремонт
                             </h1>

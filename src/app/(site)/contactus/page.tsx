@@ -1,14 +1,38 @@
 import { Metadata } from 'next'
 import ContactPage from '@/app/components/contact/ContactPage'
+import StructuredData from '@/app/components/seo/StructuredData'
+import { companyAddress, companyEmail, companyPhone, getBreadcrumbSchema, getOrganizationSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
-  title: 'Контакты | Homely Renovation',
-  description: 'Свяжитесь с Homely Renovation в Москве: консультация, расчёт стоимости ремонта, адрес, телефон и форма заявки.',
+  title: 'Контакты | SK New City | СК Новый Город',
+  description: 'Свяжитесь с СК Новый Город (SK New City) в Москве: консультация по ремонту квартир, расчёт стоимости, адрес, телефон и форма заявки.',
   alternates: {
     canonical: '/contactus',
   },
 }
 
 export default function ContactUsPage() {
-  return <ContactPage />
+  const structuredData = [
+    getOrganizationSchema(),
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ContactPage',
+      name: 'Контакты SK New City',
+      description: 'Контакты, адрес, телефон и форма заявки на ремонт квартир в Москве.',
+      telephone: companyPhone,
+      email: companyEmail,
+      address: companyAddress,
+    },
+    getBreadcrumbSchema([
+      { name: 'Главная', path: '/' },
+      { name: 'Контакты', path: '/contactus' },
+    ]),
+  ];
+
+  return (
+    <>
+      <StructuredData data={structuredData} />
+      <ContactPage />
+    </>
+  )
 }
