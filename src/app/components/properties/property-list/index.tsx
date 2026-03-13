@@ -50,8 +50,8 @@ const PropertiesListing: React.FC = () => {
   return (
     <>
       <HeroSub
-        title={categoryParam ? formatCategory(categoryParam) : "Проекты ремонта квартир"}
-        description="Реальные кейсы с фото, сметами и сроками — выбирайте подходящий формат ремонта."
+        title={categoryParam ? formatCategory(categoryParam) : "Наши работы"}
+        description="Реальные кейсы с фото и сроками — выбирайте подходящий формат ремонта."
         badge="Проекты"
       />
       <section className='pt-0!'>
