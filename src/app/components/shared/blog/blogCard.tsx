@@ -11,7 +11,7 @@ const BlogCard: FC<{ blog: Blog }> = ({ blog }) => {
             <div className="overflow-hidden rounded-2xl flex-shrink-0">
                 <Image
                     src={coverImage!}
-                    alt="image"
+                    alt={title || "Обложка статьи"}
                     className="transition group-hover:scale-110"
                     width={190}
                     height={163}

@@ -3,36 +3,51 @@ import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from '@iconify/react'
-import { getPostBySlug } from "@/lib/markdown";
+import { getPostBySlug, getPostSlugs } from "@/lib/markdown";
 import markdownToHtml from "@/lib/markdownToHtml";
+import { notFound } from "next/navigation";
+import StructuredData from "@/app/components/seo/StructuredData";
+import { getArticleSchema, getBreadcrumbSchema } from "@/lib/seo";
 
 type Props = {
     params: Promise<{ slug: string }>;
 };
+
+export async function generateStaticParams() {
+    return getPostSlugs().map((slug) => ({
+        slug: slug.replace(/\.mdx$/, ""),
+    }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const data = await params;
     const post = getPostBySlug(data.slug, [
         "title",
         "author",
-        "content",
-        "metadata",
+        "coverImage",
+        "detail",
     ]);
 
-    const siteName = process.env.SITE_NAME || "Your Site Name";
-    const authorName = process.env.AUTHOR_NAME || "Your Author Name";
+    const siteName = process.env.SITE_NAME || "SK New City";
 
     if (post) {
         const metadata: Metadata = {
-            title: `${post.title || "Single Post Page"} | ${siteName}`,
-            authors: [{ name: authorName }],
+            title: `${post.title || "Статья"} | ${siteName}`,
+            description: typeof post.detail === "string" ? post.detail : "Полезная статья о ремонте квартир и отделочных работах от SK New City.",
+            alternates: {
+                canonical: `/blogs/${data.slug}`,
+            },
+            openGraph: {
+                title: `${post.title || "Статья"} | ${siteName}`,
+                description: typeof post.detail === "string" ? post.detail : "Полезная статья о ремонте квартир и отделочных работах от SK New City.",
+                images: typeof post.coverImage === "string" ? [post.coverImage] : [],
+            },
             robots: {
                 index: true,
                 follow: true,
-                nocache: true,
                 googleBot: {
                     index: true,
-                    follow: false,
+                    follow: true,
                     "max-video-preview": -1,
                     "max-image-preview": "large",
                     "max-snippet": -1,
@@ -45,11 +60,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return {
             title: "Not Found",
             description: "No blog article has been found",
-            authors: [{ name: authorName }],
             robots: {
                 index: false,
                 follow: false,
-                nocache: false,
                 googleBot: {
                     index: false,
                     follow: false,
@@ -75,10 +88,30 @@ export default async function Post({ params }: Props) {
         "detail",
     ]);
 
+    if (!post) {
+        notFound();
+    }
+
     const content = await markdownToHtml(post.content || "");
+    const structuredData = [
+        getArticleSchema({
+            title: post.title || "Статья",
+            description: post.detail || "Полезная статья о ремонте квартир.",
+            path: `/blogs/${data.slug}`,
+            image: post.coverImage,
+            publishedTime: post.date,
+            author: post.author || "SK New City",
+        }),
+        getBreadcrumbSchema([
+            { name: "Главная", path: "/" },
+            { name: "Блог", path: "/blogs" },
+            { name: post.title || "Статья", path: `/blogs/${data.slug}` },
+        ]),
+    ];
 
     return (
         <>
+            <StructuredData data={structuredData} />
             <section className="relative pt-44! pb-0!">
                 <div className="container max-w-8xl mx-auto md:px-0 px-4">
                     <div>
@@ -90,23 +123,23 @@ export default async function Post({ params }: Props) {
                                     height={20}
                                     className=''
                                 />
-                                <span>Go Back</span>
+                                <span>Назад к статьям</span>
                             </Link>
-                            <h2 className="text-dark dark:text-white md:text-52 text-40 leading-[1.2] font-semibold pt-7">
+                            <h1 className="text-dark dark:text-white md:text-52 text-40 leading-[1.2] font-semibold pt-7">
                                 {post.title}
-                            </h2>
+                            </h1>
                             <h6 className="text-xm mt-5 text-dark dark:text-white">
                                 {post.detail}
                             </h6>
                         </div>
                         <div className="flex items-center justify-between gap-6 mt-12">
                             <div className="flex items-center gap-4">
-                                <Image
-                                    src={post.authorImage}
-                                    alt="image"
-                                    className="bg-no-repeat bg-contain inline-block rounded-full w-12! h-12!"
-                                    width={48}
-                                    height={48}
+                                    <Image
+                                        src={post.authorImage}
+                                        alt={`Автор статьи ${post.author}`}
+                                        className="bg-no-repeat bg-contain inline-block rounded-full w-12! h-12!"
+                                        width={48}
+                                        height={48}
                                     quality={100}
                                     unoptimized={true}
                                 />
@@ -137,7 +170,7 @@ export default async function Post({ params }: Props) {
                     <div className="z-20 mt-12 overflow-hidden rounded">
                         <Image
                             src={post.coverImage}
-                            alt="image"
+                            alt={post.title || "Обложка статьи"}
                             width={1170}
                             height={766}
                             quality={100}

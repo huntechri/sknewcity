@@ -6,9 +6,9 @@ import { useTheme } from 'next-themes'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import NavLink from './navigation/NavLink'
+import { navLinks } from '@/lib/layout-data'
 
 const Header: React.FC = () => {
-  const [navLinks, setNavLinks] = useState<null | any[]>(null);
   const [sticky, setSticky] = useState(false)
   const [navbarOpen, setNavbarOpen] = useState(false)
   const { theme, setTheme } = useTheme()
@@ -24,20 +24,6 @@ const Header: React.FC = () => {
 
   const handleScroll = useCallback(() => {
     setSticky(window.scrollY >= 50)
-  }, [])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/layout-data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setNavLinks(data?.navLinks)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-    fetchData()
   }, [])
 
   useEffect(() => {
@@ -107,7 +93,7 @@ const Header: React.FC = () => {
 
 
             <div className={`hidden md:block`}>
-              <Link href='#' className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${isHeroHeader
+              <Link href='tel:+79167673434' className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${isHeroHeader
                 ? sticky
                   ? 'text-dark dark:text-white hover:text-primary border-dark dark:border-white'
                   : 'text-white hover:text-primary'
@@ -132,7 +118,7 @@ const Header: React.FC = () => {
                 <span>
                   <Icon icon={'ph:list'} width={24} height={24} />
                 </span>
-                <span className='hidden sm:block'>Menu</span>
+                <span className='hidden sm:block'>Меню</span>
               </button>
             </div>
           </div>
@@ -174,7 +160,7 @@ const Header: React.FC = () => {
             </div>
             <nav className='flex flex-col items-start gap-4'>
               <ul className='w-full'>
-                {navLinks && navLinks?.map((item: any, index: any) => (
+                {navLinks.map((item, index) => (
                   <NavLink key={index} item={item} onClick={() => setNavbarOpen(false)} />
                 ))}
               </ul>
@@ -182,13 +168,11 @@ const Header: React.FC = () => {
           </div>
 
           <div className='flex flex-col gap-1 my-16 text-white'>
-            <p className='text-base sm:text-xm font-normal text-white/40'>
-              Contact
-            </p>
-            <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
+            <p className='text-base sm:text-xm font-normal text-white/40'>Контакты</p>
+            <Link href="mailto:info@sk-new-city.ru" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
               info@sk-new-city.ru
             </Link>
-            <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
+            <Link href="tel:+79167673434" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
               +7916-767-34-34
             </Link>
           </div>

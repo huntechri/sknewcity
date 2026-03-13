@@ -1,18 +1,5 @@
 import { NextResponse } from "next/server";
-
-const navLinks = [
-  { label: 'Главная', href: '/' },
-  { label: 'Ремонт квартир', href: '/apartment-renovation' },
-  { label: 'Проекты', href: '/properties' },
-  { label: 'Контакты', href: '/contactus' },
-]
-
-const footerLinks = [
-  { label: 'Главная', href: '/' },
-  { label: 'Ремонт квартир', href: '/apartment-renovation' },
-  { label: 'Проекты', href: '/properties' },
-  { label: 'Контакты', href: '/contactus' },
-]
+import { footerLinks, navLinks } from "@/lib/layout-data";
 
 export const GET = async () => {
   return NextResponse.json({

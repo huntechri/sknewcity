@@ -54,7 +54,7 @@ const BaseProjectLayout: React.FC<BaseProjectLayoutProps> = ({ item, testimonial
                             <div className="w-full h-[540px]">
                                 <Image
                                     src={item.images[0]?.src}
-                                    alt="Main Property Image"
+                                    alt={`${item.name} — главное фото проекта`}
                                     width={400}
                                     height={500}
                                     className="rounded-2xl w-full h-full object-cover"
@@ -65,17 +65,17 @@ const BaseProjectLayout: React.FC<BaseProjectLayoutProps> = ({ item, testimonial
                     </div>
                     <div className="lg:col-span-4 lg:block hidden w-full h-[335px]">
                         {item?.images && item?.images[1] && (
-                            <Image src={item.images[1]?.src} alt="Property Image 2" width={400} height={500} className="rounded-2xl w-full h-full object-cover" unoptimized={true} />
+                            <Image src={item.images[1]?.src} alt={`${item.name} — фото интерьера 2`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" unoptimized={true} />
                         )}
                     </div>
                     <div className="lg:col-span-2 col-span-6 w-full h-[155px]">
                         {item?.images && item?.images[2] && (
-                            <Image src={item.images[2]?.src} alt="Property Image 3" width={400} height={500} className="rounded-2xl w-full h-full object-cover" unoptimized={true} />
+                            <Image src={item.images[2]?.src} alt={`${item.name} — фото интерьера 3`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" unoptimized={true} />
                         )}
                     </div>
                     <div className="lg:col-span-2 col-span-6 w-full h-[155px]">
                         {item?.images && item?.images[3] && (
-                            <Image src={item.images[3]?.src} alt="Property Image 4" width={400} height={500} className="rounded-2xl w-full h-full object-cover" unoptimized={true} />
+                            <Image src={item.images[3]?.src} alt={`${item.name} — фото интерьера 4`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" unoptimized={true} />
                         )}
                     </div>
                 </div>
@@ -157,7 +157,7 @@ const BaseProjectLayout: React.FC<BaseProjectLayoutProps> = ({ item, testimonial
                                 {item?.rate}
                             </h4>
                             <p className='text-sm text-dark/50 dark:text-white'>Стоимость работ</p>
-                            <Link href="#" className='py-4 px-8 bg-primary text-white rounded-full w-full block text-center hover:bg-dark duration-300 text-base mt-8 hover:cursor-pointer'>
+                            <Link href="/contactus" className='py-4 px-8 bg-primary text-white rounded-full w-full block text-center hover:bg-dark duration-300 text-base mt-8 hover:cursor-pointer'>
                                 Получить консультацию
                             </Link>
                             <div className="absolute right-0 top-4 -z-[1]">

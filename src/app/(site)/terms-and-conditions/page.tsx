@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Пользовательское соглашение | Homely",
+    title: "Пользовательское соглашение | SK New City",
 };
 
 export default function Page() {

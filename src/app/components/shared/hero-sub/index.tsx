@@ -5,9 +5,11 @@ interface HeroSubProps {
     title: string;
     description: string;
     badge: string;
+    as?: "h1" | "h2";
 }
 
-const HeroSub: FC<HeroSubProps> = ({ title, description, badge }) => {
+const HeroSub: FC<HeroSubProps> = ({ title, description, badge, as = "h1" }) => {
+    const HeadingTag = as;
 
     return (
         <>
@@ -25,7 +27,7 @@ const HeroSub: FC<HeroSubProps> = ({ title, description, badge }) => {
                         {badge}
                     </p>
                 </div>
-                <h2 className="text-dark text-52 relative font-bold dark:text-white " >{title}</h2>
+                <HeadingTag className="text-dark text-52 relative font-bold dark:text-white ">{title}</HeadingTag>
                 <p className="text-lg text-dark/50 dark:text-white/50 font-normal w-full mx-auto">
                     {description}
                 </p>

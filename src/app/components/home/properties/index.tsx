@@ -1,26 +1,8 @@
-"use client";
 import { Icon } from '@iconify/react'
 import PropertyCard from './card/Card'
-import { useEffect, useState } from 'react';
+import { propertyHomes } from '@/lib/property-data';
 
 const Properties: React.FC = () => {
-
-  const [propertyHomes, setPropertyHomes] = useState<any>(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/property-data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setPropertyHomes(data?.propertyHomes)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-    fetchData()
-  }, [])
-
   return (
     <section>
       <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
@@ -46,7 +28,7 @@ const Properties: React.FC = () => {
           </p>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10'>
-          {propertyHomes && propertyHomes?.slice(0, 6).map((item: any, index: any) => (
+          {propertyHomes.slice(0, 6).map((item, index) => (
             <div key={index} className=''>
               <PropertyCard item={item} />
             </div>

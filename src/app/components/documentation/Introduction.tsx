@@ -65,9 +65,9 @@ export const Introduction = () => {
           }
         </div>
         <div className="mt-5">
-          <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">Homely Tailwind NextJs Template is built with Tailwindcss and Nextjs.</p>
-          <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">These theme is ready to use and you can totally customize as per your requirement.</p>
-          <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">For Customize, You should have knowledge of NextJs, ReactJs, Tailwind and JSX to be able to modify these template.</p>
+          <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">Проект SK New City разработан на Next.js и Tailwind CSS.</p>
+          <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">Кодовая база адаптирована под сайт строительной компании, ремонта квартир и отделочных работ.</p>
+          <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">Для доработки полезно понимать основы Next.js, React, Tailwind CSS и JSX.</p>
         </div>
 
       </div>
@@ -76,7 +76,7 @@ export const Introduction = () => {
         className={`lg:hidden block fixed top-0 right-0 h-full w-full bg-white dark:bg-dark shadow-lg transform transition-transform duration-300 max-w-xs ${docNavbarOpen ? "translate-x-0" : "translate-x-full"} z-50`}
       >
         <div className="flex items-center justify-between p-4">
-          <h2 className="text-lg font-bold text-midnight_text dark:text-white">Docs Menu</h2>
+          <h2 className="text-lg font-bold text-midnight_text dark:text-white">Меню документации</h2>
           <button onClick={() => setDocNavbarOpen(false)} aria-label="Close mobile menu">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="dark:text-white">
               <path

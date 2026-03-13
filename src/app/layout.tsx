@@ -10,10 +10,35 @@ import ScrollToTop from './components/scroll-to-top';
 import SmoothScrollProvider from '@/providers/SmoothScrollProvider';
 
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sk-new-city.ru';
 
 export const metadata: Metadata = {
-  title: 'Ремонт квартир под ключ | Homely Renovation',
-  description: 'Проекты и услуги по ремонту квартир: дизайн, отделка, инженерия и комплектация.',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'Ремонт квартир под ключ в Москве | SK New City | СК Новый Город',
+    template: '%s',
+  },
+  description: 'СК Новый Город (SK New City) выполняет ремонт квартир под ключ в Москве: черновая и чистовая отделка, капитальный и дизайнерский ремонт, инженерия, комплектация и авторский контроль.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'ru_RU',
+    url: siteUrl,
+    title: 'Ремонт квартир под ключ в Москве | SK New City | СК Новый Город',
+    description: 'СК Новый Город: ремонт квартир, отделочные работы, инженерия, дизайн-проект и реализованные объекты в Москве.',
+    siteName: 'SK New City',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Ремонт квартир под ключ в Москве | SK New City',
+    description: 'Ремонт квартир и отделочные работы в Москве от СК Новый Город.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
@@ -22,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang='ru' suppressHydrationWarning>
       <body className={`${font.className} bg-white dark:bg-black antialiased`}>
         <NextTopLoader color="#07be8a" />
 
