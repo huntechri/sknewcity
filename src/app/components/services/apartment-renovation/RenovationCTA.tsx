@@ -15,30 +15,28 @@ const RenovationCTA = () => {
 
                     <div className="relative z-10 max-w-4xl mx-auto">
                         <h2 className="text-4xl sm:text-6xl font-black tracking-wide text-white mb-8 leading-tight">
-                            Готовы начать <br className="hidden sm:block" /> новую главу вашей жизни?
+                            Обсудим ваш проект <br className="hidden sm:block" /> и подготовим решение.
                         </h2>
-                        <p className="text-white/80 text-xl mb-12 max-w-2xl mx-auto italic">
-                            «Наш ремонт — это не просто бетон и плитка. Это фундамент вашего ежедневного счастья и вдохновения».
-                        </p>
 
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+
+                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
                             <Link
                                 href="/contactus"
-                                className="px-6 sm:px-8 py-3 sm:py-4 border border-white dark:border-dark bg-white dark:bg-dark text-dark dark:text-white duration-300 dark:hover:text-dark hover:bg-transparent hover:text-white text-sm sm:text-base font-semibold rounded-full hover:cursor-pointer text-center active:scale-95"
+                                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border border-white dark:border-dark bg-white dark:bg-dark text-dark dark:text-white duration-300 dark:hover:text-dark hover:bg-transparent hover:text-white text-sm sm:text-base font-semibold rounded-full hover:cursor-pointer text-center active:scale-95 w-full sm:w-auto"
                             >
-                                <Icon icon="ph:paper-plane-tilt-bold" />
+                                <Icon icon="ph:paper-plane-tilt-bold" width={20} height={20} />
                                 Начать обсуждение
                             </Link>
                             <Link
                                 href="tel:+79167673434"
-                                className="px-6 sm:px-8 py-3 sm:py-4 border border-white dark:border-dark bg-transparent text-white dark:text-dark hover:bg-white dark:hover:bg-dark dark:hover:text-white hover:text-dark duration-300 text-sm sm:text-base font-semibold rounded-full hover:cursor-pointer text-center active:scale-95"
+                                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border border-white dark:border-dark bg-transparent text-white dark:text-dark hover:bg-white dark:hover:bg-dark dark:hover:text-white hover:text-dark duration-300 text-sm sm:text-base font-semibold rounded-full hover:cursor-pointer text-center active:scale-95 w-full sm:w-auto"
                             >
-                                <Icon icon="ph:phone-call-bold" />
+                                <Icon icon="ph:phone-call-bold" width={20} height={20} />
                                 +7 916 767-34-34
                             </Link>
                         </div>
 
-                        <div className="mt-16 flex flex-wrap justify-center gap-10 opacity-60 grayscale brightness-200">
+                        <div className="mt-16 flex flex-wrap justify-center gap-6 sm:gap-10">
                             {/* Small badges or icons could go here */}
                             <div className="flex items-center gap-2 text-white">
                                 <Icon icon="ph:check-bold" />

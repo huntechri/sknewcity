@@ -3,8 +3,13 @@ import Link from "next/link";
 import { Icon } from "@iconify/react"
 import { useEffect, useState } from "react";
 
+interface FooterLink {
+  label: string;
+  href: string;
+}
+
 const Footer = () => {
-  const [footerLinks, setFooterLinks] = useState<any>(null);
+  const [footerLinks, setFooterLinks] = useState<FooterLink[] | null>(null);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -32,19 +37,19 @@ const Footer = () => {
                 Подписаться
               </button>
             </div>
-            <p className="text-white/40 text-xs sm:text-sm lg:max-w-[45%] order-1 lg:order-2">
+            <p className="text-white/40 text-xs sm:text-sm lg:max-w-45p order-1 lg:order-2">
               Подписываясь, вы соглашаетесь получать письма. Можно отписаться в любой момент.
             </p>
           </div>
           <div className="flex items-center gap-6">
-            <Link href="#">
-              <Icon icon="ph:x-logo-bold" width={24} height={24} className="text-white hover:text-primary duration-300" />
+            <Link href="https://t.me/sknewcity444" target="_blank" rel="noopener noreferrer">
+              <Icon icon="ph:telegram-logo-bold" width={24} height={24} className="text-white hover:text-primary duration-300" />
             </Link>
-            <Link href="#">
-              <Icon icon="ph:facebook-logo-bold" width={24} height={24} className="text-white hover:text-primary duration-300" />
+            <Link href="https://vk.com/sk_new_city" target="_blank" rel="noopener noreferrer">
+              <Icon icon="fa6-brands:vk" width={24} height={24} className="text-white hover:text-primary duration-300" />
             </Link>
-            <Link href="#">
-              <Icon icon="ph:instagram-logo-bold" width={24} height={24} className="text-white hover:text-primary duration-300" />
+            <Link href="https://max.ru/id7733427438_biz" target="_blank" rel="noopener noreferrer">
+              <Icon icon="ph:chat-circle-bold" width={24} height={24} className="text-white hover:text-primary duration-300" />
             </Link>
           </div>
         </div>
@@ -60,7 +65,7 @@ const Footer = () => {
             </div>
             <div className="md:col-span-3 sm:col-span-6 col-span-12">
               <div className="flex flex-col gap-3 w-fit">
-                {footerLinks?.slice(0, 4)?.map((item:any, index:any) => (
+                {footerLinks?.slice(0, 4)?.map((item: FooterLink, index: number) => (
                   <div key={index}>
                     <Link href={item.href} className="text-white/40 text-xs sm:text-xm hover:text-white">
                       {item.label}
@@ -71,7 +76,7 @@ const Footer = () => {
             </div>
             <div className="md:col-span-2 sm:col-span-6 col-span-12">
               <div className="flex flex-col gap-3 w-fit">
-                {footerLinks?.slice(4, 8)?.map((item:any, index:any) => (
+                {footerLinks?.slice(4, 8)?.map((item: FooterLink, index: number) => (
                   <div key={index}>
                     <Link href={item.href} className="text-white/40 text-xs sm:text-xm hover:text-white">
                       {item.label}

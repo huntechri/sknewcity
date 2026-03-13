@@ -8,11 +8,10 @@ const navLinks = [
 ]
 
 const footerLinks = [
+  { label: 'Главная', href: '/' },
   { label: 'Ремонт квартир', href: '/apartment-renovation' },
-  { label: 'Капитальный ремонт', href: '/properties?category=capital' },
-  { label: 'Дизайнерский ремонт', href: '/properties?category=designer' },
+  { label: 'Проекты', href: '/properties' },
   { label: 'Контакты', href: '/contactus' },
-  { label: '404', href: '/not-found' },
 ]
 
 export const GET = async () => {

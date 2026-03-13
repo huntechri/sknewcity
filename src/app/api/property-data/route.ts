@@ -157,38 +157,6 @@ const propertyHomes: PropertyHomes[] = [
     ]
   },
   {
-    name: 'Дизайнерский ремонт 54 м²',
-    slug: 'designer-54',
-    category: 'designer',
-    location: 'ЖК «Видный», Казань',
-    rate: 'от 980 000 ₽',
-    beds: 2,
-    baths: 1,
-    area: 54,
-    images: [
-      { src: "/images/property/property-7/property-cover-7.jpg" },
-      { src: "/images/property/property-7/property-1.jpg" },
-      { src: "/images/property/property-7/property-2.jpg" },
-      { src: "/images/property/property-7/property-3.jpg" }
-    ]
-  },
-  {
-    name: 'Капитальный ремонт 64 м²',
-    slug: 'capital-64',
-    category: 'capital',
-    location: 'ЖК «Озерный», Екатеринбург',
-    rate: 'от 1 050 000 ₽',
-    beds: 3,
-    baths: 2,
-    area: 64,
-    images: [
-      { src: "/images/property/property-8/property-cover-8.jpg" },
-      { src: "/images/property/property-8/property-1.jpg" },
-      { src: "/images/property/property-8/property-2.jpg" },
-      { src: "/images/property/property-8/property-3.jpg" }
-    ]
-  },
-  {
     name: 'Косметический ремонт 48 м²',
     slug: 'cosmetic-48',
     category: 'cosmetic',

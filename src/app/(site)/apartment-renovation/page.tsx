@@ -6,7 +6,7 @@ import RenovationMaterials from "@/app/components/services/apartment-renovation/
 import RenovationFAQ from "@/app/components/services/apartment-renovation/RenovationFAQ";
 import RenovationTrust from "@/app/components/services/apartment-renovation/RenovationTrust";
 import RenovationCTA from "@/app/components/services/apartment-renovation/RenovationCTA";
-import ContactUs from "@/app/components/home/get-in-touch";
+
 
 export const metadata: Metadata = {
     title: "Ремонт квартир под ключ в Москве | Homely",
@@ -23,7 +23,6 @@ export default function ApartmentRenovationPage() {
             <RenovationMaterials />
             <RenovationFAQ />
             <RenovationCTA />
-            <ContactUs />
         </main>
     );
 }
