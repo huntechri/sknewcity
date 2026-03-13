@@ -68,7 +68,7 @@ const RenovationFAQ = () => {
                                             </div>
                                         </AccordionTrigger>
                                         <AccordionContent className="p-0">
-                                            <div className="px-8 pb-8 pl-0 sm:pl-18 animate-in fade-in slide-in-from-top-2 duration-500 ease-out">
+                                            <div className="px-8 pb-8 pl-0 sm:pl-18">
                                                 <div className="flex gap-5 items-start mb-6">
                                                     <div className="w-px h-full min-h-[40px] bg-primary/30 rounded-full mt-1 shrink-0"></div>
                                                     <p className="text-dark/70 dark:text-white/70 text-base sm:text-lg leading-relaxed transition-colors duration-500">
