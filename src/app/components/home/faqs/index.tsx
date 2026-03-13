@@ -29,22 +29,22 @@ const FAQ: React.FC = () => {
                             Собрали ответы на частые вопросы о сроках, смете, материалах и гарантиях.
                         </p>
                         <div className="my-8">
-                            <Accordion type="single" defaultValue="item-1" collapsible className="w-full flex flex-col gap-6">
-                                <AccordionItem value="item-1">
-                                    <AccordionTrigger>1. Можно ли сделать ремонт по моему проекту?</AccordionTrigger>
-                                    <AccordionContent>
+                            <Accordion type="single" defaultValue="item-1" collapsible className="w-full flex flex-col gap-4">
+                                <AccordionItem value="item-1" className="border-b border-dark/10 dark:border-white/10 px-2 transition-all hover:bg-dark/2 dark:hover:bg-white/2 rounded-xl">
+                                    <AccordionTrigger className="hover:no-underline py-5 text-lg font-bold">1. Можно ли сделать ремонт по моему проекту?</AccordionTrigger>
+                                    <AccordionContent className="text-base leading-relaxed opacity-80">
                                         Да, мы работаем по вашему проекту или разработаем его вместе с дизайнером.
                                     </AccordionContent>
                                 </AccordionItem>
-                                <AccordionItem value="item-2">
-                                    <AccordionTrigger>2. Как формируется смета?</AccordionTrigger>
-                                    <AccordionContent>
+                                <AccordionItem value="item-2" className="border-b border-dark/10 dark:border-white/10 px-2 transition-all hover:bg-dark/2 dark:hover:bg-white/2 rounded-xl">
+                                    <AccordionTrigger className="hover:no-underline py-5 text-lg font-bold">2. Как формируется смета?</AccordionTrigger>
+                                    <AccordionContent className="text-base leading-relaxed opacity-80">
                                         Смета составляется по замерам и ТЗ, фиксируется перед стартом работ.
                                     </AccordionContent>
                                 </AccordionItem>
-                                <AccordionItem value="item-3">
-                                    <AccordionTrigger>3. Какие сроки ремонта квартиры?</AccordionTrigger>
-                                    <AccordionContent>
+                                <AccordionItem value="item-3" className="border-b border-dark/10 dark:border-white/10 px-2 transition-all hover:bg-dark/2 dark:hover:bg-white/2 rounded-xl">
+                                    <AccordionTrigger className="hover:no-underline py-5 text-lg font-bold">3. Какие сроки ремонта квартиры?</AccordionTrigger>
+                                    <AccordionContent className="text-base leading-relaxed opacity-80">
                                         В среднем от 6 до 12 недель в зависимости от объёма работ и сложности проекта.
                                     </AccordionContent>
                                 </AccordionItem>

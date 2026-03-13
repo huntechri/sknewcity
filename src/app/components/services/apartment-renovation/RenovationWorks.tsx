@@ -105,7 +105,7 @@ const RenovationWorks = () => {
                                         </div>
                                     </AccordionTrigger>
                                     <AccordionContent className="px-6 pb-10">
-                                        <div className="pl-0 sm:pl-[76px] animate-in fade-in slide-in-from-top-2 duration-1200 ease-out">
+                                        <div className="pl-0 sm:pl-[76px]">
                                             <p className="text-black/80 dark:text-white/80 mb-8 text-lg leading-relaxed font-medium transition-colors duration-300">
                                                 {stage.description}
                                             </p>
