@@ -11,11 +11,11 @@ interface BaseProjectLayoutProps {
 
 const BaseProjectLayout: React.FC<BaseProjectLayoutProps> = ({ item, testimonials }) => {
     return (
-        <section className="!pt-44 pb-20 relative" >
-            <div className="container mx-auto max-w-8xl px-5 2xl:px-0">
+        <section className="pt-32 sm:pt-44 pb-20 relative" >
+            <div className="container mx-auto max-w-8xl px-6 2xl:px-0">
                 <div className="grid grid-cols-12 items-end gap-6">
                     <div className="lg:col-span-8 col-span-12">
-                        <h1 className='lg:text-52 text-40 font-semibold text-dark dark:text-white'>{item?.name}</h1>
+                        <h1 className='lg:text-52 text-32 sm:text-40 font-semibold text-dark dark:text-white'>{item?.name}</h1>
                         <div className="flex gap-2.5">
                             <Icon icon="ph:map-pin" width={24} height={24} className="text-dark/50 dark:text-white/50" />
                             <p className='text-dark/50 dark:text-white/50 text-xm'>{item?.location}</p>
@@ -69,12 +69,12 @@ const BaseProjectLayout: React.FC<BaseProjectLayoutProps> = ({ item, testimonial
                             <Image src={item.images[1]?.src} alt={`${item.name} — фото интерьера 2`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" sizes="33vw" />
                         )}
                     </div>
-                    <div className="lg:col-span-2 col-span-6 w-full h-[155px]">
+                    <div className="lg:col-span-2 sm:col-span-6 col-span-12 w-full h-[155px]">
                         {item?.images && item?.images[2] && (
                             <Image src={item.images[2]?.src} alt={`${item.name} — фото интерьера 3`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" sizes="(max-width: 1024px) 50vw, 16vw" />
                         )}
                     </div>
-                    <div className="lg:col-span-2 col-span-6 w-full h-[155px]">
+                    <div className="lg:col-span-2 sm:col-span-6 col-span-12 w-full h-[155px]">
                         {item?.images && item?.images[3] && (
                             <Image src={item.images[3]?.src} alt={`${item.name} — фото интерьера 4`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" sizes="(max-width: 1024px) 50vw, 16vw" />
                         )}
