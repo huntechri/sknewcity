@@ -5,6 +5,8 @@ import { Icon } from "@iconify/react";
 import Image from 'next/image';
 import { Complex } from '@/app/types/complex';
 
+const logoSizes = "(max-width: 768px) 140px, 200px";
+
 const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
     if (complexes.length === 0) return null;
 
@@ -40,14 +42,14 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
                                 {complex.logoDark ? (
                                     <>
                                         <div className="dark:hidden">
-                                            <Image src={complex.logo as string} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" unoptimized />
+                                            <Image src={complex.logo as string} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" loading="lazy" sizes={logoSizes} />
                                         </div>
                                         <div className="hidden dark:block">
-                                            <Image src={complex.logoDark} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" unoptimized />
+                                            <Image src={complex.logoDark} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" loading="lazy" sizes={logoSizes} />
                                         </div>
                                     </>
                                 ) : complex.logo ? (
-                                    <Image src={complex.logo} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" unoptimized />
+                                    <Image src={complex.logo} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" loading="lazy" sizes={logoSizes} />
                                 ) : (
                                     <div className="flex flex-col items-center gap-2 md:gap-3 opacity-40 group-hover/item:opacity-100 transition-opacity">
                                         <Icon icon={complex.icon || 'ph:buildings-fill'} className="text-4xl md:text-6xl text-dark dark:text-white transition-colors group-hover/item:text-primary" />
@@ -69,14 +71,14 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
                                 {complex.logoDark ? (
                                     <>
                                         <div className="dark:hidden">
-                                            <Image src={complex.logo as string} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" unoptimized />
+                                            <Image src={complex.logo as string} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" loading="lazy" sizes={logoSizes} />
                                         </div>
                                         <div className="hidden dark:block">
-                                            <Image src={complex.logoDark} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" unoptimized />
+                                            <Image src={complex.logoDark} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" loading="lazy" sizes={logoSizes} />
                                         </div>
                                     </>
                                 ) : complex.logo ? (
-                                    <Image src={complex.logo} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" unoptimized />
+                                    <Image src={complex.logo} alt={complex.name} width={240} height={80} className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity" loading="lazy" sizes={logoSizes} />
                                 ) : (
                                     <div className="flex flex-col items-center gap-2 md:gap-3 opacity-40 group-hover/item:opacity-100 transition-opacity">
                                         <Icon icon={complex.icon || 'ph:buildings-fill'} className="text-4xl md:text-6xl text-dark dark:text-white transition-colors group-hover/item:text-primary" />

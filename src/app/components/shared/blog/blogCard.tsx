@@ -16,7 +16,8 @@ const BlogCard: FC<{ blog: Blog }> = ({ blog }) => {
                     width={190}
                     height={163}
                     style={{ width: "100%", height: "100%" }}
-                    unoptimized={true}
+                    loading="lazy"
+                    sizes="(max-width: 768px) 92vw, (max-width: 1200px) 45vw, 30vw"
                 />
             </div>
             <div className="flex justify-between items-center">
