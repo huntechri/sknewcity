@@ -46,7 +46,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Properties />
-      <FeaturedProperty featuredProperty={featuredProperty} />
+      {/* <FeaturedProperty featuredProperty={featuredProperty} /> */}
       <ResidentialComplexes complexes={complexes} />
       {/* <Testimonial /> */}
       {/* <BlogSmall /> */}

@@ -27,7 +27,7 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div className="fixed bottom-8 right-8 z-999">
+    <div className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-999">
       <div className="flex items-center gap-2.5">
         <Link href={"https://sk-new-city.ru"} className="hidden lg:block bg-primary hover:bg-dark text-sm text-white duration-300 font-medium px-4 py-3.5 leading-none rounded-lg text-nowrap">
           sk-new-city.ru

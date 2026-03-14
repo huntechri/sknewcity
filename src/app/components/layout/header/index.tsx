@@ -39,8 +39,8 @@ const Header: React.FC = () => {
   const isHeroHeader = pathname === '/' || pathname === '/apartment-renovation'
 
   return (
-    <header className={`fixed h-20 sm:h-24 py-1 z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-3 sm:px-4 ${sticky ? "top-2 sm:top-3" : "top-0"}`}>
-      <nav className={`container mx-auto max-w-8xl flex items-center justify-between py-2 sm:py-4 duration-300 ${sticky ? "shadow-lg bg-white dark:bg-dark rounded-full top-5 px-3 sm:px-4 " : "shadow-none top-0"}`}>
+    <header className={`fixed h-20 sm:h-24 py-1 z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-6 sm:px-6 ${sticky ? "top-2 sm:top-3" : "top-0"}`}>
+      <nav className={`container mx-auto max-w-8xl flex items-center justify-between py-1.5 sm:py-4 duration-300 ${sticky ? "shadow-md sm:shadow-lg bg-white dark:bg-dark rounded-full px-6 sm:px-6 " : "shadow-none px-6 sm:px-6"}`}>
         <div className='flex justify-between items-center gap-2 w-full'>
           <div>
             <Link href='/'>
@@ -141,7 +141,7 @@ const Header: React.FC = () => {
               <button
                 onClick={() => setNavbarOpen(false)}
                 aria-label='Close mobile menu'
-                className='bg-white p-3 rounded-full hover:cursor-pointer'>
+                className='bg-white p-4 rounded-full hover:cursor-pointer shadow-lg'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='24'

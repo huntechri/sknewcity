@@ -28,22 +28,24 @@ const GetInTouch: React.FC = () => {
     return (
         <section>
             <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
-                <div ref={sectionRef} className="relative rounded-t-2xl overflow-hidden bg-[radial-gradient(circle_at_top,#1e293b,transparent_55%),linear-gradient(135deg,#0f172a,#334155)]">
+                <div ref={sectionRef} className="relative rounded-t-2xl overflow-hidden">
+                    {/* Background Fallback/Layer */}
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#1e293b,transparent_55%),linear-gradient(135deg,#0f172a,#334155)]" />
+
                     {shouldLoadVideo && (
                         <video
-                            className="w-full h-full absolute top-0 left-0 object-cover -z-10"
+                            className="w-full h-full absolute top-0 left-0 object-cover z-0"
                             autoPlay
                             loop
                             muted
                             playsInline
-                            preload="none"
                             aria-label="Видео-фон с современным интерьером"
                         >
                             <source src="https://videos.pexels.com/video-files/7233782/7233782-hd_1920_1080_25fps.mp4" type="video/mp4" />
                         </video>
                     )}
 
-                    <div className="bg-black/30 lg:py-64 md:py-28 py-20 px-4">
+                    <div className="relative z-10 bg-black/30 lg:py-64 md:py-28 py-20 px-4">
                         <div className="flex flex-col items-center gap-6 sm:gap-8">
                             <h2 className='text-white text-xl sm:text-3xl lg:text-52 lg:max-w-3/4 text-center font-medium leading-tight'>
                                 Пространства, в которых удобно жить. Ремонт под ваш стиль и бюджет.
