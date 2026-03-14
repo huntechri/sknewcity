@@ -58,24 +58,25 @@ const BaseProjectLayout: React.FC<BaseProjectLayoutProps> = ({ item, testimonial
                                     width={400}
                                     height={500}
                                     className="rounded-2xl w-full h-full object-cover"
-                                    unoptimized={true}
+                                    priority
+                                    sizes="(max-width: 1024px) 100vw, 66vw"
                                 />
                             </div>
                         )}
                     </div>
                     <div className="lg:col-span-4 lg:block hidden w-full h-[335px]">
                         {item?.images && item?.images[1] && (
-                            <Image src={item.images[1]?.src} alt={`${item.name} — фото интерьера 2`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" unoptimized={true} />
+                            <Image src={item.images[1]?.src} alt={`${item.name} — фото интерьера 2`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" sizes="33vw" />
                         )}
                     </div>
                     <div className="lg:col-span-2 col-span-6 w-full h-[155px]">
                         {item?.images && item?.images[2] && (
-                            <Image src={item.images[2]?.src} alt={`${item.name} — фото интерьера 3`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" unoptimized={true} />
+                            <Image src={item.images[2]?.src} alt={`${item.name} — фото интерьера 3`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" sizes="(max-width: 1024px) 50vw, 16vw" />
                         )}
                     </div>
                     <div className="lg:col-span-2 col-span-6 w-full h-[155px]">
                         {item?.images && item?.images[3] && (
-                            <Image src={item.images[3]?.src} alt={`${item.name} — фото интерьера 4`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" unoptimized={true} />
+                            <Image src={item.images[3]?.src} alt={`${item.name} — фото интерьера 4`} width={400} height={500} className="rounded-2xl w-full h-full object-cover" sizes="(max-width: 1024px) 50vw, 16vw" />
                         )}
                     </div>
                 </div>
@@ -176,7 +177,6 @@ const BaseProjectLayout: React.FC<BaseProjectLayoutProps> = ({ item, testimonial
                                             width={64}
                                             height={64}
                                             className='w-full h-full object-cover'
-                                            unoptimized={true}
                                         />
                                     </div>
                                     <div className="">

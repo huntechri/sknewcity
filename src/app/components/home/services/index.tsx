@@ -49,7 +49,7 @@ const Services = () => {
                   width={680}
                   height={386}
                   className="w-full h-full object-cover"
-                  unoptimized={true}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </Link>
               <Link href="/apartment-renovation" className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 sm:top-full flex flex-col justify-between pl-5 sm:pl-10 pb-5 sm:pb-10 sm:group-hover:top-0 duration-500">
@@ -78,7 +78,7 @@ const Services = () => {
                   width={680}
                   height={386}
                   className="w-full h-full object-cover"
-                  unoptimized={true}
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </Link>
               <Link href="/properties?category=capital" className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 sm:top-full flex flex-col justify-between pl-5 sm:pl-10 pb-5 sm:pb-10 sm:group-hover:top-0 duration-500">
@@ -107,7 +107,7 @@ const Services = () => {
                   width={320}
                   height={386}
                   className="w-full h-full object-cover"
-                  unoptimized={true}
+                  sizes="(max-width: 1024px) 100vw, 25vw"
                 />
               </Link>
               <Link href="/properties?category=designer" className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 sm:top-full flex flex-col justify-between pl-5 sm:pl-10 pb-5 sm:pb-10 sm:group-hover:top-0 duration-500">
@@ -136,7 +136,7 @@ const Services = () => {
                   width={320}
                   height={386}
                   className="w-full h-full object-cover"
-                  unoptimized={true}
+                  sizes="(max-width: 1024px) 100vw, 25vw"
                 />
               </Link>
               <Link href="/properties?category=commercial" className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 sm:top-full flex flex-col justify-between pl-5 sm:pl-10 pb-5 sm:pb-10 sm:group-hover:top-0 duration-500">

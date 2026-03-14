@@ -1,26 +1,11 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+
+import React from 'react';
 import { Icon } from "@iconify/react";
 import Image from 'next/image';
 import { Complex } from '@/app/types/complex';
 
-const ResidentialComplexes = () => {
-    const [complexes, setComplexes] = useState<Complex[]>([]);
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch('/api/page-data');
-                if (!res.ok) throw new Error('Failed to fetch');
-                const data = await res.json();
-                setComplexes(data?.complexes || []);
-            } catch (error) {
-                console.error('Error fetching complexes:', error);
-            }
-        };
-        fetchData();
-    }, []);
-
+const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
     if (complexes.length === 0) return null;
 
     return (

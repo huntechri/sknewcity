@@ -16,7 +16,6 @@ import {
   getWebsiteSchema,
   homeFaqs,
 } from '@/lib/seo'
-
 export const metadata: Metadata = {
   title: 'Ремонт квартир под ключ в Москве | SK New City | СК Новый Город',
   description:
@@ -31,6 +30,7 @@ export const metadata: Metadata = {
     images: ['/images/hero/heroBanner.png'],
   },
 }
+import { featuredProperty, complexes } from '@/lib/page-data'
 
 export default function Home() {
   const structuredData = [
@@ -46,8 +46,8 @@ export default function Home() {
       <Hero />
       <Services />
       <Properties />
-      <FeaturedProperty />
-      <ResidentialComplexes />
+      <FeaturedProperty featuredProperty={featuredProperty} />
+      <ResidentialComplexes complexes={complexes} />
       {/* <Testimonial /> */}
       {/* <BlogSmall /> */}
       <GetInTouch />

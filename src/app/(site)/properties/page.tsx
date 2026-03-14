@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import PropertiesListing from "@/app/components/properties/property-list";
 import StructuredData from "@/app/components/seo/StructuredData";
 import { getBreadcrumbSchema, getServiceSchema } from "@/lib/seo";
-
 export const metadata: Metadata = {
     title: "Проекты ремонта квартир | SK New City",
     description: "Портфолио СК Новый Город: реальные проекты ремонта квартир и отделочных работ в Москве с фото, площадью, сметой и форматом ремонта.",

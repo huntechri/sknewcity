@@ -1,16 +1,15 @@
 "use client";
 import * as React from "react";
-import { useEffect, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 import { Carousel, CarouselApi, CarouselContent, CarouselItem } from "../../ui/carousel";
+import { FeaturedProperty as FeaturedPropertyItem } from "@/app/types/featuredProperty";
 
-const FeaturedProperty: React.FC = () => {
+const FeaturedProperty: React.FC<{ featuredProperty: FeaturedPropertyItem[] }> = ({ featuredProperty }) => {
   const [api, setApi] = React.useState<CarouselApi | undefined>(undefined);
   const [current, setCurrent] = React.useState(0);
   const [count, setCount] = React.useState(0);
-  const [featuredProprty, setFeaturedProprty] = React.useState<any>(null);
   React.useEffect(() => {
     if (!api) {
       return;
@@ -29,21 +28,6 @@ const FeaturedProperty: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-      const fetchData = async () => {
-        try {
-          const res = await fetch('/api/page-data')
-          if (!res.ok) throw new Error('Failed to fetch')
-          const data = await res.json()
-          setFeaturedProprty(data?.featuredProprty)
-        } catch (error) {
-          console.error('Error fetching services:', error)
-        }
-      }
-      fetchData()
-    }, [])
-
-
   return (
     <section>
       <div className="container max-w-8xl mx-auto px-3 sm:px-5 2xl:px-0">
@@ -56,7 +40,7 @@ const FeaturedProperty: React.FC = () => {
               }}
             >
               <CarouselContent>
-                {featuredProprty && featuredProprty?.map((item:any, index:any) => (
+                {featuredProperty.map((item, index) => (
                   <CarouselItem key={index}>
                     <Image
                       src={item.scr}
@@ -64,7 +48,7 @@ const FeaturedProperty: React.FC = () => {
                       width={680}
                       height={530}
                       className="rounded-2xl w-full h-540"
-                      unoptimized={true}
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </CarouselItem>
                 ))}

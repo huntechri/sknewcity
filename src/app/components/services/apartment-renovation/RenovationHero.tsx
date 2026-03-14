@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { useMemo } from "react";
 
 const RenovationHero = () => {
-    const stats = useMemo(() => [
+    const stats = [
         {
             label: 'Гарантия на работы',
             value: '2 года',
@@ -24,7 +23,7 @@ const RenovationHero = () => {
             value: '24/7',
             icon: 'ph:users-three-bold',
         },
-    ], []);
+    ];
 
     return (
         <section className="py-0! bg-white dark:bg-black transition-colors duration-300">
@@ -36,7 +35,7 @@ const RenovationHero = () => {
                         loop
                         muted
                         playsInline
-                        preload="auto"
+                        preload="metadata"
                         className="absolute inset-0 w-full h-full object-cover transform-gpu will-change-transform"
                     >
                         <source src="/videos/moscow-city-night.mp4" type="video/mp4" />

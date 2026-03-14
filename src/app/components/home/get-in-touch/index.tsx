@@ -1,19 +1,47 @@
+"use client";
+
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 
 const GetInTouch: React.FC = () => {
+    const sectionRef = useRef<HTMLDivElement | null>(null);
+    const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
+
+    useEffect(() => {
+        if (!sectionRef.current) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries.some((entry) => entry.isIntersecting)) {
+                    setShouldLoadVideo(true);
+                    observer.disconnect();
+                }
+            },
+            { rootMargin: "300px 0px" }
+        );
+
+        observer.observe(sectionRef.current);
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <section>
             <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
-                <div className="relative rounded-t-2xl overflow-hidden">
-                    <video
-                        className="w-full h-full absolute top-0 left-0 object-cover -z-10"
-                        autoPlay
-                        loop
-                        muted
-                        aria-label="Видео-фон с современным интерьером"
-                    >
-                        <source src="https://videos.pexels.com/video-files/7233782/7233782-hd_1920_1080_25fps.mp4" type="video/mp4" />
-                    </video>
+                <div ref={sectionRef} className="relative rounded-t-2xl overflow-hidden bg-[radial-gradient(circle_at_top,#1e293b,transparent_55%),linear-gradient(135deg,#0f172a,#334155)]">
+                    {shouldLoadVideo && (
+                        <video
+                            className="w-full h-full absolute top-0 left-0 object-cover -z-10"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="none"
+                            aria-label="Видео-фон с современным интерьером"
+                        >
+                            <source src="https://videos.pexels.com/video-files/7233782/7233782-hd_1920_1080_25fps.mp4" type="video/mp4" />
+                        </video>
+                    )}
 
                     <div className="bg-black/30 lg:py-64 md:py-28 py-20 px-4">
                         <div className="flex flex-col items-center gap-6 sm:gap-8">

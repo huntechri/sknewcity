@@ -14,7 +14,7 @@ const FAQ: React.FC = () => {
                             width={680}
                             height={644}
                             className='lg:w-full'
-                            unoptimized={true}
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     </div>
                     <div className='lg:px-12 px-3 sm:px-5'>

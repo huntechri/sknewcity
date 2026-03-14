@@ -120,8 +120,8 @@ const Hero: React.FC = () => {
               alt='heroImg'
               width={1082}
               height={1016}
-              priority={false}
-              unoptimized={true}
+              priority
+              sizes="(max-width: 1280px) 45vw, 1082px"
             />
           </div>
         </div>
