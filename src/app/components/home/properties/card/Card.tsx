@@ -21,7 +21,8 @@ const PropertyCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
                   width={440}
                   height={300}
                   className='w-full h-full object-cover rounded-t-2xl group-hover:brightness-50 group-hover:scale-125 transition duration-300 delay-75'
-                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 92vw, (max-width: 1200px) 46vw, 31vw"
                 />
               )}
             </div>

@@ -1,7 +1,39 @@
+"use client";
+
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import { useEffect, useRef, useState } from "react";
 
 const RenovationHero = () => {
+    const sectionRef = useRef<HTMLDivElement | null>(null);
+    const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
+    const [showStaticBackground, setShowStaticBackground] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+        if (mediaQuery.matches) {
+            setShowStaticBackground(true);
+            return;
+        }
+
+        if (!sectionRef.current) return;
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries.some((entry) => entry.isIntersecting)) {
+                    setShouldLoadVideo(true);
+                    observer.disconnect();
+                }
+            },
+            { rootMargin: "350px 0px" }
+        );
+
+        observer.observe(sectionRef.current);
+
+        return () => observer.disconnect();
+    }, []);
+
     const stats = [
         {
             label: 'Гарантия на работы',
@@ -26,20 +58,24 @@ const RenovationHero = () => {
     ];
 
     return (
-        <section className="py-0! bg-white dark:bg-black transition-colors duration-300">
+        <section className="py-0! bg-white dark:bg-black transition-colors duration-300" ref={sectionRef}>
             <div className="h-svh min-h-[700px] overflow-hidden relative flex flex-col justify-center">
-                {/* Video Background */}
-                <div className="absolute inset-0 z-0 overflow-hidden">
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        preload="metadata"
-                        className="absolute inset-0 w-full h-full object-cover transform-gpu will-change-transform"
-                    >
-                        <source src="/videos/moscow-city-night.mp4" type="video/mp4" />
-                    </video>
+                {/* Video / static background */}
+                <div className="absolute inset-0 z-0 overflow-hidden bg-[url('/images/contactUs/contactUs.jpg')] bg-cover bg-center">
+                    {!showStaticBackground && shouldLoadVideo && (
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            preload="none"
+                            poster="/images/contactUs/contactUs.jpg"
+                            className="absolute inset-0 w-full h-full object-cover transform-gpu will-change-transform"
+                            aria-label="Фоновое видео с панорамой города"
+                        >
+                            <source src="/videos/moscow-city-night.mp4" type="video/mp4" />
+                        </video>
+                    )}
                     {/* Color Overlays */}
                     <div className="absolute inset-0 bg-black/40 z-0" />
                     <div className="absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-white dark:to-black transition-colors duration-300 z-0" />
