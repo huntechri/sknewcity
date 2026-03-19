@@ -7,68 +7,74 @@ import { getPropertyBySlug, propertyHomes } from "@/lib/property-data";
 import { getBreadcrumbSchema, getServiceSchema } from "@/lib/seo";
 
 type Props = {
-    params: Promise<{ slug: string }>;
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
-    return propertyHomes.map((item) => ({ slug: item.slug }));
+  return propertyHomes.map((item) => ({ slug: item.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const { slug } = await params;
-    const item = getPropertyBySlug(slug);
+  const { slug } = await params;
+  const item = getPropertyBySlug(slug);
 
-    if (!item) {
-        return {
-            title: "Проект не найден | SK New City",
-            robots: {
-                index: false,
-                follow: false,
-            },
-        };
-    }
-
+  if (!item) {
     return {
-        title: `${item.name} | ${item.location} | SK New City`,
-        description: item.description?.[0] ?? `Проект ремонта ${item.name} от СК Новый Город в ${item.location}. Фото, объём работ, отделка и стоимость ремонта.`,
-        alternates: {
-            canonical: `/properties/${item.slug}`,
-        },
-        openGraph: {
-            title: `${item.name} | SK New City`,
-            description: item.description?.[0] ?? `Реализованный проект ремонта квартиры от СК Новый Город.`,
-            images: item.images[0] ? [item.images[0].src] : [],
-        },
+      title: "Проект не найден | SK New City",
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
+  }
+
+  return {
+    title: `${item.name} | ${item.location} | SK New City`,
+    description:
+      item.description?.[0] ??
+      `Проект ремонта ${item.name} от СК Новый Город в ${item.location}. Фото, объём работ, отделка и стоимость ремонта.`,
+    alternates: {
+      canonical: `/properties/${item.slug}`,
+    },
+    openGraph: {
+      title: `${item.name} | SK New City`,
+      description:
+        item.description?.[0] ??
+        `Реализованный проект ремонта квартиры от СК Новый Город.`,
+      images: item.images[0] ? [item.images[0].src] : [],
+    },
+  };
 }
 
 const page = async ({ params }: Props) => {
-    const { slug } = await params;
-    const item = getPropertyBySlug(slug);
+  const { slug } = await params;
+  const item = getPropertyBySlug(slug);
 
-    if (!item) {
-        notFound();
-    }
+  if (!item) {
+    notFound();
+  }
 
-    const structuredData = [
-        getServiceSchema({
-            name: `${item.name} — проект ремонта`,
-            description: item.description?.[0] ?? `Проект ремонта ${item.name} в ${item.location}.`,
-            path: `/properties/${item.slug}`,
-        }),
-        getBreadcrumbSchema([
-            { name: "Главная", path: "/" },
-            { name: "Проекты", path: "/properties" },
-            { name: item.name, path: `/properties/${item.slug}` },
-        ]),
-    ];
+  const structuredData = [
+    getServiceSchema({
+      name: `${item.name} — проект ремонта`,
+      description:
+        item.description?.[0] ??
+        `Проект ремонта ${item.name} в ${item.location}.`,
+      path: `/properties/${item.slug}`,
+    }),
+    getBreadcrumbSchema([
+      { name: "Главная", path: "/" },
+      { name: "Проекты", path: "/properties" },
+      { name: item.name, path: `/properties/${item.slug}` },
+    ]),
+  ];
 
-    return (
-        <>
-            <StructuredData data={structuredData} />
-            <Details item={item} testimonials={testimonials} />
-        </>
-    );
+  return (
+    <>
+      <StructuredData data={structuredData} data-oid="-j_-v2r" />
+      <Details item={item} testimonials={testimonials} data-oid="bt0_z0k" />
+    </>
+  );
 };
 
 export default page;

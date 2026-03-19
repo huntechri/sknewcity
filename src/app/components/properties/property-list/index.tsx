@@ -7,27 +7,35 @@ type PropertiesListingProps = {
   categoryParam?: string;
 };
 
-const PropertiesListing: React.FC<PropertiesListingProps> = ({ categoryParam }) => {
+const PropertiesListing: React.FC<PropertiesListingProps> = ({
+  categoryParam,
+}) => {
   const formatCategory = (text: string) => {
     const map: Record<string, string> = {
-      cosmetic: 'Косметический ремонт',
-      capital: 'Капитальный ремонт',
-      designer: 'Дизайнерский ремонт',
-      commercial: 'Коммерческий ремонт',
+      cosmetic: "Дизайнерский ремонт",
+      capital: "Дизайнерский ремонт",
+      designer: "Дизайнерский ремонт",
+      commercial: "Дизайнерский ремонт",
     };
-    return map[text.toLowerCase()] ?? text
-      .split('-')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
+    return (
+      map[text.toLowerCase()] ??
+      text
+        .split("-")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ")
+    );
   };
 
   const normalizedCategory = categoryParam?.toLowerCase();
-  const categoryLabel = normalizedCategory ? formatCategory(normalizedCategory) : null;
+  const categoryLabel = normalizedCategory
+    ? formatCategory(normalizedCategory)
+    : null;
 
   const filteredProperties = normalizedCategory
-    ? propertyHomes.filter((property) => property.category.toLowerCase() === normalizedCategory)
+    ? propertyHomes.filter(
+        (property) => property.category.toLowerCase() === normalizedCategory,
+      )
     : propertyHomes;
-
 
   return (
     <>
@@ -36,16 +44,28 @@ const PropertiesListing: React.FC<PropertiesListingProps> = ({ categoryParam }) 
         description="Реальные кейсы с фото и сроками — выбирайте подходящий формат ремонта."
         badge="Проекты"
         as="h1"
+        data-oid="p0elgu_"
       />
-      <section className='pt-0!'>
-        <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
-          {normalizedCategory && ['commercial', 'designer', 'capital'].includes(normalizedCategory) ? (
-            <UnderDevelopment categoryName={categoryLabel ?? normalizedCategory} />
+
+      <section className="pt-0!" data-oid="6vosvo9">
+        <div
+          className="container max-w-8xl mx-auto px-5 2xl:px-0"
+          data-oid="knih16y"
+        >
+          {normalizedCategory &&
+          ["commercial", "designer", "capital"].includes(normalizedCategory) ? (
+            <UnderDevelopment
+              categoryName={categoryLabel ?? normalizedCategory}
+              data-oid="d3qtr.."
+            />
           ) : (
-            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10'>
+            <div
+              className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10"
+              data-oid="1bqk-wq"
+            >
               {filteredProperties.map((item) => (
-                <div key={item.slug}>
-                  <PropertyCard item={item} />
+                <div key={item.slug} data-oid="-moguwu">
+                  <PropertyCard item={item} data-oid="77l:6bx" />
                 </div>
               ))}
             </div>

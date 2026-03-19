@@ -1,84 +1,165 @@
-"use client"
-import Image from "next/image"
-import nextImg from "/public/images/documentation/Categories=Nextjs.svg"
-import reactImg from "/public/images/documentation/Categories=React.svg"
-import tailwindImg from "/public/images/documentation/Categories=Tailwind.svg"
-import nextauthImg from "/public/images/documentation/nextauth.png"
-import typescriptImg from "/public/images/documentation/Categories=Typescript.svg"
-import axiosImg from "/public/images/documentation/axios.svg"
-import { Icon } from "@iconify/react/dist/iconify.js"
-import { useState } from "react"
-import { DocNavigation } from "./DocNavigation"
+"use client";
+import Image from "next/image";
+import nextImg from "/public/images/documentation/Categories=Nextjs.svg";
+import reactImg from "/public/images/documentation/Categories=React.svg";
+import tailwindImg from "/public/images/documentation/Categories=Tailwind.svg";
+import nextauthImg from "/public/images/documentation/nextauth.png";
+import typescriptImg from "/public/images/documentation/Categories=Typescript.svg";
+import axiosImg from "/public/images/documentation/axios.svg";
+import { Icon } from "@iconify/react/dist/iconify.js";
+import { useState } from "react";
+import { DocNavigation } from "./DocNavigation";
 
 export const Introduction = () => {
-  const [docNavbarOpen, setDocNavbarOpen] = useState(false)
+  const [docNavbarOpen, setDocNavbarOpen] = useState(false);
   const PackageVersions = [
     {
       id: "1",
       packageName: "NextJs",
       img: "images/documentation/Categories=Nextjs.svg",
-      version: "15.2.2"
+      version: "15.2.2",
     },
     {
       id: "2",
       packageName: "React",
       img: "images/documentation/Categories=React.svg",
-      version: "19.0.0"
+      version: "19.0.0",
     },
     {
       id: "3",
       packageName: "Tailwindcss",
       img: "images/documentation/Categories=Tailwind.svg",
-      version: "4"
+      version: "4",
     },
     {
       id: "4",
       packageName: "Typescript",
       img: "images/documentation/Categories=Typescript.svg",
-      version: "5.6.3"
-    }
-  ]
+      version: "5.6.3",
+    },
+  ];
+
   return (
     <>
-      <div id="version" className="md:scroll-m-[180px] scroll-m-28">
-
+      <div
+        id="version"
+        className="md:scroll-m-[180px] scroll-m-28"
+        data-oid="f2w6u6w"
+      >
         {docNavbarOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-40" onClick={() => setDocNavbarOpen(false)} />
+          <div
+            className="fixed top-0 left-0 w-full h-full bg-black/50 z-40"
+            onClick={() => setDocNavbarOpen(false)}
+            data-oid="3b:eegr"
+          />
         )}
 
-        <div className="flex item-center justify-between">
-          <h3 className=" text-black text-2xl mt-4 font-semibold mb-6 dark:text-white" >Pacakge Versions</h3>
-          <button onClick={() => setDocNavbarOpen(true)} className="p-0"> <Icon icon="gg:menu-right" className="text-3xl lg:hidden block" /></button>
+        <div className="flex item-center justify-between" data-oid="2qdj-mz">
+          <h3
+            className=" text-black text-2xl mt-4 font-semibold mb-6 dark:text-white"
+            data-oid="70enkc5"
+          >
+            Pacakge Versions
+          </h3>
+          <button
+            onClick={() => setDocNavbarOpen(true)}
+            className="p-0"
+            data-oid="_jp95uh"
+          >
+            {" "}
+            <Icon
+              icon="gg:menu-right"
+              className="text-3xl lg:hidden block"
+              data-oid="5n.dp:o"
+            />
+          </button>
         </div>
 
-        <div className="w-full flex justify-between lg:gap-0 gap-6 lg:flex-nowrap flex-wrap p-6 rounded-md border border-black/10 dark:border-white/20">
-          {
-            PackageVersions && PackageVersions.map((item) => {
+        <div
+          className="w-full flex justify-between lg:gap-0 gap-6 lg:flex-nowrap flex-wrap p-6 rounded-md border border-black/10 dark:border-white/20"
+          data-oid="x7ooj-z"
+        >
+          {PackageVersions &&
+            PackageVersions.map((item) => {
               return (
-                <div key={item.id} className="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-black/10 dark:border-white/20">
-                  <Image src={item.img} alt="npm-package" className=" mx-auto w-10 h-10 " width={40} height={40} />
-                  <h5 className="text-2xl font-bold mt-3.5 dark:text-white" >{`v${item.version}`}</h5>
-                  <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">{item.packageName}</p>
+                <div
+                  key={item.id}
+                  className="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-black/10 dark:border-white/20"
+                  data-oid="hrclruf"
+                >
+                  <Image
+                    src={item.img}
+                    alt="npm-package"
+                    className=" mx-auto w-10 h-10 "
+                    width={40}
+                    height={40}
+                    data-oid="p4m8o3m"
+                  />
+                  <h5
+                    className="text-2xl font-bold mt-3.5 dark:text-white"
+                    data-oid="30g2bcw"
+                  >{`v${item.version}`}</h5>
+                  <p
+                    className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50"
+                    data-oid="vry0mc3"
+                  >
+                    {item.packageName}
+                  </p>
                 </div>
-              )
-            })
-          }
+              );
+            })}
         </div>
-        <div className="mt-5">
-          <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">Проект SK New City разработан на Next.js и Tailwind CSS.</p>
-          <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">Кодовая база адаптирована под сайт строительной компании, ремонта квартир и отделочных работ.</p>
-          <p className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50">Для доработки полезно понимать основы Next.js, React, Tailwind CSS и JSX.</p>
+        <div className="mt-5" data-oid="2-nmver">
+          <p
+            className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50"
+            data-oid="zruy35h"
+          >
+            Проект SK New City разработан на Next.js и Tailwind CSS.
+          </p>
+          <p
+            className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50"
+            data-oid="auhl:mg"
+          >
+            Кодовая база адаптирована под сайт строительной компании, ремонта
+            квартир и отделочных работ.
+          </p>
+          <p
+            className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50"
+            data-oid="fitzh_2"
+          >
+            Для доработки полезно понимать основы Next.js, React, Tailwind CSS и
+            JSX.
+          </p>
         </div>
-
       </div>
 
       <div
         className={`lg:hidden block fixed top-0 right-0 h-full w-full bg-white dark:bg-dark shadow-lg transform transition-transform duration-300 max-w-xs ${docNavbarOpen ? "translate-x-0" : "translate-x-full"} z-50`}
+        data-oid="zak:bnt"
       >
-        <div className="flex items-center justify-between p-4">
-          <h2 className="text-lg font-bold text-midnight_text dark:text-white">Меню документации</h2>
-          <button onClick={() => setDocNavbarOpen(false)} aria-label="Close mobile menu">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="dark:text-white">
+        <div
+          className="flex items-center justify-between p-4"
+          data-oid="xhst6r_"
+        >
+          <h2
+            className="text-lg font-bold text-midnight_text dark:text-white"
+            data-oid=":zvx_d1"
+          >
+            Меню документации
+          </h2>
+          <button
+            onClick={() => setDocNavbarOpen(false)}
+            aria-label="Close mobile menu"
+            data-oid="68arpxx"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              className="dark:text-white"
+              data-oid="qo:b0m9"
+            >
               <path
                 fill="none"
                 stroke="currentColor"
@@ -86,14 +167,15 @@ export const Introduction = () => {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
+                data-oid="f6yi4li"
               />
             </svg>
           </button>
         </div>
-        <nav className="px-4" >
-          <DocNavigation />
+        <nav className="px-4" data-oid="htmszaw">
+          <DocNavigation data-oid="0azn68q" />
         </nav>
       </div>
     </>
-  )
-}
+  );
+};

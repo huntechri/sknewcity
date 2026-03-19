@@ -7,6 +7,7 @@ export default function StructuredData({ data }: StructuredDataProps) {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      data-oid="vsxg3qc"
     />
   );
 }
