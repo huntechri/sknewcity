@@ -39,8 +39,8 @@ const Header: React.FC = () => {
   const isHeroHeader = pathname === '/' || pathname === '/apartment-renovation'
 
   return (
-    <header className={`fixed h-20 sm:h-24 py-1 z-50 w-full bg-transparent transition-all duration-300 lg:px-0 px-6 sm:px-6 ${sticky ? "top-2 sm:top-3" : "top-0"}`}>
-      <nav className={`container mx-auto max-w-8xl flex items-center justify-between py-1.5 sm:py-4 duration-300 ${sticky ? "shadow-md sm:shadow-lg bg-white dark:bg-dark rounded-full px-6 sm:px-6 " : "shadow-none px-6 sm:px-6"}`}>
+    <header className={`fixed top-0 z-50 h-20 w-full bg-transparent px-3 py-1 transition-all duration-300 sm:h-24 sm:px-6 lg:px-0 ${sticky ? "top-2 sm:top-3" : "top-0"}`}>
+      <nav className={`container mx-auto flex max-w-8xl items-center justify-between py-1.5 duration-300 sm:py-4 ${sticky ? "rounded-full bg-white px-4 shadow-md dark:bg-dark sm:px-6 sm:shadow-lg" : "px-4 shadow-none sm:px-6"}`}>
         <div className='flex justify-between items-center gap-2 w-full'>
           <div>
             <Link href='/'>
@@ -63,19 +63,19 @@ const Header: React.FC = () => {
             </Link>
           </div>
 
-          <div className='flex items-center gap-2 sm:gap-6'>
+          <div className='flex items-center gap-1.5 sm:gap-6'>
 
             <button
-              className='hover:cursor-pointer'
+              className='rounded-full p-1 hover:cursor-pointer'
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               aria-label='Переключить тему'
               title='Переключить тему'
             >
               <Icon
                 icon={'solar:sun-bold'}
-                width={32}
-                height={32}
-                className={`dark:hidden block ${isHeroHeader
+                width={28}
+                height={28}
+                className={`block h-7 w-7 dark:hidden sm:h-8 sm:w-8 ${isHeroHeader
                   ? sticky
                     ? 'text-dark'
                     : 'text-white'
@@ -84,9 +84,9 @@ const Header: React.FC = () => {
               />
               <Icon
                 icon={'solar:moon-bold'}
-                width={32}
-                height={32}
-                className='dark:block hidden text-white'
+                width={28}
+                height={28}
+                className='hidden h-7 w-7 text-white dark:block sm:h-8 sm:w-8'
               />
             </button>
 
@@ -107,7 +107,7 @@ const Header: React.FC = () => {
             <div>
               <button
                 onClick={() => setNavbarOpen(!navbarOpen)}
-                className={`flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border ${isHeroHeader
+                className={`flex items-center gap-2 rounded-full border p-2 text-sm font-semibold hover:cursor-pointer sm:gap-3 sm:px-5 sm:py-3 sm:text-base ${isHeroHeader
                   ? sticky
                     ? 'text-white bg-dark dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-dark dark:border-white'
                     : 'text-dark bg-white dark:text-dark hover:bg-transparent hover:text-white border-white'
@@ -133,7 +133,7 @@ const Header: React.FC = () => {
 
       <div
         ref={sideMenuRef}
-        className={`fixed top-0 right-0 h-full w-full bg-dark shadow-lg transition-transform duration-300 max-w-sm sm:max-w-2xl ${navbarOpen ? 'translate-x-0' : 'translate-x-full'} z-50 px-6 sm:px-16 md:px-20 overflow-auto no-scrollbar`}
+        className={`fixed top-0 right-0 z-50 h-full w-[min(100%,22rem)] overflow-auto bg-dark px-5 shadow-lg transition-transform duration-300 no-scrollbar sm:w-full sm:max-w-2xl sm:px-16 md:px-20 ${navbarOpen ? 'translate-x-0' : 'translate-x-full'}`}
       >
         <div className="flex flex-col h-full justify-between">
           <div className="">
@@ -141,7 +141,7 @@ const Header: React.FC = () => {
               <button
                 onClick={() => setNavbarOpen(false)}
                 aria-label='Close mobile menu'
-                className='bg-white p-4 rounded-full hover:cursor-pointer shadow-lg'>
+                className='rounded-full bg-white p-3 shadow-lg hover:cursor-pointer sm:p-4'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   width='24'
@@ -167,7 +167,7 @@ const Header: React.FC = () => {
             </nav>
           </div>
 
-          <div className='flex flex-col gap-1 my-16 text-white'>
+          <div className='my-12 flex flex-col gap-1 text-white sm:my-16'>
             <p className='text-base sm:text-xm font-normal text-white/40'>Контакты</p>
             <Link href="mailto:info@sk-new-city.ru" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
               info@sk-new-city.ru

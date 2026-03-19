@@ -5,23 +5,23 @@ import { footerLinks } from "@/lib/layout-data";
 const Footer = () => {
   return (
     <footer className="relative z-10 bg-dark">
-      <div className="container mx-auto max-w-8xl pt-14 px-4 sm:px-6 lg:px-0">
-        <div className="flex lg:items-center justify-between items-end lg:gap-11 pb-14 border-b border-white/10 lg:flex-nowrap flex-wrap gap-6">
-          <p className="text-white text-sm lg:max-w-1/5">
+      <div className="container mx-auto max-w-8xl px-4 pt-12 sm:px-6 sm:pt-14 lg:px-0">
+        <div className="flex flex-col gap-8 border-b border-white/10 pb-12 sm:pb-14 lg:flex-row lg:items-end lg:justify-between lg:gap-11">
+          <p className="max-w-sm text-sm leading-relaxed text-white lg:max-w-1/5">
             Получайте новости, полезные советы и специальные предложения.
           </p>
-          <div className="flex lg:flex-row flex-col items-center lg:gap-10 gap-2 sm:gap-3">
-            <div className="flex gap-2 lg:order-1 order-2 flex-col sm:flex-row w-full sm:w-auto">
-              <input type="email" placeholder="Введите email" className="rounded-full py-2 sm:py-4 px-3 sm:px-6 bg-white/10 placeholder:text-white text-white focus-visible:outline-0 text-sm sm:text-base" />
-              <button className="text-dark bg-white py-2 sm:py-4 px-4 sm:px-8 font-semibold rounded-full hover:bg-primary hover:text-white duration-300 hover:cursor-pointer text-sm sm:text-base">
+          <div className="flex w-full flex-col gap-5 lg:flex-1 lg:flex-row lg:items-end lg:justify-between lg:gap-10">
+            <div className="order-2 flex w-full max-w-2xl flex-col gap-3 sm:flex-row sm:items-center lg:order-1">
+              <input type="email" placeholder="Введите email" className="w-full min-w-0 rounded-full bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white focus-visible:outline-0 sm:px-6 sm:py-4 sm:text-base" />
+              <button className="w-full rounded-full bg-white px-4 py-3 text-sm font-semibold text-dark duration-300 hover:cursor-pointer hover:bg-primary hover:text-white sm:w-auto sm:px-8 sm:py-4 sm:text-base">
                 Подписаться
               </button>
             </div>
-            <p className="text-white/40 text-xs sm:text-sm lg:max-w-45p order-1 lg:order-2">
+            <p className="order-1 max-w-xl text-xs leading-relaxed text-white/40 sm:text-sm lg:order-2 lg:max-w-45p">
               Подписываясь, вы соглашаетесь получать письма. Можно отписаться в любой момент.
             </p>
           </div>
-          <div className="flex items-center gap-6">
+          <div className="flex w-full items-center gap-6 sm:w-auto">
             <Link href="https://t.me/sknewcity444" target="_blank" rel="noopener noreferrer">
               <Icon icon="ph:telegram-logo-bold" width={24} height={24} className="text-white hover:text-primary duration-300" />
             </Link>
@@ -36,15 +36,15 @@ const Footer = () => {
         <div className="py-10 sm:py-16 border-b border-white/10">
           <div className="grid grid-cols-12 gap-3 sm:gap-6 md:gap-10">
             <div className="md:col-span-7 col-span-12">
-              <h2 className="text-white leading-[1.2] text-2xl sm:text-3xl md:text-5xl lg:text-40 font-medium mb-4 sm:mb-6 lg:max-w-3/4">
+              <h2 className="mb-4 max-w-2xl text-2xl font-medium leading-[1.15] text-white text-balance sm:mb-6 sm:text-3xl md:text-5xl lg:text-40 lg:max-w-3/4">
                 Готовы к ремонту без стресса? Свяжитесь с нами сегодня.
               </h2>
-              <Link href="/contactus" className="bg-primary text-sm sm:text-base font-semibold py-3 sm:py-4 px-5 sm:px-8 rounded-full text-white hover:bg-white hover:text-dark duration-300 hover:cursor-pointer">
+              <Link href="/contactus" className="inline-flex rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white duration-300 hover:cursor-pointer hover:bg-white hover:text-dark sm:px-8 sm:py-4 sm:text-base">
                 Получить консультацию
               </Link>
             </div>
             <div className="md:col-span-3 sm:col-span-6 col-span-12">
-              <div className="flex flex-col gap-3 w-fit">
+              <div className="flex w-full flex-col gap-3">
                 {footerLinks.slice(0, 4).map((item, index: number) => (
                   <div key={index}>
                     <Link href={item.href} className="text-white/40 text-xs sm:text-xm hover:text-white">
@@ -55,7 +55,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="md:col-span-2 sm:col-span-6 col-span-12">
-              <div className="flex flex-col gap-3 w-fit">
+              <div className="flex w-full flex-col gap-3">
                 {footerLinks.slice(4, 8).map((item, index: number) => (
                   <div key={index}>
                     <Link href={item.href} className="text-white/40 text-xs sm:text-xm hover:text-white">
@@ -67,11 +67,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between md:flex-nowrap flex-wrap items-center py-6 gap-6">
+        <div className="flex flex-col items-start justify-between gap-4 py-6 sm:gap-6 md:flex-row md:flex-nowrap md:items-center">
           <p className="text-white/40 text-sm ">
             ©2025 sk-new-city.ru — все права защищены
           </p>
-          <div className="flex gap-8 items-center">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3 sm:gap-x-8">
             <Link href="/terms-and-conditions" className="text-white/40 hover:text-primary text-sm">
               Условия
             </Link>

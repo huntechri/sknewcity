@@ -12,14 +12,16 @@ const ModernFlatProject: React.FC<ProjectProps> = ({ item, testimonials }) => {
     return (
         <div>
             {/* Custom Banner or anything unique for Project 1 */}
-            <div className="bg-dark py-4 text-center text-white text-sm">
-                Спецпредложение для ЖК «Скандинавия»: Дизайн-проект в подарок!
+            <div className="bg-dark px-4 py-3 text-center text-xs leading-relaxed text-white sm:py-4 sm:text-sm">
+                <p className="mx-auto max-w-3xl text-balance break-words">
+                    Спецпредложение для ЖК «Скандинавия»: Дизайн-проект в подарок!
+                </p>
             </div>
 
             <BaseProjectLayout item={item} testimonials={testimonials} />
 
             {/* We could add more unique sections here */}
-            <div className="container mx-auto px-5 mb-20 text-center">
+            <div className="container mx-auto mb-20 px-4 text-center sm:px-5">
                 <p className="text-dark/50 dark:text-white/50 italic">
                     * Данный проект был реализован с использованием экологически чистых материалов.
                 </p>
