@@ -8,17 +8,17 @@ export const Configuration = () => {
       <div
         className="pb-10 md:scroll-m-[180px] scroll-m-28"
         id="configuration"
-        data-oid="q_:cjrp"
+        data-oid="dk6t6lk"
       >
         <h3
           className=" text-black text-2xl font-semibold mt-4 dark:text-white"
-          data-oid="_ful_ej"
+          data-oid="9f:2j:f"
         >
           Project Configuration
         </h3>
-        <ColorConfiguration data-oid="6bh..t." />
-        <TypographyConfiguration data-oid="nzzdabl" />
-        <LogoConfiguration data-oid="100d0ev" />
+        <ColorConfiguration data-oid="gj26o_1" />
+        <TypographyConfiguration data-oid="hd_pv8u" />
+        <LogoConfiguration data-oid="g:exfw2" />
       </div>
     </>
   );

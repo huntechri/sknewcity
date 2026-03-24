@@ -117,47 +117,47 @@ export default async function Post({ params }: Props) {
 
   return (
     <>
-      <StructuredData data={structuredData} data-oid="7fvn3gy" />
-      <section className="relative pt-44! pb-0!" data-oid="n7bc8uh">
+      <StructuredData data={structuredData} data-oid="jeqr.o_" />
+      <section className="relative pt-44! pb-0!" data-oid="8de3fva">
         <div
           className="container max-w-8xl mx-auto md:px-0 px-4"
-          data-oid="jgaz_hl"
+          data-oid="wfez:6g"
         >
-          <div data-oid="rzamia_">
-            <div data-oid="yv:f:s0">
+          <div data-oid="6iet3ki">
+            <div data-oid="fvdd-an">
               <Link
                 href="/blogs"
                 className="flex items-center gap-3 text-white bg-primary py-3 px-4 rounded-full w-fit hover:bg-dark duration-300"
-                data-oid="gbc56qd"
+                data-oid="v-uk5xn"
               >
                 <Icon
                   icon={"ph:arrow-left"}
                   width={20}
                   height={20}
                   className=""
-                  data-oid="zp5a.z9"
+                  data-oid="qq:d4d_"
                 />
 
-                <span data-oid="7ois93u">Назад к статьям</span>
+                <span data-oid="3:iv34_">Назад к статьям</span>
               </Link>
               <h1
                 className="text-dark dark:text-white md:text-52 text-40 leading-[1.2] font-semibold pt-7"
-                data-oid="w-wt1gm"
+                data-oid="_6pnjqf"
               >
                 {post.title}
               </h1>
               <h6
                 className="text-xm mt-5 text-dark dark:text-white"
-                data-oid="f-u1e2l"
+                data-oid="v-pa54a"
               >
                 {post.detail}
               </h6>
             </div>
             <div
               className="flex items-center justify-between gap-6 mt-12"
-              data-oid="6yhzb98"
+              data-oid="1gp8jlb"
             >
-              <div className="flex items-center gap-4" data-oid="5:6n0l7">
+              <div className="flex items-center gap-4" data-oid="q3qd9q7">
                 <Image
                   src={post.authorImage}
                   alt={`Автор статьи ${post.author}`}
@@ -166,42 +166,42 @@ export default async function Post({ params }: Props) {
                   height={48}
                   quality={100}
                   unoptimized={true}
-                  data-oid="-imx9.w"
+                  data-oid="x8zxgb:"
                 />
 
-                <div data-oid="0bzl4i7">
+                <div data-oid="5g:b01:">
                   <span
                     className="text-xm text-dark dark:text-white"
-                    data-oid="bwnjbld"
+                    data-oid="iq840h3"
                   >
                     {post.author}
                   </span>
                 </div>
               </div>
-              <div className="flex items-center gap-7" data-oid="tccj.01">
-                <div className="flex items-center gap-4" data-oid="2t6by6a">
+              <div className="flex items-center gap-7" data-oid="2skogq3">
+                <div className="flex items-center gap-4" data-oid="kg-5_-u">
                   <Icon
                     icon={"ph:clock"}
                     width={20}
                     height={20}
                     className=""
-                    data-oid="uw51xvv"
+                    data-oid=":yypcal"
                   />
 
                   <span
                     className="text-base text-dark font-medium dark:text-white"
-                    data-oid="km-2y8q"
+                    data-oid="082bus9"
                   >
                     {format(new Date(post.date), "MMM dd, yyyy")}
                   </span>
                 </div>
                 <div
                   className="py-2.5 px-5 bg-dark/5 rounded-full dark:bg-white/15"
-                  data-oid="d9v3qkn"
+                  data-oid="h_19tg9"
                 >
                   <p
                     className="text-sm font-semibold text-dark dark:text-white"
-                    data-oid="_c9seaw"
+                    data-oid="ljosf53"
                   >
                     {post.tag}
                   </p>
@@ -211,7 +211,7 @@ export default async function Post({ params }: Props) {
           </div>
           <div
             className="z-20 mt-12 overflow-hidden rounded"
-            data-oid="1ynn44j"
+            data-oid="-ejw3m7"
           >
             <Image
               src={post.coverImage}
@@ -220,21 +220,21 @@ export default async function Post({ params }: Props) {
               height={766}
               quality={100}
               className="h-full w-full object-cover object-center rounded-3xl"
-              data-oid="_v809yq"
+              data-oid="d8nnyjg"
             />
           </div>
         </div>
       </section>
-      <section className="pt-12!" data-oid="hb0a1gs">
-        <div className="container max-w-8xl mx-auto px-4" data-oid="0bwc61f">
+      <section className="pt-12!" data-oid="9-ke-_q">
+        <div className="container max-w-8xl mx-auto px-4" data-oid="ayit4-j">
           <div
             className="-mx-4 flex flex-wrap justify-center"
-            data-oid="0377rp3"
+            data-oid="uywc:5-"
           >
-            <div className="blog-details markdown xl:pr-10" data-oid="wzk::0t">
+            <div className="blog-details markdown xl:pr-10" data-oid="6ip74w0">
               <div
                 dangerouslySetInnerHTML={{ __html: content }}
-                data-oid="lw.l84g"
+                data-oid="s:gzgzv"
               ></div>
             </div>
           </div>

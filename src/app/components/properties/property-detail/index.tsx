@@ -17,23 +17,25 @@ export default function Details({ item, testimonials }: DetailsProps) {
         <ModernFlatProject
           item={item}
           testimonials={testimonials}
-          data-oid="cieqv08"
+          data-oid="9j5fxbp"
         />
       );
+
     case "capital-78":
       return (
         <FullHouseProject
           item={item}
           testimonials={testimonials}
-          data-oid="0sfkef3"
+          data-oid="ee-x:wq"
         />
       );
+
     default:
       return (
         <BaseProjectLayout
           item={item}
           testimonials={testimonials}
-          data-oid="0baee-k"
+          data-oid="dzfiq0:"
         />
       );
   }

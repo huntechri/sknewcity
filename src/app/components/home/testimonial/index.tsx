@@ -50,38 +50,38 @@ const Testimonial = () => {
     <section
       className="bg-dark relative overflow-hidden"
       id="testimonial"
-      data-oid="f:jehcm"
+      data-oid="ncysw9j"
     >
-      <div className="absolute right-0" data-oid="cpgmbfb">
+      <div className="absolute right-0" data-oid="qd3awt2">
         <Image
           src="/images/testimonial/Vector.png"
           alt="victor"
           width={700}
           height={1039}
           unoptimized={true}
-          data-oid="luktn2k"
+          data-oid="h:to-.0"
         />
       </div>
       <div
         className="container max-w-8xl mx-auto px-5 2xl:px-0"
-        data-oid=".lfxetf"
+        data-oid="57ypkq."
       >
-        <div className="flex flex-col gap-4" data-oid="_0pq8.4">
-          <div data-oid="_5v4o__">
+        <div className="flex flex-col gap-4" data-oid="kc.l:dy">
+          <div data-oid="puxi70h">
             <p
               className="text-white text-base font-semibold flex gap-2"
-              data-oid="m:pm4:_"
+              data-oid="btantz_"
             >
               <Icon
                 icon="ph:house-simple-fill"
                 className="text-2xl text-primary"
-                data-oid="gyesjut"
+                data-oid="8a4jegt"
               />
               Отзывы
             </p>
             <h2
               className="lg:text-52 text-40 font-medium text-white"
-              data-oid="tykure6"
+              data-oid="9airv1r"
             >
               Что говорят клиенты
             </h2>
@@ -92,51 +92,51 @@ const Testimonial = () => {
           opts={{
             loop: true,
           }}
-          data-oid="uyhnbf9"
+          data-oid="4o_n9x6"
         >
-          <CarouselContent data-oid="2xzydc9">
+          <CarouselContent data-oid="gy6tecl">
             {testimonials &&
               testimonials?.map((item: any, index: any) => (
-                <CarouselItem key={index} className="mt-9" data-oid="_xabdom">
+                <CarouselItem key={index} className="mt-9" data-oid="vjns-hd">
                   <div
                     className="lg:flex items-center gap-11"
-                    data-oid="28ym348"
+                    data-oid="tyj_b.h"
                   >
                     <div
                       className="flex items-start gap-11 lg:pr-20"
-                      data-oid="zt_u2aw"
+                      data-oid="l4n7fz4"
                     >
                       <div
                         className="shrink-0 hidden lg:block"
-                        data-oid="mio78o5"
+                        data-oid="m37izep"
                       >
                         <div
                           className="w-16 h-16 rounded-full bg-yellow-500/10 flex items-center justify-center"
-                          data-oid="g66v0mb"
+                          data-oid=":0sbcgy"
                         >
                           <Icon
                             icon="ph:quotes-fill"
                             width={32}
                             height={32}
                             className="text-yellow-500"
-                            data-oid="jghf24j"
+                            data-oid="w_aua1d"
                           />
                         </div>
                       </div>
-                      <div data-oid="kpoqe9h">
+                      <div data-oid="_a3f6k2">
                         <h4
                           className="text-white lg:text-3xl text-xl font-normal leading-relaxed italic"
-                          data-oid="8:mpa5a"
+                          data-oid="730::69"
                         >
                           &quot;{item.review}&quot;
                         </h4>
                         <div
                           className="flex items-center mt-8 gap-6"
-                          data-oid="ts2nsxh"
+                          data-oid="l:59k6e"
                         >
                           <div
                             className="w-16 h-16 rounded-full overflow-hidden border border-white/10 shrink-0"
-                            data-oid="cnrmpad"
+                            data-oid="m_rrnaa"
                           >
                             <Image
                               src={item.image}
@@ -145,37 +145,37 @@ const Testimonial = () => {
                               height={64}
                               className="w-full h-full object-cover"
                               unoptimized={true}
-                              data-oid="8_y8m1b"
+                              data-oid="9b3613c"
                             />
                           </div>
-                          <div data-oid="d_o6kq:">
+                          <div data-oid="m9s0uzj">
                             <h6
                               className="text-white text-xl font-medium"
-                              data-oid="fviy:hv"
+                              data-oid="_ximlw."
                             >
                               {item.name}
                             </h6>
                             <div
                               className="flex items-center gap-2"
-                              data-oid="8oue9c9"
+                              data-oid=":y_srg5"
                             >
                               <p
                                 className="text-white/40 text-sm"
-                                data-oid="yrd7.1w"
+                                data-oid="2mov2v9"
                               >
                                 {item.position}
                               </p>
                               <span
                                 className="w-1 h-1 rounded-full bg-white/20"
-                                data-oid="h1vb-ft"
+                                data-oid="utuek:-"
                               ></span>
                               <span
                                 className="text-xs text-green-500 flex items-center gap-1"
-                                data-oid="a_h4921"
+                                data-oid="am1hqfg"
                               >
                                 <Icon
                                   icon="material-symbols:check-circle-rounded"
-                                  data-oid="csuw08e"
+                                  data-oid="y:y7-mi"
                                 />
                                 Подтверждено
                               </span>
@@ -186,7 +186,7 @@ const Testimonial = () => {
                     </div>
                     <div
                       className="w-full max-w-[440px] aspect-square rounded-2xl overflow-hidden bg-white/5 border border-white/10 hidden lg:block"
-                      data-oid="au.ynmu"
+                      data-oid="fcwqcdt"
                     >
                       <Image
                         src={item.image}
@@ -195,7 +195,7 @@ const Testimonial = () => {
                         height={440}
                         className="w-full h-full object-cover"
                         unoptimized={true}
-                        data-oid="cps.yti"
+                        data-oid="596y_5l"
                       />
                     </div>
                   </div>
@@ -205,7 +205,7 @@ const Testimonial = () => {
         </Carousel>
         <div
           className="absolute bottom-24 left-1/2 transform -translate-x-1/2 flex gap-2.5 p-2.5 bg-white/20 rounded-full"
-          data-oid="xzemgj6"
+          data-oid="6.rp8ue"
         >
           {Array.from({ length: count }).map((_, index) => (
             <button
@@ -213,7 +213,7 @@ const Testimonial = () => {
               onClick={() => handleDotClick(index)}
               className={`w-2.5 h-2.5 rounded-full ${current === index + 1 ? "bg-white" : "bg-white/50"}`}
               aria-label={`Go to slide ${index + 1}`}
-              data-oid="4:3dif6"
+              data-oid="etmpn6n"
             />
           ))}
         </div>

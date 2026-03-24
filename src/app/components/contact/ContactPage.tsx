@@ -72,39 +72,39 @@ export default function ContactPage() {
   return (
     <div
       className="container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-44 pb-14 md:pb-28"
-      data-oid="9aeaa5n"
+      data-oid="ofrg_1l"
     >
-      <div className="mb-16" data-oid="a36ow8r">
+      <div className="mb-16" data-oid="li8q2qh">
         <div
           className="flex gap-2.5 items-center justify-center mb-3"
-          data-oid="xep:gyu"
+          data-oid="aq0bq0p"
         >
-          <span data-oid="zfx4xgh">
+          <span data-oid="2l:prn9">
             <Icon
               icon={"ph:house-simple-fill"}
               width={20}
               height={20}
               className="text-primary"
-              data-oid="psd3kuk"
+              data-oid="ve824f."
             />
           </span>
           <p
             className="text-base font-semibold text-badge dark:text-white/90"
-            data-oid="m0hm7bt"
+            data-oid="0j0-dv-"
           >
             Контакты
           </p>
         </div>
-        <div className="text-center" data-oid="4p3wajl">
+        <div className="text-center" data-oid="80alrt3">
           <h1
             className="text-4xl sm:text-52 font-medium tracking-tighter text-black dark:text-white mb-3 leading-10 sm:leading-14"
-            data-oid=".w499t_"
+            data-oid="bqd0p0-"
           >
             Есть вопросы? Мы на связи
           </h1>
           <p
             className="text-xm font-normal tracking-tight text-black/50 dark:text-white/50 leading-6"
-            data-oid="4j0cfcf"
+            data-oid="z6..-ce"
           >
             Поможем рассчитать стоимость, подобрать формат ремонта и сроки.
           </p>
@@ -113,13 +113,13 @@ export default function ContactPage() {
 
       <div
         className="border border-black/10 dark:border-white/10 rounded-2xl p-4 shadow-xl dark:shadow-white/10"
-        data-oid="68f2ogg"
+        data-oid="bsme-hp"
       >
         <div
           className="flex flex-col lg:flex-row lg:items-center gap-12"
-          data-oid="2km991w"
+          data-oid="wtzshmh"
         >
-          <div className="relative w-fit" data-oid="oh__g86">
+          <div className="relative w-fit" data-oid="2n-wfau">
             <Image
               src={"/images/contactUs/contactUs.jpg"}
               alt="Команда SK New City на консультации по ремонту квартиры"
@@ -127,48 +127,49 @@ export default function ContactPage() {
               height={535}
               className="rounded-2xl brightness-50 h-full"
               unoptimized={true}
-              data-oid="d_vhkce"
+              data-oid="3qlc2e0"
             />
 
             <div
               className="absolute top-6 left-6 lg:top-12 lg:left-12 flex flex-col gap-2"
-              data-oid="pl757ek"
+              data-oid="xuaq_me"
             >
               <h2
                 className="text-xl xs:text-2xl mobile:text-3xl font-medium tracking-tight text-white"
-                data-oid="8tz_7v5"
+                data-oid="ksw:dqs"
               >
                 Контактная информация
               </h2>
               <p
                 className="text-sm xs:text-base mobile:text-xm font-normal text-white/80"
-                data-oid="_k2vgid"
+                data-oid="qmj8p59"
               >
                 Ответим на вопросы и подготовим смету под ваш объект.
               </p>
             </div>
             <div
               className="absolute bottom-6 left-6 lg:bottom-12 lg:left-12 flex flex-col gap-4 text-white"
-              data-oid="y.afwmy"
+              data-oid="et7_v1k"
             >
               <Link
                 href="tel:+79167673434"
                 className="w-fit"
-                data-oid="jv40aw7"
+                data-oid="liazn01"
               >
                 <div
                   className="flex items-center gap-4 group w-fit"
-                  data-oid="u.oh2gt"
+                  data-oid="2swk7ac"
                 >
                   <Icon
                     icon={"ph:phone"}
                     width={32}
                     height={32}
-                    data-oid="7:ooa2w"
+                    data-oid="0ualit2"
                   />
+
                   <p
                     className="text-sm xs:text-base mobile:text-xm font-normal group-hover:text-primary"
-                    data-oid="fhgn:3h"
+                    data-oid="l6-1zib"
                   >
                     +7 916 767-34-34
                   </p>
@@ -177,48 +178,50 @@ export default function ContactPage() {
               <Link
                 href="mailto:info@sk-new-city.ru"
                 className="w-fit"
-                data-oid="kp5_a0a"
+                data-oid="qenx_uc"
               >
                 <div
                   className="flex items-center gap-4 group w-fit"
-                  data-oid="d29-6ki"
+                  data-oid="p6i.sc4"
                 >
                   <Icon
                     icon={"ph:envelope-simple"}
                     width={32}
                     height={32}
-                    data-oid="5fj-bh3"
+                    data-oid="fct29jn"
                   />
+
                   <p
                     className="text-sm xs:text-base mobile:text-xm font-normal group-hover:text-primary"
-                    data-oid="uavo23i"
+                    data-oid="589utbn"
                   >
                     info@sk-new-city.ru
                   </p>
                 </div>
               </Link>
-              <div className="flex items-center gap-4" data-oid="4m23v3g">
+              <div className="flex items-center gap-4" data-oid="daay8pm">
                 <Icon
                   icon={"ph:map-pin"}
                   width={32}
                   height={32}
-                  data-oid="87ndsxn"
+                  data-oid="phbzoi4"
                 />
+
                 <p
                   className="text-sm xs:text-base mobile:text-xm font-normal"
-                  data-oid="-29y5_d"
+                  data-oid="b0sf1og"
                 >
                   г. Москва, ул. Митинская, д. 26
                 </p>
               </div>
             </div>
           </div>
-          <div className="flex-1/2" data-oid="5.ppimd">
-            <form onSubmit={handleSubmit} data-oid=".a0rw1d">
-              <div className="flex flex-col gap-8" data-oid="obb-ixj">
+          <div className="flex-1/2" data-oid="anz0c75">
+            <form onSubmit={handleSubmit} data-oid="huoj8bb">
+              <div className="flex flex-col gap-8" data-oid="kyfw.o:">
                 <div
                   className="flex flex-col lg:flex-row gap-6"
-                  data-oid="lohcel."
+                  data-oid="n.e9_dh"
                 >
                   <input
                     type="text"
@@ -230,7 +233,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline w-full"
-                    data-oid="t.y3ui4"
+                    data-oid="jhlzhow"
                   />
 
                   <input
@@ -243,7 +246,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline w-full"
-                    data-oid="to99fey"
+                    data-oid="j456ggy"
                   />
                 </div>
                 <input
@@ -256,7 +259,7 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-full outline-primary focus:outline"
-                  data-oid="6uzspvg"
+                  data-oid="dw_ly04"
                 />
 
                 <textarea
@@ -269,17 +272,17 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   className="px-6 py-3.5 border border-black/10 dark:border-white/10 rounded-2xl outline-primary focus:outline"
-                  data-oid="upn8zxz"
+                  data-oid="gupj.iw"
                 ></textarea>
                 <button
                   className="px-8 py-4 rounded-full bg-primary text-white text-base font-semibold w-full mobile:w-fit hover:cursor-pointer hover:bg-dark duration-300"
-                  data-oid="-f.9xk4"
+                  data-oid="b:pd0bl"
                 >
                   Отправить заявку
                 </button>
               </div>
               {submitted && (
-                <p className="text-primary mt-4" data-oid="zx7jtdo">
+                <p className="text-primary mt-4" data-oid=":h3htho">
                   Спасибо! Сообщение отправлено, мы свяжемся с вами в ближайшее
                   время.
                 </p>

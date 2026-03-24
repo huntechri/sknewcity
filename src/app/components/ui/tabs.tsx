@@ -21,7 +21,6 @@ function Tabs({
         className,
       )}
       {...props}
-      data-oid="le17h:u"
     />
   );
 }
@@ -53,7 +52,6 @@ function TabsList({
       data-variant={variant}
       className={cn(tabsListVariants({ variant }), className)}
       {...props}
-      data-oid=".gu6jyl"
     />
   );
 }
@@ -73,7 +71,6 @@ function TabsTrigger({
         className,
       )}
       {...props}
-      data-oid=":tmdgkd"
     />
   );
 }
@@ -87,7 +84,6 @@ function TabsContent({
       data-slot="tabs-content"
       className={cn("flex-1 outline-none", className)}
       {...props}
-      data-oid="qgpx1z5"
     />
   );
 }

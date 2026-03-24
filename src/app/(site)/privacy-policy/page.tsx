@@ -9,37 +9,37 @@ export default function Page() {
   return (
     <section
       className="bg-white dark:bg-dark transition-colors duration-300"
-      data-oid="q0f::4:"
+      data-oid="_vgkjjt"
     >
       <div
         className="relative w-full flex justify-center pt-24 md:pt-32 pb-16"
-        data-oid="qz4qmoe"
+        data-oid="v71wxuu"
       >
         <div
           className="container max-w-5xl px-5 relative z-10"
-          data-oid="0c6w1ba"
+          data-oid="d2i-8r4"
         >
-          <div className="flex flex-col gap-8" data-oid="1s-wa9-">
+          <div className="flex flex-col gap-8" data-oid="fznuz8w">
             <h1
               className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center text-black dark:text-white"
-              data-oid="..d7rmc"
+              data-oid="tz4ixof"
             >
               Политика конфиденциальности
             </h1>
 
             <div
               className="prose prose-lg max-w-none text-dark/70 dark:text-white/60 space-y-8"
-              data-oid="05r_-th"
+              data-oid=".bfsbo8"
             >
-              <section data-oid="5-xi-l2">
-                <p data-oid="k6frnso">
+              <section data-oid="iqpxou-">
+                <p data-oid="e8bso_d">
                   Настоящая Политика конфиденциальности (далее — «Политика»)
                   действует в отношении всей информации, которую администрация
                   сайта{" "}
                   <Link
                     href="/"
                     className="text-primary font-medium hover:underline"
-                    data-oid="7_e0qxu"
+                    data-oid="f-0-jc2"
                   >
                     sk-new-city.ru
                   </Link>{" "}
@@ -48,68 +48,68 @@ export default function Page() {
                 </p>
               </section>
 
-              <section data-oid=".juaz_n">
+              <section data-oid="8h2vqup">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="3fu-:wz"
+                  data-oid="mnw8rkz"
                 >
                   1. Состав персональных данных
                 </h2>
-                <p data-oid="ftjjunc">
+                <p data-oid="l8_mhrk">
                   Администрация Сайта может обрабатывать следующие персональные
                   данные, предоставленные Пользователем добровольно через формы
                   обратной связи:
                 </p>
-                <ul className="list-disc pl-5 space-y-1" data-oid="9:-tx6h">
-                  <li data-oid="f2plg7d">Фамилия, имя, отчество;</li>
-                  <li data-oid="03g7e8i">Номер контактного телефона;</li>
-                  <li data-oid="9h:q:0v">Адрес электронной почты (email);</li>
-                  <li data-oid=":z:bihb">
+                <ul className="list-disc pl-5 space-y-1" data-oid="ge1ur3p">
+                  <li data-oid="lyc1lfe">Фамилия, имя, отчество;</li>
+                  <li data-oid="8hfzc36">Номер контактного телефона;</li>
+                  <li data-oid="2i:9avl">Адрес электронной почты (email);</li>
+                  <li data-oid="a:8o0id">
                     Адрес объекта (для выезда замерщика);
                   </li>
-                  <li data-oid="2hc7o-c">
+                  <li data-oid="pxz1izk">
                     Иная информация, указанная в сообщении.
                   </li>
                 </ul>
               </section>
 
-              <section data-oid="e22vq6k">
+              <section data-oid="exnorzw">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="00l-les"
+                  data-oid="ituizjs"
                 >
                   2. Цели обработки данных
                 </h2>
-                <p data-oid="8cv0obr">
+                <p data-oid="f3d2cq3">
                   Мы обрабатываем ваши данные исключительно для:
                 </p>
-                <ul className="list-disc pl-5 space-y-1" data-oid="egg:kpd">
-                  <li data-oid="kfd01_6">
+                <ul className="list-disc pl-5 space-y-1" data-oid="3jqi0zz">
+                  <li data-oid="4bsrj2t">
                     Установления с Пользователем обратной связи (звонки,
                     сообщения);
                   </li>
-                  <li data-oid="-cw:ln5">
+                  <li data-oid="u9h6dco">
                     Подготовки предварительного коммерческого предложения и
                     сметы;
                   </li>
-                  <li data-oid="1.43h-n">
+                  <li data-oid="f_a3akr">
                     Записи на технический выезд (замер);
                   </li>
-                  <li data-oid="habqb22">
+                  <li data-oid="z_7fs5o">
                     Предоставления информации об акциях и новостях компании (при
                     согласии).
                   </li>
                 </ul>
               </section>
 
-              <section data-oid="1kkjs5w">
+              <section data-oid="y1pekkf">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="2gl2q7g"
+                  data-oid="btoz_jr"
                 >
                   3. Правовые основания
                 </h2>
-                <p data-oid=".m84117">
+                <p data-oid=":23md85">
                   Обработка персональных данных осуществляется в соответствии с
                   Федеральным законом от 27.07.2006 №152-ФЗ «О персональных
                   данных» и на основании согласия Пользователя, выраженного
@@ -117,47 +117,47 @@ export default function Page() {
                 </p>
               </section>
 
-              <section data-oid="llfu1:k">
+              <section data-oid="ql.wztr">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="6lqad4p"
+                  data-oid="hym-j56"
                 >
                   4. Защита и передача данных
                 </h2>
-                <ol className="list-decimal pl-5 space-y-3" data-oid="v392hvy">
-                  <li data-oid="t_rwgmy">
+                <ol className="list-decimal pl-5 space-y-3" data-oid="31y0x:s">
+                  <li data-oid=".m330cc">
                     Мы принимаем необходимые организационные и технические меры
                     для защиты персональной информации Пользователя от
                     неправомерного доступа.
                   </li>
-                  <li data-oid="69iu63k">
+                  <li data-oid="34m0o5j">
                     Персональные данные Пользователя никогда, ни при каких
                     условиях не будут переданы третьим лицам, за исключением
                     случаев, связанных с исполнением действующего
                     законодательства.
                   </li>
-                  <li data-oid="anr88s0">
+                  <li data-oid="zy5-jvb">
                     Срок обработки персональных данных является неограниченным,
                     до момента отзыва согласия Пользователем.
                   </li>
                 </ol>
               </section>
 
-              <section data-oid="gspyki3">
+              <section data-oid="3pr::v3">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="11:s-vc"
+                  data-oid=":5w3rol"
                 >
                   5. Права Пользователя
                 </h2>
-                <p data-oid="v7pp75u">
+                <p data-oid="8u1fken">
                   Пользователь имеет право в любой момент запросить информацию
                   об обрабатываемых данных, внести в них изменения или
                   потребовать их удаления. Для этого необходимо отправить запрос
                   на email:{" "}
                   <span
                     className="text-black dark:text-white font-medium"
-                    data-oid="769d585"
+                    data-oid="pm-aqrl"
                   >
                     info@sk-new-city.ru
                   </span>
@@ -165,22 +165,22 @@ export default function Page() {
                 </p>
               </section>
 
-              <section data-oid="_qg2cyo">
+              <section data-oid="1d:miv0">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="al.mlhv"
+                  data-oid="9bkd7_8"
                 >
                   6. Изменение политики
                 </h2>
-                <p data-oid="c1_-z3t">
+                <p data-oid="lpewhqy">
                   Администрация имеет право вносить изменения в настоящую
                   Политику конфиденциальности. Новая редакция вступает в силу с
                   момента ее размещения на Сайте.
                 </p>
               </section>
 
-              <section className="mt-12 text-sm italic" data-oid="pyheez-">
-                <p data-oid="h3-x:lq">Последнее обновление: 13 марта 2025 г.</p>
+              <section className="mt-12 text-sm italic" data-oid=".qtffyj">
+                <p data-oid="0u3.7ja">Последнее обновление: 13 марта 2025 г.</p>
               </section>
             </div>
           </div>

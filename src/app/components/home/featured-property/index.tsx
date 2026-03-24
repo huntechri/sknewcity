@@ -36,23 +36,23 @@ const FeaturedProperty: React.FC<{
   };
 
   return (
-    <section data-oid="3hep2bj">
+    <section data-oid="fq3fitj">
       <div
         className="container max-w-8xl mx-auto px-3 sm:px-5 2xl:px-0"
-        data-oid="shi:an5"
+        data-oid="p6e0r1l"
       >
-        <div className="grid lg:grid-cols-2 gap-5 sm:gap-10" data-oid="f54ta8y">
-          <div className="relative" data-oid="o4018c-">
+        <div className="grid lg:grid-cols-2 gap-5 sm:gap-10" data-oid="nk0.6kp">
+          <div className="relative" data-oid="1qlgz6-">
             <Carousel
               setApi={setApi}
               opts={{
                 loop: true,
               }}
-              data-oid="685:w7o"
+              data-oid="9p-.wxp"
             >
-              <CarouselContent data-oid="838z_kb">
+              <CarouselContent data-oid="4_c5snf">
                 {featuredProperty.map((item, index) => (
-                  <CarouselItem key={index} data-oid="yht7no:">
+                  <CarouselItem key={index} data-oid="cysc3gk">
                     <Image
                       src={item.scr}
                       alt={item.alt}
@@ -60,7 +60,7 @@ const FeaturedProperty: React.FC<{
                       height={530}
                       className="rounded-2xl w-full h-540"
                       sizes="(max-width: 1024px) 100vw, 50vw"
-                      data-oid=":.48h62"
+                      data-oid="6fzin7q"
                     />
                   </CarouselItem>
                 ))}
@@ -68,7 +68,7 @@ const FeaturedProperty: React.FC<{
             </Carousel>
             <div
               className="absolute left-2/5 sm:left-2/5 md:left-2/5 bg-dark/50 rounded-full py-1.5 sm:py-2.5 bottom-5 sm:bottom-10 flex justify-center mt-2 sm:mt-4 gap-1.5 sm:gap-2.5 px-2 sm:px-2.5"
-              data-oid="ka0xfxa"
+              data-oid="l-0gcmm"
             >
               {Array.from({ length: count }).map((_, index) => (
                 <button
@@ -77,41 +77,43 @@ const FeaturedProperty: React.FC<{
                   className={`w-2.5 h-2.5 rounded-full ${current === index + 1 ? "bg-white" : "bg-white/50"}`}
                   aria-label={`Перейти к слайду ${index + 1}`}
                   title={`Слайд ${index + 1}`}
-                  data-oid="lyp9jax"
+                  data-oid="t6std_v"
                 />
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-10" data-oid="vwotr61">
-            <div data-oid="iy6ezou">
+          <div className="flex flex-col gap-10" data-oid="c7-bqno">
+            <div data-oid="gyrtv.c">
               <p
                 className="text-dark/75 dark:text-white/75 text-sm sm:text-base font-semibold flex gap-2 items-center"
-                data-oid="s1yk62l"
+                data-oid="gzz1plf"
               >
                 <Icon
                   icon="ph:house-simple-fill"
                   className="text-lg sm:text-2xl text-primary "
-                  data-oid="j:d0e9n"
+                  data-oid="x8zl6gd"
                 />
-                <span data-oid="5oc2r9l">Проект месяца</span>
+
+                <span data-oid="3gdlzmf">Проект месяца</span>
               </p>
               <h2
                 className="text-2xl sm:text-3xl md:text-5xl lg:text-52 font-medium text-dark dark:text-white"
-                data-oid="z0jk43z"
+                data-oid="evvk-tx"
               >
                 Сканди-минимализм, 68 м²
               </h2>
-              <div className="flex items-center gap-2.5" data-oid="dyl224x">
+              <div className="flex items-center gap-2.5" data-oid="a_oufcm">
                 <Icon
                   icon="ph:map-pin"
                   width={24}
                   height={24}
                   className="text-dark/50 dark:text-white/50 text-sm sm:text-lg"
-                  data-oid="sks:jf9"
+                  data-oid="_u1bx4l"
                 />
+
                 <p
                   className="text-dark/50 dark:text-white/50 text-sm sm:text-base"
-                  data-oid="xko9j7p"
+                  data-oid="ym1l656"
                 >
                   ЖК «Северный парк», Москва
                 </p>
@@ -119,7 +121,7 @@ const FeaturedProperty: React.FC<{
             </div>
             <p
               className="text-base text-dark/50 dark:text-white/50 text-sm sm:text-base leading-6 sm:leading-7"
-              data-oid="eziu5g9"
+              data-oid="qosuco0"
             >
               Комплексный ремонт квартиры с разработкой проекта, заменой
               инженерии и подбором материалов. Выполнили демонтаж, черновые
@@ -127,12 +129,12 @@ const FeaturedProperty: React.FC<{
             </p>
             <div
               className="grid grid-cols-2 gap-4 sm:gap-10"
-              data-oid="h434ew4"
+              data-oid=":pctnnc"
             >
-              <div className="flex items-center gap-4" data-oid="h1ekic4">
+              <div className="flex items-center gap-4" data-oid="lm87spf">
                 <div
                   className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]"
-                  data-oid="tqknd88"
+                  data-oid="d08w5e9"
                 >
                   <Image
                     src={"/images/hero/sofa.svg"}
@@ -141,7 +143,7 @@ const FeaturedProperty: React.FC<{
                     height={24}
                     className="block dark:hidden"
                     unoptimized={true}
-                    data-oid="r_su4xv"
+                    data-oid="_ku9nb_"
                   />
 
                   <Image
@@ -151,17 +153,17 @@ const FeaturedProperty: React.FC<{
                     height={24}
                     className="hidden dark:block"
                     unoptimized={true}
-                    data-oid="zqb-iu3"
+                    data-oid="6pf.fe5"
                   />
                 </div>
-                <h6 className="" data-oid=":lx1xy4">
+                <h6 className="" data-oid="f-lkp.:">
                   3 комнаты
                 </h6>
               </div>
-              <div className="flex items-center gap-4" data-oid="gjd5xis">
+              <div className="flex items-center gap-4" data-oid="xq211u5">
                 <div
                   className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]"
-                  data-oid="ybs8c10"
+                  data-oid="pic97pa"
                 >
                   <Image
                     src={"/images/hero/tube.svg"}
@@ -170,7 +172,7 @@ const FeaturedProperty: React.FC<{
                     height={24}
                     className="block dark:hidden"
                     unoptimized={true}
-                    data-oid=":r0jt5f"
+                    data-oid="h4t9r:7"
                   />
 
                   <Image
@@ -180,17 +182,17 @@ const FeaturedProperty: React.FC<{
                     height={24}
                     className="hidden dark:block"
                     unoptimized={true}
-                    data-oid="f8_-e45"
+                    data-oid="9gnpn5n"
                   />
                 </div>
-                <h6 className="" data-oid="rvh3egn">
+                <h6 className="" data-oid="n_t1w6m">
                   2 санузла
                 </h6>
               </div>
-              <div className="flex items-center gap-4" data-oid="5190ytg">
+              <div className="flex items-center gap-4" data-oid="-en6zt1">
                 <div
                   className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]"
-                  data-oid="b073s._"
+                  data-oid="fae41t2"
                 >
                   <Image
                     src={"/images/hero/parking.svg"}
@@ -199,7 +201,7 @@ const FeaturedProperty: React.FC<{
                     height={24}
                     className="block dark:hidden"
                     unoptimized={true}
-                    data-oid="fsk0fx4"
+                    data-oid="rhcbegd"
                   />
 
                   <Image
@@ -209,17 +211,17 @@ const FeaturedProperty: React.FC<{
                     height={24}
                     className="hidden dark:block"
                     unoptimized={true}
-                    data-oid="yl0jh0d"
+                    data-oid="zsjim4p"
                   />
                 </div>
-                <h6 className="" data-oid="faqls8-">
+                <h6 className="" data-oid="6tk66:h">
                   Срок 10 недель
                 </h6>
               </div>
-              <div className="flex items-center gap-4" data-oid="qz1.yx1">
+              <div className="flex items-center gap-4" data-oid="cwz4dyk">
                 <div
                   className="bg-dark/5 dark:bg-white/5 p-2.5 rounded-[6px]"
-                  data-oid="n5-0f--"
+                  data-oid="z5vhgit"
                 >
                   <Image
                     src={"/images/hero/bar.svg"}
@@ -228,7 +230,7 @@ const FeaturedProperty: React.FC<{
                     height={24}
                     className="block dark:hidden"
                     unoptimized={true}
-                    data-oid="wna8kfb"
+                    data-oid="y25kg8_"
                   />
 
                   <Image
@@ -238,35 +240,35 @@ const FeaturedProperty: React.FC<{
                     height={24}
                     className="hidden dark:block"
                     unoptimized={true}
-                    data-oid="1miwmfg"
+                    data-oid="8bfyet:"
                   />
                 </div>
-                <h6 className="" data-oid="idfgjs6">
+                <h6 className="" data-oid="pgl0bxx">
                   Гарантия 2 года
                 </h6>
               </div>
             </div>
             <div
               className="flex gap-4 sm:gap-10 flex-col sm:flex-row"
-              data-oid="kcw5.z0"
+              data-oid="h6g31lf"
             >
               <Link
                 href="/contactus"
                 className="py-3 sm:py-4 px-6 sm:px-8 bg-primary hover:bg-dark duration-300 rounded-full text-white text-sm sm:text-base"
-                data-oid="5ud2nfg"
+                data-oid="e1ne8z7"
               >
                 Получить смету
               </Link>
-              <div data-oid="z.7jbdv">
+              <div data-oid="-uas-dg">
                 <h4
                   className="text-2xl sm:text-3xl text-dark dark:text-white font-medium"
-                  data-oid="zaj3qy5"
+                  data-oid="i3uvuq5"
                 >
                   от 1 250 000 ₽
                 </h4>
                 <p
                   className="text-xs sm:text-base text-dark/50"
-                  data-oid="aysam6c"
+                  data-oid="-h:em8e"
                 >
                   Стоимость работ
                 </p>

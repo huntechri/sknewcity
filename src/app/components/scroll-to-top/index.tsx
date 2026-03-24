@@ -29,13 +29,13 @@ export default function ScrollToTop() {
   return (
     <div
       className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-999"
-      data-oid="ou3tbwn"
+      data-oid="sqah2kr"
     >
-      <div className="flex items-center gap-2.5" data-oid="uj:ph85">
+      <div className="flex items-center gap-2.5" data-oid="nhockc.">
         <Link
           href={"https://sk-new-city.ru"}
           className="hidden lg:block bg-primary hover:bg-dark text-sm text-white duration-300 font-medium px-4 py-3.5 leading-none rounded-lg text-nowrap"
-          data-oid="luy80le"
+          data-oid="l2ykxvj"
         >
           sk-new-city.ru
         </Link>
@@ -44,11 +44,11 @@ export default function ScrollToTop() {
             onClick={scrollToTop}
             aria-label="scroll to top"
             className="back-to-top flex h-10 w-10 cursor-pointer items-center justify-center rounded-md bg-primary text-secondary shadow-md transition duration-300 ease-in-out hover:bg-darkPrimary"
-            data-oid="88m1ixt"
+            data-oid="nwg481t"
           >
             <span
               className="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"
-              data-oid="1mnvztv"
+              data-oid="-8:lv69"
             ></span>
           </div>
         )}

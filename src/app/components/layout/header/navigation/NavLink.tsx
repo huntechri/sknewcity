@@ -27,13 +27,13 @@ const NavLink: React.FC<NavLinkProps> = ({ item, onClick }) => {
   });
 
   return (
-    <li className="flex items-center group w-fit" data-oid="c-ifa0a">
-      <div className={liststyle} data-oid="fc:c5lz" />
+    <li className="flex items-center group w-fit" data-oid="leo2b_-">
+      <div className={liststyle} data-oid="r48n51:" />
       <Link
         href={item.href}
         className={linkclasses}
         onClick={onClick}
-        data-oid="grmejxm"
+        data-oid="ebjp0n8"
       >
         {item.label}
       </Link>

@@ -41,37 +41,37 @@ const BlogSmall: React.FC = () => {
     .slice(0, 3);
 
   return (
-    <section data-oid="mi3:8ec">
+    <section data-oid="75:gkug">
       <div
         className="container max-w-8xl mx-auto px-5 2xl:px-0"
-        data-oid="ewo0mk4"
+        data-oid="p6ocs4r"
       >
         <div
           className="flex justify-between md:items-end items-start mb-10 md:flex-row flex-col"
-          data-oid="pmaztkp"
+          data-oid=":08s3fl"
         >
-          <div data-oid="-b93rni">
+          <div data-oid="7-byvoc">
             <p
               className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2"
-              data-oid="..akxj8"
+              data-oid="ifza5g6"
             >
               <Icon
                 icon="ph:house-simple-fill"
                 className="text-2xl text-primary"
                 aria-label="Home icon"
-                data-oid="2ia268i"
+                data-oid="pnx43hg"
               />
               Blog
             </p>
             <h2
               className="lg:text-52 text-40 font-medium dark:text-white"
-              data-oid=".sb23u."
+              data-oid="fpr50uv"
             >
               Полезные статьи о ремонте
             </h2>
             <p
               className="text-dark/50 dark:text-white/50 text-xm"
-              data-oid="3be-r0c"
+              data-oid="6:rjr__"
             >
               Советы по планированию ремонта, выбору материалов и контролю
               качества.
@@ -81,18 +81,18 @@ const BlogSmall: React.FC = () => {
             href="/blogs"
             className="bg-dark dark:bg-white text-white dark:text-dark py-4 px-8 rounded-full hover:bg-primary duration-300"
             aria-label="Read all blog articles"
-            data-oid="z-dnpq:"
+            data-oid="admf:d5"
           >
             Читать статьи
           </Link>
         </div>
         <div
           className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-12"
-          data-oid="7wsv:-b"
+          data-oid="k3.31p7"
         >
           {posts.map((blog, i) => (
-            <div key={i} className="w-full" data-oid="4qi:q1y">
-              <BlogCard blog={blog} data-oid="v7238hu" />
+            <div key={i} className="w-full" data-oid="vgxzocn">
+              <BlogCard blog={blog} data-oid="4sszi98" />
             </div>
           ))}
         </div>

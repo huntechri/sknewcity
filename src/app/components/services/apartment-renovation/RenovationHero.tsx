@@ -61,16 +61,16 @@ const RenovationHero = () => {
     <section
       className="py-0! bg-white dark:bg-black transition-colors duration-300"
       ref={sectionRef}
-      data-oid="qu-sy-v"
+      data-oid="eu6f2wu"
     >
       <div
         className="h-svh min-h-[700px] overflow-hidden relative flex flex-col justify-center"
-        data-oid="obp.qr4"
+        data-oid="8gbc_5r"
       >
         {/* Video / static background */}
         <div
           className="absolute inset-0 z-0 overflow-hidden bg-[url('/images/contactUs/contactUs.jpg')] bg-cover bg-center"
-          data-oid="rr7k0co"
+          data-oid="1_x85f."
         >
           {!showStaticBackground && shouldLoadVideo && (
             <video
@@ -82,55 +82,56 @@ const RenovationHero = () => {
               poster="/images/contactUs/contactUs.jpg"
               className="absolute inset-0 w-full h-full object-cover transform-gpu will-change-transform"
               aria-label="Фоновое видео с панорамой города"
-              data-oid="m_9heh_"
+              data-oid="m87_je:"
             >
               <source
                 src="/videos/moscow-city-night.mp4"
                 type="video/mp4"
-                data-oid="kqf.1og"
+                data-oid="-qfr3sb"
               />
             </video>
           )}
           {/* Color Overlays */}
           <div
             className="absolute inset-0 bg-black/40 z-0"
-            data-oid="5yfhd4q"
+            data-oid="o2csn90"
           />
+
           <div
             className="absolute inset-0 bg-linear-to-b from-black/20 via-transparent to-white dark:to-black transition-colors duration-300 z-0"
-            data-oid="qjsj0iz"
+            data-oid="9cn2bd_"
           />
         </div>
 
         <div
           className="grow flex flex-col justify-center py-20"
-          data-oid="c2vfum8"
+          data-oid="36m7iu1"
         >
           <div
             className="container max-w-8xl mx-auto px-3 sm:px-5 2xl:px-0 relative z-10 text-white dark:text-white transition-colors duration-300"
-            data-oid="ahls01v"
+            data-oid="i:rf.ep"
           >
             <div
               className="relative text-inherit text-center md:text-start z-10 md:mb-12"
-              data-oid="xk6t0rj"
+              data-oid="k0xn06n"
             >
               <p
                 className="text-inherit text-xs sm:text-xm font-medium uppercase tracking-widest invisible mb-2"
                 aria-hidden="true"
-                data-oid="cjo_x12"
+                data-oid="tz7kwm1"
               >
                 Услуги SK New City
               </p>
               <h1
                 className="text-4xl xs:text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-semibold tracking-wide text-inherit md:max-w-45p mb-4 sm:mb-6 leading-tight drop-shadow-lg"
-                data-oid="7edq6bq"
+                data-oid="a1hid_x"
               >
                 Ремонт
               </h1>
 
               <p
                 className="text-inherit opacity-100 text-lg sm:text-xl mb-10 leading-relaxed max-w-2xl font-medium drop-shadow-md"
-                data-oid="xcsjfwn"
+                data-oid="o7794tw"
               >
                 Реализуем интерьеры для жизни. Полный цикл работ — от черновой
                 отделки до авторского надзора.
@@ -138,19 +139,19 @@ const RenovationHero = () => {
 
               <div
                 className="flex flex-col xs:flex-row justify-center md:justify-start gap-3 sm:gap-4"
-                data-oid="0b:pmzl"
+                data-oid="bezr89m"
               >
                 <Link
                   href="#calculator"
                   className="px-6 sm:px-8 py-3 sm:py-4 border border-white bg-white text-dark duration-300 hover:bg-transparent hover:text-white text-sm sm:text-base font-semibold rounded-full hover:cursor-pointer text-center active:scale-95"
-                  data-oid="d2agn77"
+                  data-oid="gfmq8l-"
                 >
                   Рассчитать стоимость
                 </Link>
                 <Link
                   href="/contactus"
                   className="px-6 sm:px-8 py-3 sm:py-4 border border-white bg-transparent text-white hover:bg-white hover:text-dark duration-300 text-sm sm:text-base font-semibold rounded-full hover:cursor-pointer text-center active:scale-95"
-                  data-oid="dlpx1f_"
+                  data-oid="cccqh3j"
                 >
                   Получить консультацию
                 </Link>
@@ -161,21 +162,21 @@ const RenovationHero = () => {
 
         <div
           className="md:absolute bottom-0 md:-right-68 xl:right-0 bg-white dark:bg-black py-8 sm:py-12 px-4 sm:px-8 mobile:px-6 sm:mobile:px-16 md:pl-16 md:pr-[295px] rounded-t-3xl md:rounded-none md:rounded-tl-2xl z-10 border-t border-dark/5 dark:border-white/10 shadow-[0_-20px_50px_-20px_rgba(0,0,0,0.1)] dark:shadow-none"
-          data-oid="t3229:2"
+          data-oid="dvl.6l_"
         >
           <div
             className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 md:gap-10 text-black dark:text-white"
-            data-oid="8dgmc:b"
+            data-oid="563iqft"
           >
             {stats.map((item) => (
               <div
                 key={item.label}
                 className="flex flex-col items-center gap-2 sm:gap-3 rounded-2xl bg-white/0 dark:bg-white/0 text-center"
-                data-oid="qap74y:"
+                data-oid="k4q_jre"
               >
                 <div
                   className="bg-black/10 dark:bg-white/5 p-1.5 sm:p-2.5 rounded-[10px] w-fit"
-                  data-oid="mtk6:f4"
+                  data-oid="-nm2c8f"
                 >
                   <Icon
                     icon={item.icon}
@@ -183,20 +184,20 @@ const RenovationHero = () => {
                     height={24}
                     className="text-black dark:text-white sm:w-7 sm:h-7"
                     aria-hidden="true"
-                    data-oid="g_z78r6"
+                    data-oid="r8x:.54"
                   />
                 </div>
                 <p
                   className="text-lg sm:text-2xl md:text-3xl font-medium text-inherit leading-none w-full"
-                  data-oid="p_6ts4q"
+                  data-oid="qlb9.ju"
                 >
                   <span
                     className="inline-flex items-baseline justify-center gap-0 min-h-6 sm:min-h-9 md:w-[200px] w-full"
-                    data-oid="hzkv-ny"
+                    data-oid="9m7r:_6"
                   >
                     <span
                       className="inline-block tabular-nums text-center"
-                      data-oid="hkpgb08"
+                      data-oid="d2mj4l0"
                     >
                       {item.value}
                     </span>
@@ -204,7 +205,7 @@ const RenovationHero = () => {
                 </p>
                 <p
                   className="text-sm sm:text-base font-normal text-black/60 dark:text-white/60 text-center"
-                  data-oid="ywrd1:1"
+                  data-oid=":x0:v1k"
                 >
                   {item.label}
                 </p>

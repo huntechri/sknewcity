@@ -6,23 +6,23 @@ import { QuickStart } from "./QuickStart";
 
 export const Documentation = () => {
   return (
-    <div className="" data-oid="tof9pt3">
+    <div className="" data-oid="c3bh95k">
       <div
         className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md p-6 lg:mt-28 mt-16 !pt-10"
-        data-oid="olw.f1o"
+        data-oid="f3t:ddu"
       >
-        <div className="grid grid-cols-12 gap-6" data-oid="pkr5f.k">
+        <div className="grid grid-cols-12 gap-6" data-oid="lah4.uz">
           <div
             className="lg:col-span-3 col-span-12 lg:block hidden"
-            data-oid="li1jmw6"
+            data-oid="pj.5act"
           >
-            <DocNavigation data-oid=".l9sj1c" />
+            <DocNavigation data-oid="my_pq:c" />
           </div>
-          <div className="lg:col-span-9 col-span-12" data-oid="0o2r0qf">
-            <Introduction data-oid="25pr-7o" />
-            <PackageStructure data-oid="gwqn5q4" />
-            <QuickStart data-oid="m3tx:_3" />
-            <Configuration data-oid="mg3rkt7" />
+          <div className="lg:col-span-9 col-span-12" data-oid="d:6nwk1">
+            <Introduction data-oid="-2txnxr" />
+            <PackageStructure data-oid="ske-zw9" />
+            <QuickStart data-oid="g2li-vp" />
+            <Configuration data-oid="t4wpv4a" />
           </div>
         </div>
       </div>

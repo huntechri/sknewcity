@@ -41,17 +41,17 @@ export default function Home() {
   ];
 
   return (
-    <main data-oid="rg:0:i5">
-      <StructuredData data={structuredData} data-oid="j29en01" />
-      <Hero data-oid="tfvnr57" />
-      <Services data-oid="q3-a7ix" />
-      <Properties data-oid="dsivgwb" />
+    <main>
+      <StructuredData data={structuredData} />
+      <Hero />
+      <Services />
+      <Properties />
       {/* <FeaturedProperty featuredProperty={featuredProperty} /> */}
-      <ResidentialComplexes complexes={complexes} data-oid="86e45de" />
+      <ResidentialComplexes complexes={complexes} />
       {/* <Testimonial /> */}
       {/* <BlogSmall /> */}
-      <GetInTouch data-oid="_wv-wke" />
-      <FAQ data-oid="9wspy_s" />
+      <GetInTouch />
+      <FAQ />
     </main>
   );
 }

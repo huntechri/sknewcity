@@ -44,18 +44,18 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed top-0 z-50 h-20 w-full bg-transparent px-3 py-1 transition-all duration-300 sm:h-24 sm:px-6 lg:px-0 ${sticky ? "top-2 sm:top-3" : "top-0"}`}
-      data-oid=".f8ei_b"
+      data-oid="o0es7yp"
     >
       <nav
         className={`container mx-auto flex max-w-8xl items-center justify-between py-1.5 duration-300 sm:py-4 ${sticky ? "rounded-full bg-white px-4 shadow-md dark:bg-dark sm:px-6 sm:shadow-lg" : "px-4 shadow-none sm:px-6"}`}
-        data-oid="56:qfgz"
+        data-oid="3v63fb7"
       >
         <div
           className="flex justify-between items-center gap-2 w-full"
-          data-oid="qwzo-u2"
+          data-oid="s8uq49g"
         >
-          <div data-oid=".y_2m_g">
-            <Link href="/" data-oid="_nhf7c:">
+          <div data-oid="-nasb8d">
+            <Link href="/" data-oid="rjsq047">
               <Image
                 src={"/images/header/dark-logo.svg"}
                 alt="logo"
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
                 height={54}
                 unoptimized={true}
                 className={`w-28 sm:w-40 h-auto ${isHeroHeader ? (sticky ? "block dark:hidden" : "hidden") : sticky ? "block dark:hidden" : "block dark:hidden"}`}
-                data-oid="qn1wfqh"
+                data-oid="-wz7sw4"
               />
 
               <Image
@@ -73,21 +73,21 @@ const Header: React.FC = () => {
                 height={54}
                 unoptimized={true}
                 className={`w-28 sm:w-40 h-auto ${isHeroHeader ? (sticky ? "hidden dark:block" : "block") : sticky ? "dark:block hidden" : "dark:block hidden"}`}
-                data-oid="uvzkv34"
+                data-oid=":xzi9oh"
               />
             </Link>
           </div>
 
           <div
             className="flex items-center gap-1.5 sm:gap-6"
-            data-oid="qubv4bm"
+            data-oid="ni9mov8"
           >
             <button
               className="rounded-full p-1 hover:cursor-pointer"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               aria-label="Переключить тему"
               title="Переключить тему"
-              data-oid="hommfah"
+              data-oid="zxuhvy5"
             >
               <Icon
                 icon={"solar:sun-bold"}
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
                       : "text-white"
                     : "text-dark"
                 }`}
-                data-oid="yfoma8m"
+                data-oid="qzius_v"
               />
 
               <Icon
@@ -108,11 +108,11 @@ const Header: React.FC = () => {
                 width={28}
                 height={28}
                 className="hidden h-7 w-7 text-white dark:block sm:h-8 sm:w-8"
-                data-oid="s_-xl09"
+                data-oid="dpk3u5f"
               />
             </button>
 
-            <div className={`hidden md:block`} data-oid="59i3zot">
+            <div className={`hidden md:block`} data-oid="mmfxqzk">
               <Link
                 href="tel:+79167673434"
                 className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${
@@ -122,18 +122,18 @@ const Header: React.FC = () => {
                       : "text-white hover:text-primary"
                     : "text-dark hover:text-primary"
                 }`}
-                data-oid="milwl:9"
+                data-oid="jd_r6tn"
               >
                 <Icon
                   icon={"ph:phone-bold"}
                   width={24}
                   height={24}
-                  data-oid="1o:0e_h"
+                  data-oid="021pc5u"
                 />
                 +7916-767-34-34
               </Link>
             </div>
-            <div data-oid="agsxcpt">
+            <div data-oid="puqdujf">
               <button
                 onClick={() => setNavbarOpen(!navbarOpen)}
                 className={`flex items-center gap-2 rounded-full border p-2 text-sm font-semibold hover:cursor-pointer sm:gap-3 sm:px-5 sm:py-3 sm:text-base ${
@@ -145,17 +145,17 @@ const Header: React.FC = () => {
                 }`}
                 aria-label="Открыть меню"
                 title="Открыть меню"
-                data-oid="4ta_:ve"
+                data-oid="wtf96o0"
               >
-                <span data-oid="7r.rqpj">
+                <span data-oid="l-9r4v0">
                   <Icon
                     icon={"ph:list"}
                     width={24}
                     height={24}
-                    data-oid="50vhi_l"
+                    data-oid="i0unp::"
                   />
                 </span>
-                <span className="hidden sm:block" data-oid="8vx6q1m">
+                <span className="hidden sm:block" data-oid="rdum2di">
                   Меню
                 </span>
               </button>
@@ -167,36 +167,36 @@ const Header: React.FC = () => {
       {navbarOpen && (
         <div
           className="fixed top-0 left-0 w-full h-full bg-black/50 z-40"
-          data-oid="b2rs3r_"
+          data-oid="ng5_73g"
         />
       )}
 
       <div
         ref={sideMenuRef}
         className={`fixed top-0 right-0 z-50 h-full w-[min(100%,22rem)] overflow-auto bg-dark px-5 shadow-lg transition-transform duration-300 no-scrollbar sm:w-full sm:max-w-2xl sm:px-16 md:px-20 ${navbarOpen ? "translate-x-0" : "translate-x-full"}`}
-        data-oid="d:q:r08"
+        data-oid="zpjb.mb"
       >
         <div
           className="flex flex-col h-full justify-between"
-          data-oid="..ppmds"
+          data-oid="qoqevd."
         >
-          <div className="" data-oid="vdcl1ux">
+          <div className="" data-oid="qaz_6.i">
             <div
               className="flex items-center justify-start py-10"
-              data-oid="dpiiz5q"
+              data-oid="j1.89wq"
             >
               <button
                 onClick={() => setNavbarOpen(false)}
                 aria-label="Close mobile menu"
                 className="rounded-full bg-white p-3 shadow-lg hover:cursor-pointer sm:p-4"
-                data-oid="rjw123o"
+                data-oid="4e6bc06"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
-                  data-oid="xbz97_4"
+                  data-oid="866rgbf"
                 >
                   <path
                     fill="none"
@@ -205,19 +205,19 @@ const Header: React.FC = () => {
                     strokeLinejoin="round"
                     strokeWidth="2"
                     d="M6 18L18 6M6 6l12 12"
-                    data-oid="qbhpv5s"
+                    data-oid="5f06w.f"
                   />
                 </svg>
               </button>
             </div>
-            <nav className="flex flex-col items-start gap-4" data-oid="log:gj_">
-              <ul className="w-full" data-oid="n5l2lop">
+            <nav className="flex flex-col items-start gap-4" data-oid="08hmlpi">
+              <ul className="w-full" data-oid="ljb6lnz">
                 {navLinks.map((item, index) => (
                   <NavLink
                     key={index}
                     item={item}
                     onClick={() => setNavbarOpen(false)}
-                    data-oid="wfw4:jo"
+                    data-oid="2_84blq"
                   />
                 ))}
               </ul>
@@ -226,25 +226,25 @@ const Header: React.FC = () => {
 
           <div
             className="my-12 flex flex-col gap-1 text-white sm:my-16"
-            data-oid="ti:609v"
+            data-oid="7pa6td1"
           >
             <p
               className="text-base sm:text-xm font-normal text-white/40"
-              data-oid="fv2l0x-"
+              data-oid="p-6xp6e"
             >
               Контакты
             </p>
             <Link
               href="mailto:info@sk-new-city.ru"
               className="text-base sm:text-xm font-medium text-inherit hover:text-primary"
-              data-oid="_ptr.b3"
+              data-oid="l_r_54_"
             >
               info@sk-new-city.ru
             </Link>
             <Link
               href="tel:+79167673434"
               className="text-base sm:text-xm font-medium text-inherit hover:text-primary"
-              data-oid="m._qrjo"
+              data-oid="hv7ww76"
             >
               +7916-767-34-34
             </Link>

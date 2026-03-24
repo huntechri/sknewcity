@@ -100,46 +100,46 @@ const Hero: React.FC = () => {
     return () => observer.disconnect();
   }, [hasAnimated, stats]);
   return (
-    <section className="!py-0" data-oid="weycm26">
+    <section className="!py-0" data-oid="2yc:6em">
       <div
         className="bg-gradient-to-b from-skyblue via-lightskyblue dark:via-[#4298b0] to-white/10 dark:to-black/10 overflow-hidden relative"
-        data-oid="a4tq4zv"
+        data-oid="m0j3wu7"
       >
         <div
           className="container max-w-8xl mx-auto px-3 sm:px-5 2xl:px-0 pt-20 sm:pt-32 md:pt-60 md:pb-68"
-          data-oid="p_nvbfb"
+          data-oid="ru_d.ev"
         >
           <div
             className="relative text-white dark:text-dark text-center md:text-start z-10"
-            data-oid="-f6cof-"
+            data-oid="vv1zpwy"
           >
             <p
               className="text-inherit text-xs sm:text-xm font-medium"
-              data-oid="gr7_u53"
+              data-oid="7owagnk"
             >
               Строительная компания
             </p>
             <h1
               className="text-inherit text-3xl xs:text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold uppercase tracking-wider mt-2 sm:mt-4 mb-4 sm:mb-6 leading-tight"
-              data-oid="962:_82"
+              data-oid="pz7enzr"
             >
               SK NEW CITY
             </h1>
             <div
               className="flex flex-col xs:flex-row justify-center md:justify-start gap-3 sm:gap-4"
-              data-oid="jlimqay"
+              data-oid="nuifd31"
             >
               <Link
                 href="/contactus"
                 className="px-6 sm:px-8 py-3 sm:py-4 border border-white dark:border-black bg-white dark:bg-black text-dark dark:text-white duration-300 dark:hover:text-dark hover:bg-transparent hover:text-white text-sm sm:text-base font-semibold rounded-full hover:cursor-pointer"
-                data-oid="2fdmcmn"
+                data-oid="iqs25sc"
               >
                 Рассчитать стоимость
               </Link>
               <Link
                 href={"/properties"}
                 className="px-6 sm:px-8 py-3 sm:py-4 border border-white dark:border-black bg-transparent text-white dark:text-dark hover:bg-white dark:hover:bg-black dark:hover:text-white hover:text-dark duration-300 text-sm sm:text-base font-semibold rounded-full hover:cursor-pointer"
-                data-oid="pfutv9t"
+                data-oid="1831w5p"
               >
                 Смотреть проекты
               </Link>
@@ -147,7 +147,7 @@ const Hero: React.FC = () => {
           </div>
           <div
             className="hidden md:block absolute top-[92px] -right-68"
-            data-oid="p5gqqcv"
+            data-oid="5qr5z17"
           >
             <Image
               src={"/images/hero/heroBanner.png"}
@@ -156,28 +156,28 @@ const Hero: React.FC = () => {
               height={1016}
               priority
               sizes="(max-width: 1280px) 45vw, 1082px"
-              data-oid="1vx.not"
+              data-oid="hqd7rfj"
             />
           </div>
         </div>
         <div
           ref={statsRef}
           className="md:absolute bottom-0 md:-right-68 xl:right-0 bg-white dark:bg-black py-8 sm:py-12 px-4 sm:px-8 mobile:px-6 sm:mobile:px-16 md:pl-16 md:pr-[295px] rounded-2xl md:rounded-none md:rounded-tl-2xl mt-16 sm:mt-24 z-10"
-          data-oid="eg:_54:"
+          data-oid="s6savs6"
         >
           <div
             className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 md:gap-10 dark:text-white text-black"
-            data-oid="z-5l57v"
+            data-oid="uqlx2x1"
           >
             {stats.map((item, index) => (
               <div
                 key={item.label}
                 className="flex flex-col items-center gap-2 sm:gap-3 rounded-2xl bg-white/0 dark:bg-white/0 text-center"
-                data-oid="y0rrjn1"
+                data-oid="gk4:79_"
               >
                 <div
                   className="bg-dark/5 dark:bg-white/5 p-1.5 sm:p-2.5 rounded-[10px] w-fit"
-                  data-oid="9eykdp4"
+                  data-oid="b4oe6al"
                 >
                   <Icon
                     icon={item.icon}
@@ -185,21 +185,21 @@ const Hero: React.FC = () => {
                     height={24}
                     className="text-dark dark:text-white sm:w-7 sm:h-7"
                     aria-hidden="true"
-                    data-oid="29ajwvx"
+                    data-oid="ojyjqkj"
                   />
                 </div>
                 <p
                   className="text-lg sm:text-2xl md:text-3xl font-medium text-inherit leading-none w-full"
-                  data-oid="hdz_fwj"
+                  data-oid="-w-jiz8"
                 >
                   <span
                     className="inline-flex items-baseline justify-center gap-0 min-h-6 sm:min-h-9 md:w-[200px] w-full"
-                    data-oid="88-8vo0"
+                    data-oid="0norrm5"
                   >
                     {item.prefix}
                     <span
                       className="inline-block tabular-nums text-center"
-                      data-oid="7h53:i0"
+                      data-oid="0ddy1h5"
                     >
                       {counts[index].toLocaleString("ru-RU")}
                     </span>
@@ -208,7 +208,7 @@ const Hero: React.FC = () => {
                 </p>
                 <p
                   className="text-sm sm:text-base font-normal text-black/50 dark:text-white/50 text-center"
-                  data-oid="o5t6git"
+                  data-oid="sooc40l"
                 >
                   {item.label}
                 </p>

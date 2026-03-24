@@ -10,82 +10,85 @@ interface ProjectProps {
 
 const FullHouseProject: React.FC<ProjectProps> = ({ item, testimonials }) => {
   return (
-    <div className="bg-white dark:bg-dark" data-oid="em90fjn">
+    <div className="bg-white dark:bg-dark" data-oid="veqthpz">
       <BaseProjectLayout
         item={item}
         testimonials={testimonials}
-        data-oid="va5td32"
+        data-oid="rap1eup"
       />
 
       {/* Unique Section: Technical Specs */}
-      <div className="bg-dark text-white py-16" data-oid="bycgfde">
-        <div className="container mx-auto px-5" data-oid="mj:_u-6">
+      <div className="bg-dark text-white py-16" data-oid="ear3c92">
+        <div className="container mx-auto px-5" data-oid="_13bxzr">
           <h3
             className="text-3xl font-bold mb-10 text-center"
-            data-oid="1cvi2-j"
+            data-oid="rvnarkb"
           >
             Технические особенности
           </h3>
           <div
             className="grid grid-cols-1 md:grid-cols-3 gap-8"
-            data-oid="cpzh:fe"
+            data-oid="9nzc5y7"
           >
             <div
               className="flex flex-col items-center p-6 border border-white/10 rounded-2xl"
-              data-oid="l5vjc_:"
+              data-oid="p.6nb9y"
             >
               <Icon
                 icon="ph:thermometer-hot-light"
                 width={48}
                 className="text-primary mb-4"
-                data-oid="hgi254f"
+                data-oid="_dy2vuk"
               />
-              <h4 className="text-xl font-semibold mb-2" data-oid="o5114m1">
+
+              <h4 className="text-xl font-semibold mb-2" data-oid="_-cx948">
                 Микроклимат
               </h4>
               <p
                 className="text-white/60 text-center text-sm"
-                data-oid="jw5usu8"
+                data-oid="vwjpt27"
               >
                 Система приточно-вытяжной вентиляции с рекуперацией тепла.
               </p>
             </div>
             <div
               className="flex flex-col items-center p-6 border border-white/10 rounded-2xl"
-              data-oid="zn36qle"
+              data-oid="z2cqi68"
             >
               <Icon
                 icon="ph:lightning-light"
                 width={48}
                 className="text-primary mb-4"
-                data-oid="_.48hv3"
+                data-oid="-w2hl5s"
               />
-              <h4 className="text-xl font-semibold mb-2" data-oid="y544-is">
+
+              <h4 className="text-xl font-semibold mb-2" data-oid="nii76ev">
                 Энергоэффективность
               </h4>
               <p
                 className="text-white/60 text-center text-sm"
-                data-oid="_xtpjlp"
+                data-oid="c_6ugxm"
               >
                 Полное светодиодное освещение и умные реле управления нагрузкой.
               </p>
             </div>
             <div
               className="flex flex-col items-center p-6 border border-white/10 rounded-2xl"
-              data-oid="yfvzqas"
+              data-oid="pmrq14p"
             >
               <Icon
                 icon="ph:drop-light"
                 width={48}
                 className="text-primary mb-4"
-                data-oid="5u10po7"
+                data-oid="sof0_0s"
               />
-              <h4 className="text-xl font-semibold mb-2" data-oid="13tm2u4">
+
+              <h4 className="text-xl font-semibold mb-2" data-oid="eim2luf">
                 Аква-стоп
               </h4>
               <p
                 className="text-white/60 text-center text-sm"
-                data-oid="79g388q"
+                data-oid="y47cvfy"
               >
                 8 датчиков протечки с автоматическим перекрытием стояков.
               </p>

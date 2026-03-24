@@ -9,43 +9,43 @@ export default function Page() {
   return (
     <section
       className="bg-white dark:bg-dark transition-colors duration-300"
-      data-oid="ekmy9ha"
+      data-oid="m-4nt.a"
     >
       <div
         className="relative w-full flex justify-center pt-24 md:pt-32 pb-16"
-        data-oid=".z7y15_"
+        data-oid="hznv952"
       >
         <div
           className="container max-w-5xl px-5 relative z-10"
-          data-oid="gum8eso"
+          data-oid="84yloqt"
         >
-          <div className="flex flex-col gap-8" data-oid="mkjs_ul">
+          <div className="flex flex-col gap-8" data-oid="2rwl3.8">
             <h1
               className="text-3xl md:text-5xl lg:text-6xl font-semibold text-center text-black dark:text-white"
-              data-oid="wu4mlts"
+              data-oid="tqsznl2"
             >
               Пользовательское соглашение
             </h1>
 
             <div
               className="prose prose-lg max-w-none text-dark/70 dark:text-white/60 space-y-8"
-              data-oid="02pz:b0"
+              data-oid="46v-a2g"
             >
-              <section data-oid="6n5m.j_">
-                <p data-oid="-1q0ba.">
+              <section data-oid="aptv.o6">
+                <p data-oid="x7d-cbp">
                   Настоящее Пользовательское соглашение (далее — «Соглашение»)
                   регулирует отношения между администрацией сайта{" "}
                   <Link
                     href="/"
                     className="text-primary font-medium hover:underline"
-                    data-oid="e1b_oov"
+                    data-oid="022dykw"
                   >
                     sk-new-city.ru
                   </Link>{" "}
                   (далее — «Администрация») и любым лицом, посещающим сайт
                   (далее — «Пользователь»).
                 </p>
-                <p className="mt-4" data-oid="z9-qr2t">
+                <p className="mt-4" data-oid="4693s1m">
                   Использование сайта означает полное и безоговорочное принятие
                   Пользователем условий настоящего Соглашения. В случае
                   несогласия с какими-либо условиями, Пользователь обязан
@@ -53,26 +53,26 @@ export default function Page() {
                 </p>
               </section>
 
-              <section data-oid="k.x-fft">
+              <section data-oid="t2mj2ci">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="vhkf413"
+                  data-oid="vikql.-"
                 >
                   1. Общие положения
                 </h2>
-                <ol className="list-decimal pl-5 space-y-3" data-oid="udjpenf">
-                  <li data-oid="qol8jyr">
+                <ol className="list-decimal pl-5 space-y-3" data-oid="gfqm4bi">
+                  <li data-oid="w6:7wtc">
                     Сайт носит информационный характер и предоставляет сведения
                     об услугах по ремонту и отделке помещений, предлагаемых
                     Администрацией.
                   </li>
-                  <li data-oid="apnimt5">
+                  <li data-oid="uhrj9yw">
                     Все материалы и цены, размещенные на Сайте, не являются
                     публичной офертой, определяемой положениями Статьи 437
                     Гражданского кодекса РФ. Для получения точной информации о
                     стоимости и сроках необходимо заключение договора.
                   </li>
-                  <li data-oid="f6onzh2">
+                  <li data-oid=":tixn99">
                     Сайт является интеллектуальной собственностью Администрации.
                     Использование материалов Сайта без активной ссылки на
                     источник запрещено.
@@ -80,46 +80,46 @@ export default function Page() {
                 </ol>
               </section>
 
-              <section data-oid="jun7wkf">
+              <section data-oid="mued-ag">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="31rw9m3"
+                  data-oid="p4gfrqd"
                 >
                   2. Права и обязанности сторон
                 </h2>
-                <div className="space-y-4" data-oid="6qztued">
-                  <div data-oid="i8x_:di">
+                <div className="space-y-4" data-oid="8jsleov">
+                  <div data-oid="s5yo.fs">
                     <h3
                       className="font-semibold text-black dark:text-white mb-2"
-                      data-oid="7b:0l4o"
+                      data-oid="6rf-se5"
                     >
                       Администрация имеет право:
                     </h3>
-                    <ul className="list-disc pl-5 space-y-1" data-oid=".tiyafv">
-                      <li data-oid="rle442q">
+                    <ul className="list-disc pl-5 space-y-1" data-oid="xp--qgh">
+                      <li data-oid="m:uu9q9">
                         Изменять содержание Сайта и условия настоящего
                         Соглашения в одностороннем порядке без предварительного
                         уведомления.
                       </li>
-                      <li data-oid="6u:iurv">
+                      <li data-oid="osd---c">
                         Ограничивать доступ к Сайту в случае нарушения
                         Пользователем условий Соглашения.
                       </li>
                     </ul>
                   </div>
-                  <div data-oid="llfjh3p">
+                  <div data-oid="397e.f2">
                     <h3
                       className="font-semibold text-black dark:text-white mb-2"
-                      data-oid="7nmje_s"
+                      data-oid="mu9wmni"
                     >
                       Пользователь обязуется:
                     </h3>
-                    <ul className="list-disc pl-5 space-y-1" data-oid="pohyoqo">
-                      <li data-oid="-4vb7.s">
+                    <ul className="list-disc pl-5 space-y-1" data-oid="ym7n55x">
+                      <li data-oid="md13hd-">
                         Предоставлять достоверную информацию при заполнении форм
                         обратной связи.
                       </li>
-                      <li data-oid="lkr9gz7">
+                      <li data-oid="_jc4wf7">
                         Не предпринимать действий, которые могут быть
                         рассмотрены как нарушающие нормальную работу Сайта.
                       </li>
@@ -128,24 +128,24 @@ export default function Page() {
                 </div>
               </section>
 
-              <section data-oid="x416n1k">
+              <section data-oid="s.9p-rq">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="9qe:y7f"
+                  data-oid="3m-du_f"
                 >
                   3. Порядок оказания услуг
                 </h2>
-                <ol className="list-decimal pl-5 space-y-3" data-oid="pe5i__-">
-                  <li data-oid="ajz6fbo">
+                <ol className="list-decimal pl-5 space-y-3" data-oid="t3cjkw8">
+                  <li data-oid="_3jtanm">
                     Для получения услуг Пользователь оставляет заявку на Сайте
                     или связывается с Администрацией по контактным данным.
                   </li>
-                  <li data-oid=".-lnphm">
+                  <li data-oid="ijpj_-f">
                     Отношения по непосредственному выполнению ремонтных работ
                     регулируются отдельным Договором строительного подряда,
                     заключаемым между сторонами в письменной форме.
                   </li>
-                  <li data-oid="t7pj1z-">
+                  <li data-oid="d_qrrhj">
                     Результаты расчетов на онлайн-калькуляторе являются
                     предварительными и могут отличаться от итоговой сметы после
                     выезда замерщика.
@@ -153,28 +153,28 @@ export default function Page() {
                 </ol>
               </section>
 
-              <section data-oid="qh.zvew">
+              <section data-oid="ibl3b_r">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="y:.64w8"
+                  data-oid="utmjmz9"
                 >
                   4. Конфиденциальность и персональные данные
                 </h2>
-                <ol className="list-decimal pl-5 space-y-3" data-oid="b_ao3-a">
-                  <li data-oid="uje.3dy">
+                <ol className="list-decimal pl-5 space-y-3" data-oid="xxg.i7r">
+                  <li data-oid="vevy6ik">
                     Порядок обработки персональных данных Пользователей
                     регулируется Федеральным законом №152-ФЗ «О персональных
                     данных» и{" "}
                     <Link
                       href="/privacy-policy"
                       className="text-primary hover:underline"
-                      data-oid="aoetm4p"
+                      data-oid="eluts80"
                     >
                       Политикой конфиденциальности
                     </Link>
                     , размещенной на Сайте.
                   </li>
-                  <li data-oid="46sq4-3">
+                  <li data-oid="6ti7x22">
                     Оставляя данные на Сайте, Пользователь дает согласие на их
                     обработку для целей связи, предоставления информации об
                     услугах и маркетинговых предложений.
@@ -182,20 +182,20 @@ export default function Page() {
                 </ol>
               </section>
 
-              <section data-oid="fv30r2h">
+              <section data-oid="om64ciq">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="ys2tk1q"
+                  data-oid="n86dxks"
                 >
                   5. Ответственность
                 </h2>
-                <ol className="list-decimal pl-5 space-y-3" data-oid="-yuor2t">
-                  <li data-oid="un.4p76">
+                <ol className="list-decimal pl-5 space-y-3" data-oid="t_qyq5k">
+                  <li data-oid="8wq2p07">
                     Администрация не несет ответственности за убытки, возникшие
                     у Пользователя по причинам, связанным с техническими сбоями
                     оборудования или сетей связи.
                   </li>
-                  <li data-oid="zibuvma">
+                  <li data-oid="k5:et5y">
                     Администрация не гарантирует абсолютную точность информации
                     на Сайте в каждый момент времени, хотя прикладывает все
                     усилия для актуализации данных.
@@ -203,20 +203,20 @@ export default function Page() {
                 </ol>
               </section>
 
-              <section data-oid="txflu6q">
+              <section data-oid=":wct8e1">
                 <h2
                   className="text-xl font-bold text-black dark:text-white mb-4 uppercase tracking-wider"
-                  data-oid="5xp4olb"
+                  data-oid="ha.heua"
                 >
                   6. Заключительные положения
                 </h2>
-                <ol className="list-decimal pl-5 space-y-3" data-oid="moqxgkw">
-                  <li data-oid="r2i:d:v">
+                <ol className="list-decimal pl-5 space-y-3" data-oid="7x9wtbl">
+                  <li data-oid="k-o58ej">
                     Все споры, возникающие из настоящего Соглашения или в связи
                     с ним, подлежат разрешению в соответствии с действующим
                     законодательством РФ.
                   </li>
-                  <li data-oid="24t_uk5">
+                  <li data-oid="ol7aalx">
                     Настоящее Соглашение вступает в силу с момента захода
                     Пользователя на Сайт и действует бессрочно.
                   </li>
@@ -225,95 +225,95 @@ export default function Page() {
 
               <section
                 className="mt-12 p-6 bg-dark/5 dark:bg-white/5 rounded-2xl border border-black/5 dark:border-white/10"
-                data-oid="s4ic1sh"
+                data-oid="-09:e0k"
               >
                 <h2
                   className="text-lg font-bold text-black dark:text-white mb-4 uppercase tracking-wide"
-                  data-oid="gbfxy6r"
+                  data-oid="zwiiw_m"
                 >
                   Реквизиты и контакты:
                 </h2>
                 <div
                   className="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-4 text-sm"
-                  data-oid="ocoxx7d"
+                  data-oid="jxsr4_k"
                 >
-                  <div className="md:col-span-2" data-oid="_5a:v-w">
+                  <div className="md:col-span-2" data-oid="eqj-7-7">
                     <p
                       className="font-semibold text-black dark:text-white"
-                      data-oid="q9fwxox"
+                      data-oid="j-df_h9"
                     >
                       Название организации:
                     </p>
-                    <p data-oid="nng5vze">
+                    <p data-oid="xsekm8a">
                       ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ &quot;СК Новый
                       Город&quot;
                     </p>
                   </div>
-                  <div className="md:col-span-2" data-oid="j6.4po3">
+                  <div className="md:col-span-2" data-oid="22zw9xu">
                     <p
                       className="font-semibold text-black dark:text-white"
-                      data-oid="3a2doxa"
+                      data-oid="45vdujt"
                     >
                       Юридический адрес:
                     </p>
-                    <p data-oid="dbioa9u">
+                    <p data-oid="27f10hx">
                       111401, г. Москва, вн.тер.г. Муниципальный Округ Перово,
                       ул Новогиреевская, д. 18/31, помещ. 4/1/1
                     </p>
                   </div>
-                  <div data-oid="830fwlb">
+                  <div data-oid="lrm07fi">
                     <p
                       className="font-semibold text-black dark:text-white"
-                      data-oid="ub2y-kx"
+                      data-oid="13oc3ht"
                     >
                       ИНН:
                     </p>
-                    <p data-oid="qtx6jx.">7733427438</p>
+                    <p data-oid="1285qcv">7733427438</p>
                   </div>
-                  <div data-oid="ehqd6f6">
+                  <div data-oid="abifa0.">
                     <p
                       className="font-semibold text-black dark:text-white"
-                      data-oid="ssz2kk7"
+                      data-oid="2p2ir4w"
                     >
                       КПП:
                     </p>
-                    <p data-oid="84h-dmg">773301001</p>
+                    <p data-oid=".i1c:g7">773301001</p>
                   </div>
-                  <div data-oid="1gnm.0v">
+                  <div data-oid="euh_he5">
                     <p
                       className="font-semibold text-black dark:text-white"
-                      data-oid="-m485gs"
+                      data-oid="201-k1d"
                     >
                       ОГРН:
                     </p>
-                    <p data-oid="_ivxjz:">1237700765213</p>
+                    <p data-oid="pjvf3_o">1237700765213</p>
                   </div>
-                  <div data-oid="1a-r2pc">
+                  <div data-oid="5fu9djs">
                     <p
                       className="font-semibold text-black dark:text-white"
-                      data-oid="wsp0eh7"
+                      data-oid="_b4_2om"
                     >
                       Email:
                     </p>
-                    <p data-oid="6dmbyd:">info@sk-new-city.ru</p>
+                    <p data-oid="93908cx">info@sk-new-city.ru</p>
                   </div>
-                  <div data-oid="73bga_m">
+                  <div data-oid="dkx.ckl">
                     <p
                       className="font-semibold text-black dark:text-white"
-                      data-oid="._e:s11"
+                      data-oid="yo:.1hk"
                     >
                       Телефон:
                     </p>
-                    <p data-oid="7kjqofb">+7 (916) 767-34-34</p>
+                    <p data-oid="p15nb8q">+7 (916) 767-34-34</p>
                   </div>
-                  <div data-oid="kxstgo2">
+                  <div data-oid="j1ry0b:">
                     <p
                       className="font-semibold text-black dark:text-white"
-                      data-oid="qfaxvn1"
+                      data-oid="1ezs431"
                     >
                       Сайт:
                     </p>
-                    <p data-oid=".u535e-">sk-new-city.ru</p>
+                    <p data-oid="zigg8t8">sk-new-city.ru</p>
                   </div>
                 </div>
               </section>
