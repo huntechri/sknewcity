@@ -9,14 +9,14 @@ const PropertyCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
   const mainImage = images[0]?.src;
 
   return (
-    <div data-oid="byet84n">
+    <div data-oid="::jg300">
       <div
         className="relative rounded-2xl border border-dark/10 dark:border-white/10 group hover:shadow-3xl duration-300 dark:hover:shadow-white/20"
-        data-oid="m69-jbz"
+        data-oid="08a9uek"
       >
-        <div className="overflow-hidden rounded-t-2xl" data-oid="w-9t:os">
-          <Link href={`/properties/${slug}`} data-oid="99sotna">
-            <div className="w-full h-[300px]" data-oid="qlbm7n9">
+        <div className="overflow-hidden rounded-t-2xl" data-oid="r071d76">
+          <Link href={`/properties/${slug}`} data-oid="ln_znsd">
+            <div className="w-full h-[300px]" data-oid=":w5_4j0">
               {mainImage && (
                 <Image
                   src={mainImage}
@@ -26,107 +26,107 @@ const PropertyCard: React.FC<{ item: PropertyHomes }> = ({ item }) => {
                   className="w-full h-full object-cover rounded-t-2xl group-hover:brightness-50 group-hover:scale-125 transition duration-300 delay-75"
                   loading="lazy"
                   sizes="(max-width: 768px) 92vw, (max-width: 1200px) 46vw, 31vw"
-                  data-oid="gtvc6t-"
+                  data-oid="1hk:tcy"
                 />
               )}
             </div>
           </Link>
           <div
             className="absolute top-6 right-6 p-4 bg-white rounded-full hidden group-hover:block"
-            data-oid="sr1nqkh"
+            data-oid="2d8z7a6"
           >
             <Icon
               icon={"solar:arrow-right-linear"}
               width={24}
               height={24}
               className="text-black"
-              data-oid="vasxhzz"
+              data-oid="twt6nlq"
             />
           </div>
         </div>
-        <div className="p-6" data-oid="qvj.ley">
+        <div className="p-6" data-oid="qw5irzy">
           <div
             className="flex flex-col mobile:flex-row gap-5 mobile:gap-0 justify-between mb-6"
-            data-oid="kg6ycj3"
+            data-oid="c4qa4jo"
           >
-            <div data-oid="-ets1ec">
-              <Link href={`/properties/${slug}`} data-oid="_p0t916">
+            <div data-oid="trvjb65">
+              <Link href={`/properties/${slug}`} data-oid="8w8c3fz">
                 <h3
                   className="text-xl font-medium text-black dark:text-white duration-300 group-hover:text-primary"
-                  data-oid="g1:qull"
+                  data-oid="_2kpf01"
                 >
                   {name}
                 </h3>
               </Link>
               <p
                 className="text-base font-normal text-black/50 dark:text-white/50"
-                data-oid=".3es5:o"
+                data-oid="21gkt1q"
               >
                 {location}
               </p>
             </div>
-            <div data-oid="ni-6a0m">
+            <div data-oid="4wiahu.">
               <button
                 className="text-base font-normal text-primary px-5 py-2 rounded-full bg-primary/10"
-                data-oid="u7uocp8"
+                data-oid="fijwt26"
               >
                 {rate}
               </button>
             </div>
           </div>
-          <div className="flex" data-oid="2d8g7p.">
+          <div className="flex" data-oid="vrzbp25">
             <div
               className="flex flex-col gap-2 border-e border-black/10 dark:border-white/20 pr-2 xs:pr-4 mobile:pr-8"
-              data-oid="c:o4sww"
+              data-oid="b5nl85-"
             >
               <Icon
                 icon={"solar:bed-linear"}
                 width={20}
                 height={20}
-                data-oid="lcjs.h8"
+                data-oid="xh-66n_"
               />
 
               <p
                 className="text-sm mobile:text-base font-normal text-black dark:text-white"
-                data-oid="xm36llh"
+                data-oid="ap.sijs"
               >
                 {beds} комнаты
               </p>
             </div>
             <div
               className="flex flex-col gap-2 border-e border-black/10 dark:border-white/20 px-2 xs:px-4 mobile:px-8"
-              data-oid="fz5:fyl"
+              data-oid="bp3_mh:"
             >
               <Icon
                 icon={"solar:bath-linear"}
                 width={20}
                 height={20}
-                data-oid="223qp4x"
+                data-oid="5p34-bb"
               />
 
               <p
                 className="text-sm mobile:text-base font-normal text-black dark:text-white"
-                data-oid="78mztdc"
+                data-oid="vlpawv7"
               >
                 {baths} санузла
               </p>
             </div>
             <div
               className="flex flex-col gap-2 pl-2 xs:pl-4 mobile:pl-8"
-              data-oid="tu30xoq"
+              data-oid="x8pgxz2"
             >
               <Icon
                 icon={"lineicons:arrow-all-direction"}
                 width={20}
                 height={20}
-                data-oid="p45yfnp"
+                data-oid="9c6nzyr"
               />
 
               <p
                 className="text-sm mobile:text-base font-normal text-black dark:text-white"
-                data-oid="evzg2q4"
+                data-oid=".c1deyj"
               >
-                {area}m<sup data-oid="__rvwts">2</sup>
+                {area}m<sup data-oid="0py7309">2</sup>
               </p>
             </div>
           </div>

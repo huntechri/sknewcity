@@ -22,22 +22,22 @@ const RenovationMaterials = () => {
   return (
     <section
       className="py-10 bg-white dark:bg-black overflow-hidden relative"
-      data-oid="pqqvc0-"
+      data-oid="x86k3u_"
     >
       <div
         className="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-dark/5 dark:via-white/5 to-transparent"
-        data-oid="wfk6ba1"
+        data-oid=".wsrnoj"
       ></div>
-      <div className="container max-w-8xl mx-auto px-5" data-oid="g:psczq">
-        <div className="text-center mb-20 max-w-3xl mx-auto" data-oid="qqbxaxj">
+      <div className="container max-w-8xl mx-auto px-5" data-oid="4ulg.uu">
+        <div className="text-center mb-20 max-w-3xl mx-auto" data-oid="o5x1pm_">
           <h2
             className="text-3xl sm:text-5xl font-bold text-dark dark:text-white mb-6"
-            data-oid="43k4rrn"
+            data-oid="4t1ofc_"
           >
             Работаем только с{" "}
             <span
               className="text-primary underline underline-offset-8 decoration-primary/30"
-              data-oid="e3ha:ku"
+              data-oid="iwjt9p3"
             >
               проверенным
             </span>{" "}
@@ -45,7 +45,7 @@ const RenovationMaterials = () => {
           </h2>
           <p
             className="text-dark/50 dark:text-white/50 text-lg leading-relaxed"
-            data-oid="-a-5wp7"
+            data-oid="0nq-j5d"
           >
             Мы закупаем материалы напрямую у дилеров и крупных федеральных сетей
             (Петрович, Леруа Мерлен), гарантируя подлинность и лучшую цену.
@@ -54,12 +54,12 @@ const RenovationMaterials = () => {
 
         <div
           className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24"
-          data-oid="gkwuka."
+          data-oid="bq9z.zx"
         >
-          <div className="relative group" data-oid="6ehi_zw">
+          <div className="relative group" data-oid="8mkcnm.">
             <div
               className="absolute inset-0 bg-primary/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full"
-              data-oid="03py-b1"
+              data-oid="7knmui2"
             ></div>
             <Image
               src="/images/categories/luxury-villa.jpg"
@@ -67,23 +67,23 @@ const RenovationMaterials = () => {
               width={600}
               height={400}
               className="rounded-[40px] relative z-10 w-full object-cover shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]"
-              data-oid=".s4ibir"
+              data-oid="lutod51"
             />
 
             <div
               className="absolute -bottom-6 -right-6 bg-white dark:bg-black p-8 rounded-3xl shadow-2xl z-20 hidden lg:block border border-black/5 dark:border-white/5"
-              data-oid="d8vn_dr"
+              data-oid="7p9ntnp"
             >
-              <div className="flex flex-col gap-1" data-oid="x60k_iu">
+              <div className="flex flex-col gap-1" data-oid="6insao0">
                 <span
                   className="text-primary text-4xl font-black"
-                  data-oid="ljrdpe8"
+                  data-oid="h3bm_7s"
                 >
                   20%
                 </span>
                 <span
                   className="text-dark dark:text-white font-bold max-w-[120px] leading-tight"
-                  data-oid="uoeg5j_"
+                  data-oid="vz6bv.-"
                 >
                   Экономии на закупках за счет объемов
                 </span>
@@ -91,27 +91,27 @@ const RenovationMaterials = () => {
             </div>
           </div>
 
-          <div className="space-y-8" data-oid="o25ep95">
-            <div className="space-y-4 group" data-oid="2hvq:::">
+          <div className="space-y-8" data-oid="o40up69">
+            <div className="space-y-4 group" data-oid="8-qc6ap">
               <div
                 className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all transform group-hover:rotate-6"
-                data-oid="uoou7bj"
+                data-oid="mwj.spc"
               >
                 <Icon
                   icon="ph:package-bold"
                   className="text-3xl"
-                  data-oid="-3q153:"
+                  data-oid="dx18y_x"
                 />
               </div>
               <h3
                 className="text-2xl font-bold text-dark dark:text-white"
-                data-oid="8bhn8y7"
+                data-oid="v0k:ls1"
               >
                 Прозрачная логистика
               </h3>
               <p
                 className="text-dark/60 dark:text-white/60 leading-relaxed text-lg"
-                data-oid="yw41e--"
+                data-oid="s99weio"
               >
                 Все счета и накладные доступны в личном кабинете. Вы платите
                 только за реально доставленный и использованный материал.
@@ -119,27 +119,27 @@ const RenovationMaterials = () => {
             </div>
             <div
               className="space-y-4 border-t border-dark/5 dark:border-white/5 pt-8 group"
-              data-oid=".tiuxys"
+              data-oid="t1xkz7k"
             >
               <div
                 className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all transform group-hover:-rotate-6"
-                data-oid="_1n7-r9"
+                data-oid="n:pzsxq"
               >
                 <Icon
                   icon="ph:shield-checkered-bold"
                   className="text-3xl"
-                  data-oid="1:_7d--"
+                  data-oid="xd-21oj"
                 />
               </div>
               <h3
                 className="text-2xl font-bold text-dark dark:text-white"
-                data-oid="ptmnnxp"
+                data-oid="50mk8k3"
               >
                 Контроль качества
               </h3>
               <p
                 className="text-dark/60 dark:text-white/60 leading-relaxed text-lg"
-                data-oid="v8-5oaw"
+                data-oid=".bwvxdx"
               >
                 Любая партия товара проходит входной контроль прорабом. При
                 обнаружении брака — замена за наш счет в течение 24 часов.
@@ -150,51 +150,51 @@ const RenovationMaterials = () => {
 
         <div
           className="bg-primary/5 dark:bg-white/5 rounded-[40px] p-10 sm:p-20 border border-primary/10"
-          data-oid="544ep5_"
+          data-oid="lkl19y:"
         >
           <div
             className="flex flex-col lg:flex-row justify-between items-center gap-10 mb-16"
-            data-oid="ypkscj-"
+            data-oid="85y2klo"
           >
-            <div className="text-center lg:text-left" data-oid="_09pu_x">
+            <div className="text-center lg:text-left" data-oid="529-0_d">
               <h4
                 className="text-2xl sm:text-3xl font-bold text-dark dark:text-white"
-                data-oid="vah1fsl"
+                data-oid="dctnjpg"
               >
                 Предпочитаемые бренды
               </h4>
               <p
                 className="text-dark/50 dark:text-white/50 mt-2"
-                data-oid="pbjtmx0"
+                data-oid="lzp9tuc"
               >
                 Мировые стандарты надежности и экологичности
               </p>
             </div>
             <div
               className="h-px w-full lg:w-1/3 bg-black/10 dark:bg-white/10"
-              data-oid="s8ijd14"
+              data-oid="nq0kl15"
             ></div>
           </div>
 
           <div
             className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 sm:gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500"
-            data-oid="pfk.ona"
+            data-oid="3vhos1p"
           >
             {materials.map((m, idx) => (
               <div
                 key={idx}
                 className="flex flex-col items-center gap-4 group cursor-help"
-                data-oid="8w6d89m"
+                data-oid="u.m8_7u"
               >
                 <div
                   className="text-dark dark:text-white font-black text-xl tracking-tighter group-hover:text-primary transition-colors"
-                  data-oid="8z.x0oa"
+                  data-oid="f-vb7mb"
                 >
                   {m.name}
                 </div>
                 <span
                   className="text-[10px] text-center text-dark/30 dark:text-white/30 uppercase tracking-widest"
-                  data-oid="lz1yo-t"
+                  data-oid="pw8fr7o"
                 >
                   {m.type}
                 </span>

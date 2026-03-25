@@ -3,33 +3,33 @@ export const TypographyConfiguration = () => {
     <>
       <h3
         className=" text-black text-xl font-semibold mt-8 dark:text-white"
-        data-oid=":mq941j"
+        data-oid="g-xjm8a"
       >
         Typography
       </h3>
       <div
         className="p-6 rounded-md border mt-4 border-black/10 dark:border-white/20"
-        data-oid="57x8xfv"
+        data-oid="uh-2yiw"
       >
         <p
           className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50"
-          data-oid="lovyt79"
+          data-oid="0mch4o9"
         >
           1. Change Font family over here :{" "}
-          <span className="font-semibold text-base" data-oid="d04am4_">
+          <span className="font-semibold text-base" data-oid="w:t..k6">
             src/app/layout.tsx
           </span>{" "}
         </p>
-        <div className="py-4 px-3 rounded-md bg-black mt-8" data-oid="wbeaom7">
+        <div className="py-4 px-3 rounded-md bg-black mt-8" data-oid="z9r.7jf">
           <p
             className="text-sm text-gray-400 flex flex-col gap-2 mb-3"
-            data-oid="2yb2e6m"
+            data-oid="r3tw.dv"
           >
             {`import { Bricolage_Grotesque } from 'next/font/google'`}
           </p>
           <p
             className="text-sm text-gray-400 flex flex-col gap-2"
-            data-oid="4t1c20a"
+            data-oid="er62wx4"
           >
             {`const font = Bricolage_Grotesque({ subsets: ["latin"] });`}
           </p>

@@ -21,7 +21,7 @@ const Blog = () => {
           { name: "Главная", path: "/" },
           { name: "Блог", path: "/blogs" },
         ])}
-        data-oid="3qil0zs"
+        data-oid=".oov_sd"
       />
 
       <HeroSub
@@ -29,10 +29,10 @@ const Blog = () => {
         description="Практические советы, чек-листы и разборы типовых ошибок."
         badge="Blog"
         as="h1"
-        data-oid=".r9z6.a"
+        data-oid="x_-d21o"
       />
 
-      <BlogList data-oid="g.9m74-" />
+      <BlogList data-oid="u.ot70s" />
     </>
   );
 };

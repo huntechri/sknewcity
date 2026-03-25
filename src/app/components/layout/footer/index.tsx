@@ -4,46 +4,46 @@ import { footerLinks } from "@/lib/layout-data";
 
 const Footer = () => {
   return (
-    <footer className="relative z-10 bg-dark" data-oid="5jrdlor">
+    <footer className="relative z-10 bg-dark" data-oid="0qi4vmx">
       <div
         className="container mx-auto max-w-8xl px-4 pt-12 sm:px-6 sm:pt-14 lg:px-0"
-        data-oid="h132scp"
+        data-oid="-is3xyu"
       >
         <div
           className="flex flex-col gap-8 border-b border-white/10 pb-12 sm:pb-14 lg:flex-row lg:items-end lg:justify-between lg:gap-11"
-          data-oid="fbscc5o"
+          data-oid="f2olhn6"
         >
           <p
             className="max-w-sm text-sm leading-relaxed text-white lg:max-w-1/5"
-            data-oid="nw7lnc4"
+            data-oid="z-0zlgu"
           >
             Получайте новости, полезные советы и специальные предложения.
           </p>
           <div
             className="flex w-full flex-col gap-5 lg:flex-1 lg:flex-row lg:items-end lg:justify-between lg:gap-10"
-            data-oid="klvi:ld"
+            data-oid="_sj042m"
           >
             <div
               className="order-2 flex w-full max-w-2xl flex-col gap-3 sm:flex-row sm:items-center lg:order-1"
-              data-oid="_ui80t9"
+              data-oid="lkosl6u"
             >
               <input
                 type="email"
                 placeholder="Введите email"
                 className="w-full min-w-0 rounded-full bg-white/10 px-4 py-3 text-sm text-white placeholder:text-white focus-visible:outline-0 sm:px-6 sm:py-4 sm:text-base"
-                data-oid="k-d9eei"
+                data-oid="8q8dgxp"
               />
 
               <button
                 className="w-full rounded-full bg-white px-4 py-3 text-sm font-semibold text-dark duration-300 hover:cursor-pointer hover:bg-primary hover:text-white sm:w-auto sm:px-8 sm:py-4 sm:text-base"
-                data-oid="21hulfa"
+                data-oid="bppaxws"
               >
                 Подписаться
               </button>
             </div>
             <p
               className="order-1 max-w-xl text-xs leading-relaxed text-white/40 sm:text-sm lg:order-2 lg:max-w-45p"
-              data-oid="kf.77uv"
+              data-oid=":h3ooa7"
             >
               Подписываясь, вы соглашаетесь получать письма. Можно отписаться в
               любой момент.
@@ -51,86 +51,86 @@ const Footer = () => {
           </div>
           <div
             className="flex w-full items-center gap-6 sm:w-auto"
-            data-oid="ht-4fwp"
+            data-oid="fmx03p5"
           >
             <Link
               href="https://t.me/sknewcity444"
               target="_blank"
               rel="noopener noreferrer"
-              data-oid="cgt_bd3"
+              data-oid="2i6iza3"
             >
               <Icon
                 icon="ph:telegram-logo-bold"
                 width={24}
                 height={24}
                 className="text-white hover:text-primary duration-300"
-                data-oid="cu.0djd"
+                data-oid="l-u-5ds"
               />
             </Link>
             <Link
               href="https://vk.com/sk_new_city"
               target="_blank"
               rel="noopener noreferrer"
-              data-oid="w3a5uvc"
+              data-oid="v_dqli."
             >
               <Icon
                 icon="fa6-brands:vk"
                 width={24}
                 height={24}
                 className="text-white hover:text-primary duration-300"
-                data-oid="q-e8ono"
+                data-oid="3204owt"
               />
             </Link>
             <Link
               href="https://max.ru/id7733427438_biz"
               target="_blank"
               rel="noopener noreferrer"
-              data-oid="t-mc8o9"
+              data-oid="4:8l-y0"
             >
               <Icon
                 icon="ph:chat-circle-bold"
                 width={24}
                 height={24}
                 className="text-white hover:text-primary duration-300"
-                data-oid="sxeo-h6"
+                data-oid="g8jwrqa"
               />
             </Link>
           </div>
         </div>
         <div
           className="py-10 sm:py-16 border-b border-white/10"
-          data-oid="kdtyurv"
+          data-oid="6l09y:u"
         >
           <div
             className="grid grid-cols-12 gap-3 sm:gap-6 md:gap-10"
-            data-oid="260-xb6"
+            data-oid="y16trcf"
           >
-            <div className="md:col-span-7 col-span-12" data-oid="sa99fnh">
+            <div className="md:col-span-7 col-span-12" data-oid="7ugryeu">
               <h2
                 className="mb-4 max-w-2xl text-2xl font-medium leading-[1.15] text-white text-balance sm:mb-6 sm:text-3xl md:text-5xl lg:text-40 lg:max-w-3/4"
-                data-oid="9h3_1y5"
+                data-oid="m5:13nc"
               >
                 Готовы к ремонту без стресса? Свяжитесь с нами сегодня.
               </h2>
               <Link
                 href="/contactus"
                 className="inline-flex rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white duration-300 hover:cursor-pointer hover:bg-white hover:text-dark sm:px-8 sm:py-4 sm:text-base"
-                data-oid="eakm009"
+                data-oid=".861r4d"
               >
                 Получить консультацию
               </Link>
             </div>
             <div
               className="md:col-span-3 sm:col-span-6 col-span-12"
-              data-oid="wdceier"
+              data-oid="z34t1sy"
             >
-              <div className="flex w-full flex-col gap-3" data-oid="6xtnbad">
+              <div className="flex w-full flex-col gap-3" data-oid="l3c8wpb">
                 {footerLinks.slice(0, 4).map((item, index: number) => (
-                  <div key={index} data-oid="ph.sdp4">
+                  <div key={index} data-oid="43esv.1">
                     <Link
                       href={item.href}
                       className="text-white/40 text-xs sm:text-xm hover:text-white"
-                      data-oid="6jq:_4u"
+                      data-oid=".otocu5"
                     >
                       {item.label}
                     </Link>
@@ -140,15 +140,15 @@ const Footer = () => {
             </div>
             <div
               className="md:col-span-2 sm:col-span-6 col-span-12"
-              data-oid="njv7089"
+              data-oid="do4zeah"
             >
-              <div className="flex w-full flex-col gap-3" data-oid="gimu-60">
+              <div className="flex w-full flex-col gap-3" data-oid="gmx5iah">
                 {footerLinks.slice(4, 8).map((item, index: number) => (
-                  <div key={index} data-oid="zv:v.jb">
+                  <div key={index} data-oid="m9g_4o9">
                     <Link
                       href={item.href}
                       className="text-white/40 text-xs sm:text-xm hover:text-white"
-                      data-oid="x748ylg"
+                      data-oid="e6qmk-_"
                     >
                       {item.label}
                     </Link>
@@ -160,26 +160,26 @@ const Footer = () => {
         </div>
         <div
           className="flex flex-col items-start justify-between gap-4 py-6 sm:gap-6 md:flex-row md:flex-nowrap md:items-center"
-          data-oid="9.xfigb"
+          data-oid="78aut_y"
         >
-          <p className="text-white/40 text-sm " data-oid="24o6tf7">
+          <p className="text-white/40 text-sm " data-oid="2nmuxv:">
             ©2025 sk-new-city.ru — все права защищены
           </p>
           <div
             className="flex flex-wrap items-center gap-x-6 gap-y-3 sm:gap-x-8"
-            data-oid="f:j5f18"
+            data-oid="x1dhppa"
           >
             <Link
               href="/terms-and-conditions"
               className="text-white/40 hover:text-primary text-sm"
-              data-oid="l3h1g52"
+              data-oid="1o7k14o"
             >
               Условия
             </Link>
             <Link
               href="/privacy-policy"
               className="text-white/40 hover:text-primary text-sm"
-              data-oid="2sate3z"
+              data-oid="go.fjhl"
             >
               Политика конфиденциальности
             </Link>

@@ -1,0 +1,27 @@
+{
+    "chat_id": 1,
+    "topic": "",
+    "focus_section_id": "r4.files",
+    "last_agent_name": "Cody",
+    "last_modified_datetime": "2026-03-24T10:06:25.723008",
+    "messages": [
+        {
+            "name": "PO",
+            "message": "Изучи проект\n",
+            "message_raw": "Изучи проект\n",
+            "method": "USER",
+            "tasks": "",
+            "is_status_message": false,
+            "message_id": "a927beb7-cecd-4c7a-a65d-1aa2953e88f7",
+            "timestamp": "2026-03-24T10:06:25.328723",
+            "variation_index": 0,
+            "variations": [],
+            "images_data": {},
+            "documents_data": {},
+            "hidden_from_agent": false,
+            "model_auto_switched": false
+        }
+    ],
+    "mentioned_files": [],
+    "additional_context": ""
+}

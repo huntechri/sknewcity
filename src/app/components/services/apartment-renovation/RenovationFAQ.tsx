@@ -29,69 +29,69 @@ const RenovationFAQ = () => {
   return (
     <section
       className="py-10 pb-0 bg-white dark:bg-black relative overflow-hidden transition-colors duration-500"
-      data-oid="_bibq1r"
+      data-oid="p4-95br"
     >
       {/* Ambient spatial elements */}
       <div
         className="absolute top-1/2 left-0 w-64 h-64 bg-primary/5 blur-[100px] rounded-full -translate-x-1/2"
-        data-oid="u48x04d"
+        data-oid="b.67bb-"
       ></div>
       <div
         className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/5 blur-[120px] rounded-full translate-x-1/4 -translate-y-1/4"
-        data-oid="dgd.t:y"
+        data-oid="h:w7g8c"
       ></div>
 
       <div
         className="container max-w-7xl mx-auto px-5 relative z-10"
-        data-oid="18ttm4v"
+        data-oid="hmx37ko"
       >
         <div
           className="flex flex-col lg:flex-row gap-20 items-start"
-          data-oid="or-.xd-"
+          data-oid="wjrde-2"
         >
-          <div className="lg:w-1/3" data-oid="apb92ko">
-            <div className="lg:sticky lg:top-32" data-oid="px6nmr1">
+          <div className="lg:w-1/3" data-oid="44:jzq9">
+            <div className="lg:sticky lg:top-32" data-oid="1tvsk11">
               <div
                 className="text-dark/75 dark:text-white/75 text-sm sm:text-base font-semibold flex gap-2.5 items-center mb-4"
-                data-oid="35rkhz6"
+                data-oid=".kol_n-"
               >
                 <Icon
                   icon="ph:house-simple-fill"
                   className="text-lg sm:text-2xl text-primary"
-                  data-oid="pf1_k20"
+                  data-oid="1cq2uuq"
                 />
 
-                <span data-oid="ce2hw:w">Вопросы и ответы</span>
+                <span data-oid="-ylnniu">Вопросы и ответы</span>
               </div>
               <h2
                 className="text-3xl sm:text-5xl font-bold text-dark dark:text-white mb-8 leading-tight tracking-tight"
-                data-oid="tg699d0"
+                data-oid="b69h1iy"
               >
-                Часто <br data-oid="jqob1gh" />
-                задаваемые <br data-oid="p0e2ji_" />
+                Часто <br data-oid="8aq7xro" />
+                задаваемые <br data-oid="63i:dmt" />
                 вопросы
                 <span
                   className="text-primary block mt-2 text-2xl sm:text-4xl"
-                  data-oid="3teavew"
+                  data-oid="3lwveqs"
                 >
                   FAQ
                 </span>
               </h2>
               <p
                 className="text-dark/50 dark:text-white/50 text-lg leading-relaxed max-w-xs mb-8"
-                data-oid="symc:ny"
+                data-oid="u8g0g_0"
               >
                 Собрали самое важное, что стоит знать перед началом работ.
               </p>
             </div>
           </div>
 
-          <div className="lg:w-2/3 w-full lg:min-h-[480px]" data-oid="5j7ak50">
+          <div className="lg:w-2/3 w-full lg:min-h-[480px]" data-oid="nbf8bpl">
             <Accordion
               type="single"
               collapsible
               className="w-full space-y-4"
-              data-oid="hnua-f0"
+              data-oid="ka:v7c:"
             >
               {faqs.map((faq, idx) => (
                 <div
@@ -102,69 +102,69 @@ const RenovationFAQ = () => {
                       "--ladder-offset": `${idx * 12}px`,
                     } as React.CSSProperties
                   }
-                  data-oid="1n_3kw2"
+                  data-oid="kaxu8h7"
                 >
                   <AccordionItem
                     value={`faq-${idx}`}
                     className="border border-dark/5 dark:border-white/5 rounded-2xl overflow-hidden bg-dark/2 dark:bg-white/2 backdrop-blur-md transition-all duration-500 hover:border-primary/30 hover:bg-dark/4 dark:hover:bg-white/4 data-[state=open]:border-primary/40 data-[state=open]:shadow-2xl data-[state=open]:shadow-primary/10 group"
-                    data-oid="yopfaod"
+                    data-oid="nwubg-k"
                   >
                     <AccordionTrigger
                       className="hover:no-underline py-6 px-8 text-left group"
-                      data-oid="ht7-tgo"
+                      data-oid="zuw92td"
                     >
                       <div
                         className="flex items-center gap-6 w-full pr-4"
-                        data-oid="2-vagmo"
+                        data-oid="p8wc5i5"
                       >
                         <div
                           className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 transition-all duration-700 group-hover:scale-110 group-data-[state=open]:bg-primary group-data-[state=open]:text-white group-data-[state=open]:rotate-360"
-                          data-oid="o0ot9ru"
+                          data-oid="-o_i5v2"
                         >
                           <span
                             className="text-base font-black"
-                            data-oid="1x39bf_"
+                            data-oid="9q4bfo0"
                           >
                             {idx + 1}
                           </span>
                         </div>
                         <span
                           className="text-lg sm:text-xl font-bold text-dark dark:text-white transition-colors duration-500 group-data-[state=open]:text-primary leading-tight"
-                          data-oid="3ah1ai_"
+                          data-oid="v76esqq"
                         >
                           {faq.q}
                         </span>
                       </div>
                     </AccordionTrigger>
-                    <AccordionContent className="p-0" data-oid="kd--2a6">
+                    <AccordionContent className="p-0" data-oid="7ea:qu_">
                       <div
                         className="px-8 pb-8 pl-0 sm:pl-18"
-                        data-oid="ce2d0c7"
+                        data-oid="y.l1x79"
                       >
                         <div
                           className="flex gap-5 items-start mb-6"
-                          data-oid="0b.rk_w"
+                          data-oid="13bzky2"
                         >
                           <div
                             className="w-px h-full min-h-[40px] bg-primary/30 rounded-full mt-1 shrink-0"
-                            data-oid="zwhds3e"
+                            data-oid="mu2h1hv"
                           ></div>
                           <p
                             className="text-dark/70 dark:text-white/70 text-base sm:text-lg leading-relaxed transition-colors duration-500"
-                            data-oid="1.nwkcq"
+                            data-oid="8q-_.:-"
                           >
                             {faq.a}
                           </p>
                         </div>
                         <div
                           className="flex items-center gap-2.5 text-primary font-bold text-xs uppercase tracking-[0.2em] cursor-pointer hover:opacity-70 transition-opacity group/btn w-fit"
-                          data-oid="4zn8fkt"
+                          data-oid="ollc7q0"
                         >
-                          <span data-oid="7.ml43o">Подробнее</span>
+                          <span data-oid="0ytslvp">Подробнее</span>
                           <Icon
                             icon="ph:arrow-right-bold"
                             className="transition-transform group-hover/btn:translate-x-1"
-                            data-oid=":x1506i"
+                            data-oid="ga3b1-z"
                           />
                         </div>
                       </div>

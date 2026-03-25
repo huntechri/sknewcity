@@ -32,8 +32,8 @@ const page = async ({ searchParams }: PropertiesPageProps) => {
 
   return (
     <>
-      <StructuredData data={structuredData} data-oid="lzd.b32" />
-      <PropertiesListing categoryParam={params.category} data-oid="o-wz9c7" />
+      <StructuredData data={structuredData} data-oid="xp9zp1k" />
+      <PropertiesListing categoryParam={params.category} data-oid="2x9:e0k" />
     </>
   );
 };

@@ -44,28 +44,28 @@ const PropertiesListing: React.FC<PropertiesListingProps> = ({
         description="Реальные кейсы с фото и сроками — выбирайте подходящий формат ремонта."
         badge="Проекты"
         as="h1"
-        data-oid="ihwxtw0"
+        data-oid="vg828zd"
       />
 
-      <section className="pt-0!" data-oid="z245m0r">
+      <section className="pt-0!" data-oid="d.7e.1j">
         <div
           className="container max-w-8xl mx-auto px-5 2xl:px-0"
-          data-oid="fc0c3ip"
+          data-oid="pee2q3m"
         >
           {normalizedCategory &&
           ["commercial", "designer", "capital"].includes(normalizedCategory) ? (
             <UnderDevelopment
               categoryName={categoryLabel ?? normalizedCategory}
-              data-oid="v69-yle"
+              data-oid=":i7ov5t"
             />
           ) : (
             <div
               className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10"
-              data-oid="153nyfo"
+              data-oid=":m-aajt"
             >
               {filteredProperties.map((item) => (
-                <div key={item.slug} data-oid="_fdmyfm">
-                  <PropertyCard item={item} data-oid=".kbptcl" />
+                <div key={item.slug} data-oid="bb72of8">
+                  <PropertyCard item={item} data-oid="pu4x36j" />
                 </div>
               ))}
             </div>

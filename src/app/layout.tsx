@@ -42,20 +42,21 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="ru" suppressHydrationWarning>
-      <body className="bg-white dark:bg-black antialiased">
-        <NextTopLoader color="#07be8a" />
+    <html lang="ru" suppressHydrationWarning data-oid=".9-tka-">
+      <body className="bg-white dark:bg-black antialiased" data-oid="-nfl6el">
+        <NextTopLoader color="#07be8a" data-oid="78ug00j" />
 
-        <SmoothScrollProvider>
+        <SmoothScrollProvider data-oid="y_-xy5s">
           <ThemeProvider
             attribute="class"
             enableSystem={true}
             defaultTheme="light"
+            data-oid="85cjp1l"
           >
-            <Header />
+            <Header data-oid=":2f9quu" />
             {children}
-            <Footer />
-            <ScrollToTop />
+            <Footer data-oid="py65mts" />
+            <ScrollToTop data-oid="7ih5gnf" />
           </ThemeProvider>
         </SmoothScrollProvider>
       </body>

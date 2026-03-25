@@ -37,7 +37,7 @@ export const DocNavigation = () => {
   return (
     <div
       className="flex flex-col gap-0.5 mt-4 items-start fixed pe-4"
-      data-oid="k5_j3yh"
+      data-oid="rx_6pmh"
     >
       {DocsNav.map((item) => {
         return (
@@ -46,7 +46,7 @@ export const DocNavigation = () => {
             href={`#${item.hash}`}
             onClick={() => getNavItem(item.hash)}
             className={`py-2.5 hover:bg-primary/20 hover:text-primary dark:hover:text-primary xl:min-w-60 lg:min-w-52 min-w-full px-4 rounded-md text-midnight_text text-base font-medium  ${item.hash === navItem ? "bg-primary text-white hover:!bg-primary hover:!text-white dark:!text-opacity-100 dark:hover:text-white" : "dark:text-white dark:text-opacity-60"}`}
-            data-oid=".dcoc08"
+            data-oid="z0datg-"
           >
             {item.navItem}
           </Link>

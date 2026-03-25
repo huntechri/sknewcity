@@ -14,71 +14,71 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
     <section
       className="bg-white dark:bg-dark overflow-hidden py-16 md:py-24 relative"
       id="complexes"
-      data-oid="9i6iak:"
+      data-oid="7rros8x"
     >
       {/* Decorative background element */}
       <div
         className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
-        data-oid="3x7:71m"
+        data-oid="i1mrky-"
       >
         <div
           className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary rounded-full blur-[80px] md:blur-[120px]"
-          data-oid="_rbm6cp"
+          data-oid="1rzzeuz"
         ></div>
       </div>
 
       <div
         className="container mx-auto max-w-8xl px-5 2xl:px-0 mb-10 md:mb-16 relative z-10"
-        data-oid="w4.fapv"
+        data-oid="tf.7.6p"
       >
         <div
           className="flex flex-col items-center text-center gap-3"
-          data-oid="42fpkr9"
+          data-oid="bdilxaf"
         >
           <div
             className="flex gap-2.5 items-center justify-center"
-            data-oid="3by:8rr"
+            data-oid="w5t7-37"
           >
             <Icon
               icon="ph:house-simple-fill"
               className="text-2xl text-primary"
-              data-oid="-v:.qq5"
+              data-oid="tsnbu0q"
             />
 
             <p
               className="text-base font-semibold text-dark/75 dark:text-white/75 uppercase tracking-wider"
-              data-oid="dhkxbdp"
+              data-oid="n.mshj3"
             >
               Наши объекты
             </p>
           </div>
           <h2
             className="lg:text-52 md:text-40 text-32 font-medium text-dark dark:text-white leading-tight tracking-tight"
-            data-oid="0jvbft0"
+            data-oid="re:av_s"
           >
             На каких ЖК мы работаем?
           </h2>
         </div>
       </div>
 
-      <div className="relative flex overflow-x-hidden group" data-oid="8e18_xg">
+      <div className="relative flex overflow-x-hidden group" data-oid="elfbdwv">
         <div
           className="py-4 md:py-8 animate-marquee whitespace-nowrap flex items-center"
-          data-oid="wpnb.3u"
+          data-oid="8wo4fvu"
         >
           {complexes.concat(complexes).map((complex, index) => (
             <div
               key={index}
               className="mx-8 md:mx-16 flex items-center justify-center transition-all duration-500 hover:scale-110 group/item min-w-[140px] md:min-w-[200px]"
-              data-oid="l.tlr3x"
+              data-oid="2v565qy"
             >
               <div
                 className="h-12 md:h-20 flex items-center justify-center transition-colors overflow-hidden"
-                data-oid="1lgw9dw"
+                data-oid="94iqkwk"
               >
                 {complex.logoDark ? (
                   <>
-                    <div className="dark:hidden" data-oid=":ildl3_">
+                    <div className="dark:hidden" data-oid="49bwe3g">
                       <Image
                         src={complex.logo as string}
                         alt={complex.name}
@@ -87,10 +87,10 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
                         className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity"
                         loading="lazy"
                         sizes={logoSizes}
-                        data-oid="osmzve-"
+                        data-oid="gj3_00s"
                       />
                     </div>
-                    <div className="hidden dark:block" data-oid="2sm.ja6">
+                    <div className="hidden dark:block" data-oid="nj0k2ys">
                       <Image
                         src={complex.logoDark}
                         alt={complex.name}
@@ -99,7 +99,7 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
                         className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity"
                         loading="lazy"
                         sizes={logoSizes}
-                        data-oid="ukn.x6a"
+                        data-oid="1.:eb_4"
                       />
                     </div>
                   </>
@@ -112,22 +112,22 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
                     className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity"
                     loading="lazy"
                     sizes={logoSizes}
-                    data-oid="yqdrb8s"
+                    data-oid="_im9-ls"
                   />
                 ) : (
                   <div
                     className="flex flex-col items-center gap-2 md:gap-3 opacity-40 group-hover/item:opacity-100 transition-opacity"
-                    data-oid="_49fg7b"
+                    data-oid="l5xwulv"
                   >
                     <Icon
                       icon={complex.icon || "ph:buildings-fill"}
                       className="text-4xl md:text-6xl text-dark dark:text-white transition-colors group-hover/item:text-primary"
-                      data-oid="jelkipc"
+                      data-oid="4.mkgt3"
                     />
 
                     <span
                       className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-dark dark:text-white font-bold"
-                      data-oid="9qxsa1j"
+                      data-oid="klqhqam"
                     >
                       {complex.name}
                     </span>
@@ -139,22 +139,22 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
         </div>
 
         <div
-          className="absolute top-0 py-4 md:py-8 animate-marquee2 whitespace-nowrap flex items-center"
-          data-oid=":6acn38"
+          className="absolute top-0 py-4 md:py-8 animate-marquee2 whitespace-nowrap items-center grid"
+          data-oid="oufmd1w"
         >
           {complexes.concat(complexes).map((complex, index) => (
             <div
               key={index}
               className="mx-8 md:mx-16 flex items-center justify-center transition-all duration-500 hover:scale-110 group/item min-w-[140px] md:min-w-[200px]"
-              data-oid="9sgkkjq"
+              data-oid="y05mhro"
             >
               <div
                 className="h-12 md:h-20 flex items-center justify-center transition-colors overflow-hidden"
-                data-oid="vbj4c2b"
+                data-oid="76h5oqm"
               >
                 {complex.logoDark ? (
                   <>
-                    <div className="dark:hidden" data-oid="z0ofj-8">
+                    <div className="dark:hidden" data-oid="flb_ie6">
                       <Image
                         src={complex.logo as string}
                         alt={complex.name}
@@ -163,10 +163,10 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
                         className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity"
                         loading="lazy"
                         sizes={logoSizes}
-                        data-oid="cgavb0w"
+                        data-oid="d2ilq8t"
                       />
                     </div>
-                    <div className="hidden dark:block" data-oid="4600:w5">
+                    <div className="hidden dark:block" data-oid="r0j3vq3">
                       <Image
                         src={complex.logoDark}
                         alt={complex.name}
@@ -175,7 +175,7 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
                         className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity"
                         loading="lazy"
                         sizes={logoSizes}
-                        data-oid="r:7mr-j"
+                        data-oid="rf-dsy."
                       />
                     </div>
                   </>
@@ -188,22 +188,22 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
                     className="object-contain h-12 md:h-20 w-auto opacity-80 group-hover/item:opacity-100 transition-opacity"
                     loading="lazy"
                     sizes={logoSizes}
-                    data-oid="_ndd_64"
+                    data-oid="5cyy7c9"
                   />
                 ) : (
                   <div
                     className="flex flex-col items-center gap-2 md:gap-3 opacity-40 group-hover/item:opacity-100 transition-opacity"
-                    data-oid="uz-2ky7"
+                    data-oid="n1s168-"
                   >
                     <Icon
                       icon={complex.icon || "ph:buildings-fill"}
                       className="text-4xl md:text-6xl text-dark dark:text-white transition-colors group-hover/item:text-primary"
-                      data-oid="i9on9hn"
+                      data-oid="vgkg_32"
                     />
 
                     <span
                       className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-dark dark:text-white font-bold"
-                      data-oid="e7:m_9:"
+                      data-oid="n_ilfi-"
                     >
                       {complex.name}
                     </span>
@@ -217,15 +217,15 @@ const ResidentialComplexes = ({ complexes }: { complexes: Complex[] }) => {
         {/* Fading edges for smoother look */}
         <div
           className="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-white dark:from-dark to-transparent z-10"
-          data-oid="1r7hnd0"
+          data-oid="yxukm5d"
         ></div>
         <div
           className="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-white dark:from-dark to-transparent z-10"
-          data-oid="05_rxja"
+          data-oid="x0e:.qo"
         ></div>
       </div>
 
-      <style jsx data-oid="g242v5f">{`
+      <style jsx data-oid="hf5q61a">{`
         .animate-marquee {
           animation: marquee 30s linear infinite;
         }

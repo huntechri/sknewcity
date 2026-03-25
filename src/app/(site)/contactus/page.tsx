@@ -39,8 +39,8 @@ export default function ContactUsPage() {
 
   return (
     <>
-      <StructuredData data={structuredData} data-oid="r_6:1u2" />
-      <ContactPage data-oid="e97tb5w" />
+      <StructuredData data={structuredData} data-oid="3l1qnyl" />
+      <ContactPage data-oid="8l8l9xa" />
     </>
   );
 }

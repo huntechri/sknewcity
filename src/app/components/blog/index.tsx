@@ -37,18 +37,18 @@ const BlogList: React.FC = () => {
   }));
 
   return (
-    <section className="pt-0!" data-oid="xeszq4-">
+    <section className="pt-0!" data-oid="5ad5yr4">
       <div
         className="container max-w-8xl mx-auto px-5 2xl:px-0"
-        data-oid="564hg_m"
+        data-oid="qallkq9"
       >
         <div
           className="grid grid-cols-2 lg:grid-cols-3 gap-12"
-          data-oid="bde7o:k"
+          data-oid="9yn293q"
         >
           {posts.map((blog, i) => (
-            <div key={i} className="w-full" data-oid="zcxjyll">
-              <BlogCard blog={blog} data-oid="_4-wl6-" />
+            <div key={i} className="w-full" data-oid="g-k7dah">
+              <BlogCard blog={blog} data-oid="rqrrm1r" />
             </div>
           ))}
         </div>

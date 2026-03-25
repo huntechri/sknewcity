@@ -62,11 +62,11 @@ const RenovationWorks = () => {
   return (
     <section
       className="py-10 bg-white dark:bg-black relative overflow-hidden transition-colors duration-300"
-      data-oid="hssmrul"
+      data-oid="j__svut"
     >
       <div
         className="absolute left-0 top-0 hidden sm:block pointer-events-none opacity-50"
-        data-oid=":c9wjyx"
+        data-oid="wnlhqsw"
       >
         <Image
           src="/images/categories/Vector.svg"
@@ -75,7 +75,7 @@ const RenovationWorks = () => {
           height={1050}
           className="dark:hidden"
           unoptimized={true}
-          data-oid="7p7msw8"
+          data-oid="w3uwmf9"
         />
 
         <Image
@@ -84,87 +84,87 @@ const RenovationWorks = () => {
           width={800}
           height={1050}
           className="hidden dark:block"
-          data-oid="qn-opjz"
+          data-oid="xbzz4vi"
         />
       </div>
       <div
         className="container max-w-8xl mx-auto px-5 relative z-10"
-        data-oid="y3a9pql"
+        data-oid="igbb8lu"
       >
         <div
           className="flex flex-col md:flex-row gap-12 lg:gap-20"
-          data-oid="rjdx0ou"
+          data-oid="r3hdolk"
         >
-          <div className="md:w-1/2" data-oid="85nzr55">
+          <div className="md:w-1/2" data-oid="ylgxrj6">
             <div
               className="text-dark/75 dark:text-white/75 text-sm sm:text-base font-semibold flex gap-2.5 items-center mb-4"
-              data-oid=":9:y922"
+              data-oid="lyd6u98"
             >
               <Icon
                 icon="ph:house-simple-fill"
                 className="text-lg sm:text-2xl text-primary"
-                data-oid="97.43f_"
+                data-oid="_f.bw56"
               />
 
-              <span data-oid="cuvuoqx">Как мы работаем</span>
+              <span data-oid="l04.0lr">Как мы работаем</span>
             </div>
             <h2
               className="text-3xl sm:text-5xl font-bold text-dark dark:text-white mb-8 leading-tight"
-              data-oid="nsmuef2"
+              data-oid="3fahqhd"
             >
               Этапы работ
             </h2>
             <p
               className="text-dark/60 dark:text-white/60 text-lg mb-10 leading-relaxed max-w-lg"
-              data-oid="_9arusj"
+              data-oid="-qq_ril"
             >
               Мы разделили процесс на чёткие технологические этапы, чтобы вы
               могли контролировать качество и сроки на каждом шаге.
             </p>
 
-            <div className="grid grid-cols-2 gap-6" data-oid="q11b-as">
+            <div className="grid grid-cols-2 gap-6" data-oid="7pmk9ci">
               <div
                 className="p-6 rounded-2xl bg-dark/5 dark:bg-white/5 border border-dark/10 dark:border-white/10 transition-colors hover:bg-dark/10 dark:hover:bg-white/10"
-                data-oid="1:90yrm"
+                data-oid="pnupl.7"
               >
                 <Icon
                   icon="ph:check-circle-fill"
                   className="text-primary text-3xl mb-4"
-                  data-oid="d0vbnu2"
+                  data-oid=":e5-b22"
                 />
 
                 <h4
                   className="font-bold text-dark dark:text-white mb-2"
-                  data-oid="ze8xfxe"
+                  data-oid="l2cvgsn"
                 >
                   Технадзор
                 </h4>
                 <p
                   className="text-xs text-dark/50 dark:text-white/50"
-                  data-oid="7.wpk:n"
+                  data-oid="re1470v"
                 >
                   3-ступенчатый контроль
                 </p>
               </div>
               <div
                 className="p-6 rounded-2xl bg-dark/5 dark:bg-white/5 border border-dark/10 dark:border-white/10 transition-colors hover:bg-dark/10 dark:hover:bg-white/10"
-                data-oid="3_ocgp8"
+                data-oid="2he6teo"
               >
                 <Icon
                   icon="ph:file-text-fill"
                   className="text-primary text-3xl mb-4"
-                  data-oid="lq7..xr"
+                  data-oid="gspd-rp"
                 />
 
                 <h4
                   className="font-bold text-dark dark:text-white mb-2"
-                  data-oid="2o8ya_5"
+                  data-oid="fp:bpmy"
                 >
                   Отчетность
                 </h4>
                 <p
                   className="text-xs text-dark/50 dark:text-white/50"
-                  data-oid="l9x3stm"
+                  data-oid="vo1:unb"
                 >
                   Еженедельные отчеты
                 </p>
@@ -172,71 +172,71 @@ const RenovationWorks = () => {
             </div>
           </div>
 
-          <div className="md:w-1/2" data-oid="r41:aym">
+          <div className="md:w-1/2" data-oid="tcm0cla">
             <Accordion
               type="single"
               collapsible
               className="w-full space-y-4"
-              data-oid="bxne0jk"
+              data-oid="bl4xlq."
             >
               {stages.map((stage) => (
                 <AccordionItem
                   key={stage.id}
                   value={stage.id}
                   className="border border-dark/10 dark:border-white/10 rounded-3xl overflow-hidden transition-[border-color,box-shadow] duration-1000 data-[state=open]:border-primary/40 data-[state=open]:shadow-xl data-[state=open]:shadow-primary/5 group/item"
-                  data-oid="zf6y-f7"
+                  data-oid="3ogoicz"
                 >
                   <AccordionTrigger
                     className="hover:no-underline py-6 px-6 group transition-colors duration-300 hover:bg-dark/2 dark:hover:bg-white/2"
-                    data-oid=":yxjyf:"
+                    data-oid="83w1343"
                   >
                     <div
                       className="flex items-center gap-5 text-left w-full"
-                      data-oid="uawm46s"
+                      data-oid="bjo6o3."
                     >
                       <div
                         className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center text-primary shrink-0 transition-[transform,background-color,color,box-shadow] duration-1000 group-hover:scale-110 group-data-[state=open]:bg-primary group-data-[state=open]:text-white group-data-[state=open]:rotate-360 group-data-[state=open]:shadow-lg group-data-[state=open]:shadow-primary/30"
-                        data-oid="4pb8dj0"
+                        data-oid="y-oatjk"
                       >
                         <Icon
                           icon={stage.icon}
                           className="text-3xl"
-                          data-oid="z5j7jnf"
+                          data-oid="fq3uzad"
                         />
                       </div>
                       <span
                         className="text-xl font-bold text-black dark:text-white transition-[color,transform] duration-500 group-hover:translate-x-1 group-data-[state=open]:text-primary pr-4"
-                        data-oid="z-6f7gk"
+                        data-oid="tbelsaf"
                       >
                         {stage.title}
                       </span>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-10" data-oid="h92zy04">
-                    <div className="pl-0 sm:pl-[76px]" data-oid="rcga42l">
+                  <AccordionContent className="px-6 pb-10" data-oid="f.75f4w">
+                    <div className="pl-0 sm:pl-[76px]" data-oid="deaex3w">
                       <p
                         className="text-black/80 dark:text-white/80 mb-8 text-lg leading-relaxed font-medium transition-colors duration-300"
-                        data-oid="jo_m30h"
+                        data-oid="-4mnl57"
                       >
                         {stage.description}
                       </p>
                       <ul
                         className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8"
-                        data-oid="7a81l_s"
+                        data-oid="vzqgv_n"
                       >
                         {stage.details.map((detail, idx) => (
                           <li
                             key={idx}
                             className="flex items-center gap-4 text-base text-black dark:text-white font-medium group transition-[transform,color] duration-300 hover:translate-x-1"
-                            data-oid="wdfcqow"
+                            data-oid="heq7fb0"
                           >
                             <div
                               className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:scale-110 transition-all duration-500"
-                              data-oid="jktoxz6"
+                              data-oid="00_pjbb"
                             >
                               <div
                                 className="w-2 h-2 rounded-full bg-primary group-hover:bg-white transition-all"
-                                data-oid="attncb:"
+                                data-oid="p.0lnyk"
                               ></div>
                             </div>
                             {detail}
