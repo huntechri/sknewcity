@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 const RenovationHero = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
-  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
+  const [shouldLoadVideo, setShouldLoadVideo] = useState(true);
   const [showStaticBackground, setShowStaticBackground] = useState(false);
 
   useEffect(() => {
@@ -14,24 +14,16 @@ const RenovationHero = () => {
 
     if (mediaQuery.matches) {
       setShowStaticBackground(true);
-      return;
+      setShouldLoadVideo(false);
     }
 
-    if (!sectionRef.current) return;
+    const handleChange = (e: MediaQueryListEvent) => {
+      setShowStaticBackground(e.matches);
+      setShouldLoadVideo(!e.matches);
+    };
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          setShouldLoadVideo(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin: "350px 0px" },
-    );
-
-    observer.observe(sectionRef.current);
-
-    return () => observer.disconnect();
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
 
   const stats = [
@@ -78,7 +70,7 @@ const RenovationHero = () => {
               loop
               muted
               playsInline
-              preload="none"
+              preload="auto"
               poster="/images/contactUs/contactUs.jpg"
               className="absolute inset-0 w-full h-full object-cover transform-gpu will-change-transform"
               aria-label="Фоновое видео с панорамой города"
