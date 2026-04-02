@@ -42,6 +42,12 @@ export default function Home() {
 
   return (
     <main>
+      <link
+        rel="preload"
+        href="/videos/moscow-city-night.mp4"
+        as="video"
+        type="video/mp4"
+      />
       <StructuredData data={structuredData} />
       <Hero />
       <Services />
