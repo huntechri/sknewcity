@@ -3,8 +3,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    deploy:
+      resources:
+        limits:
+          memory: 2G
     ports:
       - "3000:3000"
     restart: always
     environment:
       - NODE_ENV=production
+      - NODE_OPTIONS=--max-old-space-size=1536
