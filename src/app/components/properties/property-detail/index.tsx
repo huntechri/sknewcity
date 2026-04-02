@@ -17,7 +17,7 @@ export default function Details({ item, testimonials }: DetailsProps) {
         <ModernFlatProject
           item={item}
           testimonials={testimonials}
-          data-oid="pdoc:lh"
+          data-oid="sjyw9p."
         />
       );
 
@@ -26,7 +26,7 @@ export default function Details({ item, testimonials }: DetailsProps) {
         <FullHouseProject
           item={item}
           testimonials={testimonials}
-          data-oid="wuxkz_f"
+          data-oid="2vjab2j"
         />
       );
 
@@ -35,7 +35,7 @@ export default function Details({ item, testimonials }: DetailsProps) {
         <BaseProjectLayout
           item={item}
           testimonials={testimonials}
-          data-oid="nld9iil"
+          data-oid="6fa-3r0"
         />
       );
   }

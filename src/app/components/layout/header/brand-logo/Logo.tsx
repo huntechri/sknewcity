@@ -10,7 +10,7 @@ const Logo: React.FC = () => {
         height={68}
         unoptimized={true}
         className="dark:hidden"
-        data-oid="p:0dsme"
+        data-oid="g4g67fo"
       />
 
       <Image
@@ -20,7 +20,7 @@ const Logo: React.FC = () => {
         height={68}
         unoptimized={true}
         className="dark:block hidden"
-        data-oid="k.wezg0"
+        data-oid="r3w6xm-"
       />
     </>
   );

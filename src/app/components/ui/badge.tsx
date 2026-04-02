@@ -41,7 +41,7 @@ function Badge({
       data-variant={variant}
       className={cn(badgeVariants({ variant }), className)}
       {...props}
-      data-oid="dh4dxe7"
+      data-oid="9fi.2nk"
     />
   );
 }

@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Services = () => {
   return (
-    <section className="relative overflow-hidden" data-oid="0u:90yc">
-      <div className="absolute left-0 top-0 hidden sm:block" data-oid="l_g1mzh">
+    <section className="relative overflow-hidden" data-oid="r-x2leu">
+      <div className="absolute left-0 top-0 hidden sm:block" data-oid="d.2_t-t">
         <Image
           src="/images/categories/Vector.svg"
           alt="vector"
@@ -13,7 +13,7 @@ const Services = () => {
           height={1050}
           className="dark:hidden"
           unoptimized={true}
-          data-oid="26vxrrd"
+          data-oid="cvexy9m"
         />
 
         <Image
@@ -23,56 +23,56 @@ const Services = () => {
           height={1050}
           className="hidden dark:block"
           unoptimized={true}
-          data-oid="f1xzmte"
+          data-oid="hy.pb3n"
         />
       </div>
       <div
         className="container max-w-8xl mx-auto px-3 sm:px-5 2xl:px-0 relative z-10"
-        data-oid="3m4y9.t"
+        data-oid="x.jmv4-"
       >
         <div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 items-center gap-4 sm:gap-6 lg:gap-10"
-          data-oid="4c5d.er"
+          data-oid="00w5.l1"
         >
-          <div className="lg:col-span-6 col-span-1" data-oid="drapnmd">
+          <div className="lg:col-span-6 col-span-1" data-oid="cglds0h">
             <p
               className="text-dark/75 dark:text-white/75 text-sm sm:text-base font-semibold flex gap-2.5 items-center"
-              data-oid="r01qc:k"
+              data-oid="99lw41-"
             >
               <Icon
                 icon="ph:house-simple-fill"
                 className="text-lg sm:text-2xl text-primary "
-                data-oid="ppg0op6"
+                data-oid="5vqvdj7"
               />
 
-              <span data-oid="k4juxm3">Направления</span>
+              <span data-oid="jwot::j">Направления</span>
             </p>
             <h2
               className="text-2xl sm:text-3xl md:text-5xl lg:text-52 mt-4 mb-2 font-medium leading-[1.2] text-dark dark:text-white"
-              data-oid="gp8ohjd"
+              data-oid="9k.pzef"
             >
               Реализуем проекты в разных форматах
             </h2>
             <p
               className="text-dark/50 dark:text-white/50 text-sm sm:text-base md:text-lg lg:max-w-full leading-[1.3] md:max-w-3/4"
-              data-oid="1v4x76k"
+              data-oid="-ubfm3a"
             >
               От дизайна до финальной отделки — берём на себя все этапы работы.
             </p>
             <Link
               href="/properties"
               className="py-4 px-8 bg-primary text-base leading-4 block w-fit text-white rounded-full font-semibold mt-8 hover:bg-dark duration-300"
-              data-oid="2:4snt7"
+              data-oid="fn:lq_x"
             >
               Смотреть проекты
             </Link>
           </div>
-          <div className="lg:col-span-6 col-span-1" data-oid="nm6xdsc">
+          <div className="lg:col-span-6 col-span-1" data-oid="xv8k2ql">
             <div
               className="relative rounded-2xl overflow-hidden group h-64 sm:h-96 lg:h-auto"
-              data-oid="4q9eih3"
+              data-oid="z6xn7o0"
             >
-              <Link href="/apartment-renovation" data-oid="r2lcm27">
+              <Link href="/apartment-renovation" data-oid=":v356m-">
                 <Image
                   src="/images/categories/villas.jpg"
                   alt="villas"
@@ -80,44 +80,44 @@ const Services = () => {
                   height={386}
                   className="w-full h-full object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  data-oid="0t40r-c"
+                  data-oid="3v:b0ow"
                 />
               </Link>
               <Link
                 href="/apartment-renovation"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 sm:top-full flex flex-col justify-between pl-5 sm:pl-10 pb-5 sm:pb-10 sm:group-hover:top-0 duration-500"
-                data-oid="7tg0eoo"
+                data-oid="cg4j76o"
               >
                 <div
                   className="flex justify-end mt-4 sm:mt-6 mr-4 sm:mr-6"
-                  data-oid="q_d4abs"
+                  data-oid="zhyiedv"
                 >
                   <div
                     className="bg-white text-dark rounded-full w-fit p-2 sm:p-4"
-                    data-oid="t3sor3t"
+                    data-oid="bhdthpn"
                   >
                     <Icon
                       icon="ph:arrow-right"
                       width={20}
                       height={20}
                       className="sm:w-6 sm:h-6"
-                      data-oid="cm4-2tu"
+                      data-oid="0k_bug0"
                     />
                   </div>
                 </div>
                 <div
                   className="flex flex-col gap-1.5 sm:gap-2.5"
-                  data-oid="h3f.-qb"
+                  data-oid="ql9-do8"
                 >
                   <h3
                     className="text-white text-lg sm:text-2xl"
-                    data-oid="iqvwypw"
+                    data-oid=":h:cxns"
                   >
                     Ремонт квартиры
                   </h3>
                   <p
                     className="text-white/80 text-xs sm:text-base leading-5 sm:leading-6"
-                    data-oid="up9os1b"
+                    data-oid=":78n8by"
                   >
                     Полный цикл работ от проекта до сдачи
                   </p>
@@ -125,12 +125,12 @@ const Services = () => {
               </Link>
             </div>
           </div>
-          <div className="lg:col-span-6 col-span-1" data-oid="8:brxui">
+          <div className="lg:col-span-6 col-span-1" data-oid="e.nxi3.">
             <div
               className="relative rounded-2xl overflow-hidden group h-64 sm:h-96 lg:h-auto"
-              data-oid="_4cnkdz"
+              data-oid="stzt3c9"
             >
-              <Link href="/properties?category=capital" data-oid="ntiqehe">
+              <Link href="/properties?category=capital" data-oid="eec:472">
                 <Image
                   src="/images/categories/luxury-villa.jpg"
                   alt="villas"
@@ -138,44 +138,44 @@ const Services = () => {
                   height={386}
                   className="w-full h-full object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  data-oid="7bpm8xb"
+                  data-oid="uaqr4rf"
                 />
               </Link>
               <Link
                 href="/properties?category=capital"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 sm:top-full flex flex-col justify-between pl-5 sm:pl-10 pb-5 sm:pb-10 sm:group-hover:top-0 duration-500"
-                data-oid="knc30hy"
+                data-oid="iwgv4e."
               >
                 <div
                   className="flex justify-end mt-4 sm:mt-6 mr-4 sm:mr-6"
-                  data-oid="07iv05w"
+                  data-oid="n_nj50m"
                 >
                   <div
                     className="bg-white text-dark rounded-full w-fit p-2 sm:p-4"
-                    data-oid="yi52c9o"
+                    data-oid="w3az2l8"
                   >
                     <Icon
                       icon="ph:arrow-right"
                       width={20}
                       height={20}
                       className="sm:w-6 sm:h-6"
-                      data-oid="wa-8i59"
+                      data-oid="rz4yxst"
                     />
                   </div>
                 </div>
                 <div
                   className="flex flex-col gap-1.5 sm:gap-2.5"
-                  data-oid="hltbewj"
+                  data-oid="30i4j.s"
                 >
                   <h3
                     className="text-white text-lg sm:text-2xl"
-                    data-oid="h6gm:9w"
+                    data-oid="i9zkudn"
                   >
                     Ремонт загородного дома
                   </h3>
                   <p
                     className="text-white/80 text-xs sm:text-base leading-5 sm:leading-6"
-                    data-oid="m-4tdy4"
+                    data-oid="_tjhwva"
                   >
                     Комфорт и надёжность на годы
                   </p>
@@ -185,13 +185,13 @@ const Services = () => {
           </div>
           <div
             className="sm:col-span-1 lg:col-span-3 col-span-1"
-            data-oid="g5.k2zr"
+            data-oid="tih77qh"
           >
             <div
               className="relative rounded-2xl overflow-hidden group h-64 sm:h-96 lg:h-auto"
-              data-oid="9-zca.1"
+              data-oid="0lt87yx"
             >
-              <Link href="/properties?category=designer" data-oid="ta08-9:">
+              <Link href="/properties?category=designer" data-oid=".p9sd5g">
                 <Image
                   src="/images/categories/appartment.jpg"
                   alt="villas"
@@ -199,44 +199,44 @@ const Services = () => {
                   height={386}
                   className="w-full h-full object-cover"
                   sizes="(max-width: 1024px) 100vw, 25vw"
-                  data-oid="ah1s3ca"
+                  data-oid="jk1bn61"
                 />
               </Link>
               <Link
                 href="/properties?category=designer"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 sm:top-full flex flex-col justify-between pl-5 sm:pl-10 pb-5 sm:pb-10 sm:group-hover:top-0 duration-500"
-                data-oid="hf.1ckk"
+                data-oid="3ck6oy4"
               >
                 <div
                   className="flex justify-end mt-4 sm:mt-6 mr-4 sm:mr-6"
-                  data-oid="3aaitot"
+                  data-oid="xsfqtsl"
                 >
                   <div
                     className="bg-white text-dark rounded-full w-fit p-2 sm:p-4"
-                    data-oid="uum27tf"
+                    data-oid="kvd3:te"
                   >
                     <Icon
                       icon="ph:arrow-right"
                       width={20}
                       height={20}
                       className="sm:w-6 sm:h-6"
-                      data-oid="l06-aaw"
+                      data-oid="js83k5s"
                     />
                   </div>
                 </div>
                 <div
                   className="flex flex-col gap-1.5 sm:gap-2.5"
-                  data-oid="nl69zz_"
+                  data-oid="8b3m8_v"
                 >
                   <h3
                     className="text-white text-lg sm:text-2xl"
-                    data-oid="5enjzht"
+                    data-oid="heav8j4"
                   >
                     Дизайн проект
                   </h3>
                   <p
                     className="text-white/80 text-xs sm:text-base leading-5 sm:leading-6"
-                    data-oid="9ze:uo1"
+                    data-oid="_4::53v"
                   >
                     Планировки, визуализация и рабочая документация
                   </p>
@@ -246,13 +246,13 @@ const Services = () => {
           </div>
           <div
             className="sm:col-span-1 lg:col-span-3 col-span-1"
-            data-oid="1s-vskx"
+            data-oid="l3_3.5n"
           >
             <div
               className="relative rounded-2xl overflow-hidden group h-64 sm:h-96 lg:h-auto"
-              data-oid="os9_zy_"
+              data-oid="7r50xnc"
             >
-              <Link href="/properties?category=commercial" data-oid="oqm7.ql">
+              <Link href="/properties?category=commercial" data-oid="8wzu93t">
                 <Image
                   src="/images/categories/office.jpg"
                   alt="office"
@@ -260,44 +260,44 @@ const Services = () => {
                   height={386}
                   className="w-full h-full object-cover"
                   sizes="(max-width: 1024px) 100vw, 25vw"
-                  data-oid="mn0vso7"
+                  data-oid="wr.7agn"
                 />
               </Link>
               <Link
                 href="/properties?category=commercial"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-0 sm:top-full flex flex-col justify-between pl-5 sm:pl-10 pb-5 sm:pb-10 sm:group-hover:top-0 duration-500"
-                data-oid="dg-ym.s"
+                data-oid="uvsj3pw"
               >
                 <div
                   className="flex justify-end mt-4 sm:mt-6 mr-4 sm:mr-6"
-                  data-oid="fei86pm"
+                  data-oid="of724-0"
                 >
                   <div
                     className="bg-white text-dark rounded-full w-fit p-2 sm:p-4"
-                    data-oid="p107hur"
+                    data-oid="ibwm82g"
                   >
                     <Icon
                       icon="ph:arrow-right"
                       width={20}
                       height={20}
                       className="sm:w-6 sm:h-6"
-                      data-oid="ki288:u"
+                      data-oid="2eiyyk1"
                     />
                   </div>
                 </div>
                 <div
                   className="flex flex-col gap-1.5 sm:gap-2.5"
-                  data-oid="64one_0"
+                  data-oid="7ol0zq1"
                 >
                   <h3
                     className="text-white text-lg sm:text-2xl"
-                    data-oid="-910f3."
+                    data-oid="vx96.ik"
                   >
                     Ремонт коммерческих помещений
                   </h3>
                   <p
                     className="text-white/80 text-xs sm:text-base leading-5 sm:leading-6"
-                    data-oid="95:hymf"
+                    data-oid="r78iuk3"
                   >
                     С учётом бизнес-задач и эксплуатационных требований
                   </p>

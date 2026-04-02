@@ -84,7 +84,7 @@ export default function ProjectImageGallery({
     <>
       <div
         className="mt-6 grid grid-cols-12 gap-4 sm:mt-8 sm:gap-8"
-        data-oid="ezbw0bb"
+        data-oid=":h0mda2"
       >
         {images.slice(0, 4).map((image, index) => (
           <button
@@ -93,7 +93,7 @@ export default function ProjectImageGallery({
             onClick={() => openImage(index)}
             className={`${imageSlots[index]} ${imageHeights[index]} group relative w-full overflow-hidden rounded-2xl text-left`}
             aria-label={`Открыть изображение ${index + 1} проекта ${projectName}`}
-            data-oid="3dmaz75"
+            data-oid="0-fddtk"
           >
             <Image
               src={image.src}
@@ -109,23 +109,23 @@ export default function ProjectImageGallery({
                     ? "33vw"
                     : "(max-width: 1024px) 50vw, 16vw"
               }
-              data-oid="pd4g7dg"
+              data-oid=".18gdz:"
             />
 
             <span
               className="pointer-events-none absolute inset-0 bg-black/0 transition group-hover:bg-black/15"
-              data-oid="4g3_ovd"
+              data-oid="syo.at."
             />
 
             <span
               className="pointer-events-none absolute right-4 top-4 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-2 text-sm font-medium text-dark opacity-0 transition group-hover:opacity-100"
-              data-oid="u_zf-j_"
+              data-oid="c24d5h-"
             >
               <Icon
                 icon="ph:magnifying-glass-plus"
                 width={18}
                 height={18}
-                data-oid="tcvfo6z"
+                data-oid="xeg_lfq"
               />
               Открыть
             </span>
@@ -140,16 +140,16 @@ export default function ProjectImageGallery({
           aria-modal="true"
           aria-label={`Просмотр проекта ${projectName}`}
           onClick={closeImage}
-          data-oid="2xr3-9n"
+          data-oid="0z1dt__"
         >
           <button
             type="button"
             onClick={closeImage}
             className="absolute right-4 top-4 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
             aria-label="Закрыть просмотр"
-            data-oid="0-svvb-"
+            data-oid="wc3fd_t"
           >
-            <Icon icon="ph:x" width={24} height={24} data-oid="8adcrdc" />
+            <Icon icon="ph:x" width={24} height={24} data-oid="c:twxxg" />
           </button>
 
           {images.length > 1 && (
@@ -162,13 +162,13 @@ export default function ProjectImageGallery({
                 }}
                 className="absolute left-4 top-1/2 z-10 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
                 aria-label="Предыдущее изображение"
-                data-oid="vi9vnn_"
+                data-oid=".wpqka6"
               >
                 <Icon
                   icon="ph:caret-left-bold"
                   width={20}
                   height={20}
-                  data-oid="vjhyud9"
+                  data-oid="pdra0b0"
                 />
               </button>
               <button
@@ -179,13 +179,13 @@ export default function ProjectImageGallery({
                 }}
                 className="absolute right-4 top-1/2 z-10 inline-flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20"
                 aria-label="Следующее изображение"
-                data-oid="sjxai79"
+                data-oid="d-6jskc"
               >
                 <Icon
                   icon="ph:caret-right-bold"
                   width={20}
                   height={20}
-                  data-oid="e3fez:q"
+                  data-oid="t2sf:7e"
                 />
               </button>
             </>
@@ -194,7 +194,7 @@ export default function ProjectImageGallery({
           <div
             className="relative mx-auto flex h-full w-full max-w-7xl items-center justify-center"
             onClick={(event) => event.stopPropagation()}
-            data-oid="l2howr1"
+            data-oid="-_esxwn"
           >
             <Image
               src={images[activeIndex].src}
@@ -203,7 +203,7 @@ export default function ProjectImageGallery({
               height={1600}
               className="max-h-full w-auto max-w-full rounded-2xl object-contain"
               priority
-              data-oid=":o8fux."
+              data-oid="0ys1i5g"
             />
           </div>
         </div>

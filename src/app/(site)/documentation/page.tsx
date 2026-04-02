@@ -15,26 +15,26 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="" data-oid="zapx6iq">
+    <div className="" data-oid=".jw9jqs">
       <div
         className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md p-6 lg:mt-28 mt-16 !pt-10"
-        data-oid="b16hgad"
+        data-oid="g-15:43"
       >
-        <h1 className="sr-only" data-oid="jcp:h_r">
+        <h1 className="sr-only" data-oid="5vuakhw">
           Документация SK New City
         </h1>
-        <div className="grid grid-cols-12 gap-6" data-oid="xx:k_ew">
+        <div className="grid grid-cols-12 gap-6" data-oid="wnx7z--">
           <div
             className="lg:col-span-3 col-span-12 lg:block hidden"
-            data-oid="eni51k5"
+            data-oid="pg4blin"
           >
-            <DocNavigation data-oid="hflci0r" />
+            <DocNavigation data-oid="4dnwkif" />
           </div>
-          <div className="lg:col-span-9 col-span-12" data-oid="bgbmjqj">
-            <Introduction data-oid="ax:w7z3" />
-            <PackageStructure data-oid="tgk7xy4" />
-            <QuickStart data-oid="w0l6_pd" />
-            <Configuration data-oid="ivtf5kt" />
+          <div className="lg:col-span-9 col-span-12" data-oid="b8duun3">
+            <Introduction data-oid="91u_jhr" />
+            <PackageStructure data-oid="meb6h99" />
+            <QuickStart data-oid="4cntkml" />
+            <Configuration data-oid="876qw0-" />
           </div>
         </div>
       </div>

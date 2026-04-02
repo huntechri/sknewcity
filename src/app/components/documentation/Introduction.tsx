@@ -44,40 +44,40 @@ export const Introduction = () => {
       <div
         id="version"
         className="md:scroll-m-[180px] scroll-m-28"
-        data-oid="23dhsxb"
+        data-oid="r730ys2"
       >
         {docNavbarOpen && (
           <div
             className="fixed top-0 left-0 w-full h-full bg-black/50 z-40"
             onClick={() => setDocNavbarOpen(false)}
-            data-oid="mcnuc3i"
+            data-oid="ing-.xz"
           />
         )}
 
-        <div className="flex item-center justify-between" data-oid="2sld87a">
+        <div className="flex item-center justify-between" data-oid="h-fk602">
           <h3
             className=" text-black text-2xl mt-4 font-semibold mb-6 dark:text-white"
-            data-oid="dte0peq"
+            data-oid="qj92lma"
           >
             Pacakge Versions
           </h3>
           <button
             onClick={() => setDocNavbarOpen(true)}
             className="p-0"
-            data-oid="wvmpp2g"
+            data-oid="i_xaceb"
           >
             {" "}
             <Icon
               icon="gg:menu-right"
               className="text-3xl lg:hidden block"
-              data-oid="71u-ufi"
+              data-oid="8-0z1jl"
             />
           </button>
         </div>
 
         <div
           className="w-full flex justify-between lg:gap-0 gap-6 lg:flex-nowrap flex-wrap p-6 rounded-md border border-black/10 dark:border-white/20"
-          data-oid="98qzhul"
+          data-oid="cq7ja.n"
         >
           {PackageVersions &&
             PackageVersions.map((item) => {
@@ -85,7 +85,7 @@ export const Introduction = () => {
                 <div
                   key={item.id}
                   className="lg:w-1/5 md:w-full text-center lg:border-b-0 border-b lg:border-e lg:last:border-e-0 last:border-b-0 border-black/10 dark:border-white/20"
-                  data-oid="fcxwgm1"
+                  data-oid="ycbn7sx"
                 >
                   <Image
                     src={item.img}
@@ -93,18 +93,18 @@ export const Introduction = () => {
                     className=" mx-auto w-10 h-10 "
                     width={40}
                     height={40}
-                    data-oid="fk94_yi"
+                    data-oid="zccxzpq"
                   />
 
                   <h5
                     className="text-2xl font-bold mt-3.5 dark:text-white"
-                    data-oid="_j04c85"
+                    data-oid="iu:qrqe"
                   >
                     {`v${item.version}`}
                   </h5>
                   <p
                     className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50"
-                    data-oid="z8s8a9i"
+                    data-oid="3p_151p"
                   >
                     {item.packageName}
                   </p>
@@ -112,23 +112,23 @@ export const Introduction = () => {
               );
             })}
         </div>
-        <div className="mt-5" data-oid="394.f16">
+        <div className="mt-5" data-oid="gy._pep">
           <p
             className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50"
-            data-oid="lakfpvr"
+            data-oid="0x-gema"
           >
             Проект SK New City разработан на Next.js и Tailwind CSS.
           </p>
           <p
             className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50"
-            data-oid="k0mb7be"
+            data-oid="2fsindn"
           >
             Кодовая база адаптирована под сайт строительной компании, ремонта
             квартир и отделочных работ.
           </p>
           <p
             className="text-base font-medium text-midnight_text dark:text-white dark:text-opacity-50"
-            data-oid="4-rtqn_"
+            data-oid="s2y4bpd"
           >
             Для доработки полезно понимать основы Next.js, React, Tailwind CSS и
             JSX.
@@ -138,22 +138,22 @@ export const Introduction = () => {
 
       <div
         className={`lg:hidden block fixed top-0 right-0 h-full w-full bg-white dark:bg-dark shadow-lg transform transition-transform duration-300 max-w-xs ${docNavbarOpen ? "translate-x-0" : "translate-x-full"} z-50`}
-        data-oid="qhc0-qx"
+        data-oid="ngjyjwp"
       >
         <div
           className="flex items-center justify-between p-4"
-          data-oid=".3i1bo1"
+          data-oid="ya_cecg"
         >
           <h2
             className="text-lg font-bold text-midnight_text dark:text-white"
-            data-oid=":wetj8m"
+            data-oid="p3djgsl"
           >
             Меню документации
           </h2>
           <button
             onClick={() => setDocNavbarOpen(false)}
             aria-label="Close mobile menu"
-            data-oid="57zo_ud"
+            data-oid="49e26o4"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@ export const Introduction = () => {
               height="24"
               viewBox="0 0 24 24"
               className="dark:text-white"
-              data-oid=":bj:kaw"
+              data-oid="g848.jf"
             >
               <path
                 fill="none"
@@ -170,13 +170,13 @@ export const Introduction = () => {
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
-                data-oid="h5m37v-"
+                data-oid="m-64jr4"
               />
             </svg>
           </button>
         </div>
-        <nav className="px-4" data-oid="v-qd7wr">
-          <DocNavigation data-oid="27q7koq" />
+        <nav className="px-4" data-oid="xv58wa6">
+          <DocNavigation data-oid="lwg0nlg" />
         </nav>
       </div>
     </>

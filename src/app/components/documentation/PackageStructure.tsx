@@ -15,134 +15,134 @@ export const PackageStructure = () => {
     <div
       id="structure"
       className="md:scroll-m-[130px] scroll-m-28"
-      data-oid="-jh97pb"
+      data-oid="ptecs7a"
     >
       <h3
         className=" text-black text-2xl font-semibold mt-8 dark:text-white"
-        data-oid="xjslnk8"
+        data-oid="xfi8vs9"
       >
         Pacakge Structure
       </h3>
       <div
         className="rounded-2xl p-6 pt-3 border border-black/10 dark:border-white/20 mt-6"
-        data-oid="67o9bsh"
+        data-oid="j4vnq9o"
       >
-        <div className="flex items-center gap-4" data-oid="3n41pjx">
-          <h5 className="text-base font-medium mt-3 mb-1" data-oid="gcrew49">
+        <div className="flex items-center gap-4" data-oid="xngtva6">
+          <h5 className="text-base font-medium mt-3 mb-1" data-oid="8j99uia">
             Структура проекта SK New City
           </h5>
         </div>
-        <ul className="ps-0 md:ps-5 list-unstyled" data-oid=":bfa15p">
-          <li className="py-2" data-oid=".8c:4jf">
-            <div className="flex items-center gap-3" data-oid="ow1yt3a">
+        <ul className="ps-0 md:ps-5 list-unstyled" data-oid="sw-xw_c">
+          <li className="py-2" data-oid="iz:og76">
+            <div className="flex items-center gap-3" data-oid="u8kvpm_">
               <p
                 className="text-xl text-black dark:text-white/50"
-                data-oid="r1k-ypd"
+                data-oid="a9nkw72"
               >
                 |—
               </p>
               <span
                 className="font-medium text-dark dark:text-white/50"
-                data-oid="hdaj9-a"
+                data-oid="4xt64se"
               >
                 <Icon
                   icon="tabler:folder"
                   className="text-primary text-base inline-block me-2"
-                  data-oid="qy6pi3:"
+                  data-oid="hzvkzdn"
                 />
                 packages
               </span>
             </div>
-            <ul className="ps-5 md:ps-5 list-unstyled" data-oid="hfxp25:">
-              <li className="py-0" data-oid="kgpk-4.">
-                <ul className="ps-2 ps-md-3 list-unstyled" data-oid="gmvm:9_">
-                  <li className="py-2" data-oid="65x-k-d">
+            <ul className="ps-5 md:ps-5 list-unstyled" data-oid="r9ytioa">
+              <li className="py-0" data-oid="26pmaln">
+                <ul className="ps-2 ps-md-3 list-unstyled" data-oid="qwqq0ge">
+                  <li className="py-2" data-oid="v4x_0jp">
                     <ul
                       className="ps-0 md:ps-5 list-unstyled"
-                      data-oid="-wi2par"
+                      data-oid="bex5a77"
                     >
-                      <li className="py-2" data-oid=":bh9f5u">
+                      <li className="py-2" data-oid="w-7jsba">
                         <div
                           className="flex items-center gap-3"
-                          data-oid="u_7kwb3"
+                          data-oid="sos-r4b"
                         >
                           <p
                             className="text-xl text-black dark:text-white/50"
-                            data-oid="9e2_dh5"
+                            data-oid="y1noqli"
                           >
                             |—
                           </p>
                           <span
                             className="font-medium text-dark dark:text-white/50"
-                            data-oid="837c.iu"
+                            data-oid="ty5pa4v"
                           >
                             <Icon
                               icon="tabler:folder"
                               className="text-primary text-base inline-block me-2"
-                              data-oid="aq6izbm"
+                              data-oid="xweg0od"
                             />
                             markdown
                           </span>
                         </div>
                       </li>
-                      <li className="py-2" data-oid="uspedmf">
+                      <li className="py-2" data-oid="s3qbedb">
                         <div
                           className="flex items-center gap-3"
-                          data-oid="-vystfv"
+                          data-oid="5qv57_6"
                         >
                           <p
                             className="text-xl text-black dark:text-white/50"
-                            data-oid="_gk3idq"
+                            data-oid="0l9jn6x"
                           >
                             |—
                           </p>
                           <span
                             className="font-medium text-dark dark:text-white/50"
-                            data-oid="oi4mv.g"
+                            data-oid="c0u96qd"
                           >
                             <Icon
                               icon="tabler:folder"
                               className="text-primary text-base inline-block me-2"
-                              data-oid="k:46fqk"
+                              data-oid="-z4_1ez"
                             />
                             public
                           </span>
                         </div>
                       </li>
-                      <li className="py-2" data-oid="9hf9atw">
+                      <li className="py-2" data-oid="6m54ewc">
                         <div
                           className="flex items-center gap-3"
-                          data-oid="ihhqat_"
+                          data-oid="zia3.zw"
                         >
                           <p
                             className="text-xl text-black dark:text-white/50"
-                            data-oid="_8:tcbf"
+                            data-oid="t4had:n"
                           >
                             |—
                           </p>
                           <span
                             className="font-medium text-dark dark:text-white/50"
-                            data-oid="ivw3_3q"
+                            data-oid="6n.cs_q"
                           >
                             <Icon
                               icon="tabler:folder"
                               className="text-primary text-base inline-block me-2"
-                              data-oid="vduyxkc"
+                              data-oid="07erd9j"
                             />
                             src
                           </span>
                         </div>
-                        <div className="flex" data-oid="_qmmh0a">
+                        <div className="flex" data-oid="dv7eog6">
                           <div
                             className="flex flex-col justify-between gap-2 mt-2"
-                            data-oid="cxtigeb"
+                            data-oid="nr4ro:t"
                           >
                             {Counts.slice(0, 19).map((item, index) => {
                               return (
                                 <p
                                   key={index}
                                   className="text-xl text-black dark:text-white/50"
-                                  data-oid="8s795k1"
+                                  data-oid="fwhqbpo"
                                 >
                                   |
                                 </p>
@@ -151,42 +151,42 @@ export const PackageStructure = () => {
                           </div>
                           <ul
                             className="ps-5 md:ps-12 list-unstyled"
-                            data-oid="hp92_n:"
+                            data-oid="fd1nntc"
                           >
-                            <li className="py-2" data-oid="y6fabqy">
+                            <li className="py-2" data-oid="3kqd6e8">
                               <div
                                 className="flex items-center gap-3"
-                                data-oid="edf44vj"
+                                data-oid="-uu1dq4"
                               >
                                 <p
                                   className="text-xl text-black dark:text-white/50"
-                                  data-oid="no8ocbj"
+                                  data-oid="-e56set"
                                 >
                                   |—
                                 </p>
                                 <span
                                   className="font-medium text-dark dark:text-white/50"
-                                  data-oid="ce0lzis"
+                                  data-oid="5e79i31"
                                 >
                                   <Icon
                                     icon="tabler:folder"
                                     className="text-primary text-base inline-block me-2"
-                                    data-oid="o4hd2_7"
+                                    data-oid="jh86mhj"
                                   />
                                   app
                                 </span>
                               </div>
-                              <div className="flex" data-oid="a7o6-sv">
+                              <div className="flex" data-oid="ww0cy0e">
                                 <div
                                   className="flex flex-col justify-between gap-2 mt-2"
-                                  data-oid="om55yof"
+                                  data-oid="t5txwyv"
                                 >
                                   {Counts.slice(0, 12).map((item, index) => {
                                     return (
                                       <p
                                         key={index}
                                         className="text-xl text-black dark:text-white/50"
-                                        data-oid="rc_bzr2"
+                                        data-oid="3y3.xhc"
                                       >
                                         |
                                       </p>
@@ -195,41 +195,41 @@ export const PackageStructure = () => {
                                 </div>
                                 <ul
                                   className="ps-5 md:ps-12 list-unstyled red"
-                                  data-oid="ezo6.8a"
+                                  data-oid="jw:dsh-"
                                 >
-                                  <li className="py-2" data-oid="a:jt4xc">
+                                  <li className="py-2" data-oid="1u_uex2">
                                     <div
                                       className="flex items-center gap-3"
-                                      data-oid="yxikm8_"
+                                      data-oid="8glv7u3"
                                     >
                                       <p
                                         className="text-xl text-black dark:text-white/50"
-                                        data-oid="2m3:9kg"
+                                        data-oid="oozcj:r"
                                       >
                                         |—
                                       </p>
                                       <span
                                         className="font-medium text-dark dark:text-white/50"
-                                        data-oid="-jvd47o"
+                                        data-oid="6wt1os5"
                                       >
                                         <Icon
                                           icon="tabler:folder"
                                           className="text-primary text-base inline-block me-2"
-                                          data-oid="afyy-n7"
+                                          data-oid="z8_y2nc"
                                         />
                                         (site)
                                       </span>{" "}
                                       <span
                                         className="fs-9 text-dark dark:text-white/50 ms-4"
-                                        data-oid="v0-ogqi"
+                                        data-oid="mk.t-46"
                                       >
                                         (Contains all the pages)
                                       </span>
                                     </div>
-                                    <div className="flex" data-oid="jm_qfmm">
+                                    <div className="flex" data-oid="nwotnwj">
                                       <div
                                         className="flex flex-col justify-between gap-2 mt-2"
-                                        data-oid="5x1i:7n"
+                                        data-oid="3go9fjx"
                                       >
                                         {Counts.slice(0, 5).map(
                                           (item, index) => {
@@ -237,7 +237,7 @@ export const PackageStructure = () => {
                                               <p
                                                 key={index}
                                                 className="text-xl text-black dark:text-white/50"
-                                                data-oid="jink9u0"
+                                                data-oid="zn.e:na"
                                               >
                                                 |
                                               </p>
@@ -248,125 +248,125 @@ export const PackageStructure = () => {
 
                                       <ul
                                         className="ps-5 md:ps-12 list-unstyled"
-                                        data-oid="l7u.y67"
+                                        data-oid="_q-ljh9"
                                       >
-                                        <li className="py-2" data-oid="xm9t:ju">
+                                        <li className="py-2" data-oid="yn2vhgb">
                                           <div
                                             className="flex items-center gap-3"
-                                            data-oid="oumtcn_"
+                                            data-oid="v_35wkv"
                                           >
                                             <p
                                               className="text-xl text-black dark:text-white/50"
-                                              data-oid="fh43eb_"
+                                              data-oid="3bvgbxq"
                                             >
                                               |—
                                             </p>
                                             <span
                                               className="font-medium text-dark dark:text-white/50"
-                                              data-oid="fuhkc15"
+                                              data-oid="qfl9tk_"
                                             >
                                               <Icon
                                                 icon="tabler:folder"
                                                 className="text-primary text-base inline-block me-2"
-                                                data-oid="h302_a_"
+                                                data-oid="6jj1pw3"
                                               />
                                               (auth) (Contains all the auth
                                               pages)
                                             </span>
                                           </div>
                                         </li>
-                                        <li className="py-2" data-oid="t-hvj7n">
+                                        <li className="py-2" data-oid="3h86ip3">
                                           <div
                                             className="flex items-center gap-3"
-                                            data-oid="ocz1jxh"
+                                            data-oid="tahrtac"
                                           >
                                             <p
                                               className="text-xl text-black dark:text-white/50"
-                                              data-oid="8gbqead"
+                                              data-oid="_:c3kqx"
                                             >
                                               |—
                                             </p>
                                             <span
                                               className="font-medium text-dark dark:text-white/50"
-                                              data-oid="gl_r6.w"
+                                              data-oid="bp_-9-2"
                                             >
                                               <Icon
                                                 icon="tabler:folder"
                                                 className="text-primary text-base inline-block me-2"
-                                                data-oid="i6cizc2"
+                                                data-oid=":m8pzhf"
                                               />
                                               blogs
                                             </span>
                                           </div>
                                         </li>
-                                        <li className="py-2" data-oid="si2yrca">
+                                        <li className="py-2" data-oid="44.rhfy">
                                           <div
                                             className="flex items-center gap-3"
-                                            data-oid="adh4rsf"
+                                            data-oid="b-inx6l"
                                           >
                                             <p
                                               className="text-xl text-black dark:text-white/50"
-                                              data-oid="0z:zm52"
+                                              data-oid="ass0cie"
                                             >
                                               |—
                                             </p>
                                             <span
                                               className="font-medium text-dark dark:text-white/50"
-                                              data-oid="i3u_j72"
+                                              data-oid="tk9_sne"
                                             >
                                               <Icon
                                                 icon="tabler:folder"
                                                 className="text-primary text-base inline-block me-2"
-                                                data-oid="zlfwt2o"
+                                                data-oid="4:ccfh7"
                                               />
                                               contactus
                                             </span>
                                           </div>
                                         </li>
 
-                                        <li className="py-2" data-oid="uni1bdn">
+                                        <li className="py-2" data-oid="rg.sic:">
                                           <div
                                             className="flex items-center gap-3"
-                                            data-oid="t.4oag1"
+                                            data-oid="bq2-vi8"
                                           >
                                             <p
                                               className="text-xl text-black dark:text-white/50"
-                                              data-oid="y3o5sd5"
+                                              data-oid="9.7x5ka"
                                             >
                                               |—
                                             </p>
                                             <span
                                               className="font-medium text-dark dark:text-white/50"
-                                              data-oid="c47y340"
+                                              data-oid="esdaq6e"
                                             >
                                               <Icon
                                                 icon="tabler:folder"
                                                 className="text-primary text-base inline-block me-2"
-                                                data-oid="-uzr9m3"
+                                                data-oid="9agup7h"
                                               />
                                               documentation
                                             </span>
                                           </div>
                                         </li>
-                                        <li className="py-2" data-oid="86etn-g">
+                                        <li className="py-2" data-oid="cgnfuu4">
                                           <div
                                             className="flex items-center gap-3"
-                                            data-oid="xma85vh"
+                                            data-oid="6j-2bpu"
                                           >
                                             <p
                                               className="text-xl text-black dark:text-white/50"
-                                              data-oid="4w9x2ag"
+                                              data-oid="nwgrcg9"
                                             >
                                               |—
                                             </p>
                                             <span
                                               className="font-medium text-dark dark:text-white/50"
-                                              data-oid="18yow01"
+                                              data-oid="aaht9mp"
                                             >
                                               <Icon
                                                 icon="tabler:folder"
                                                 className="text-primary text-base inline-block me-2"
-                                                data-oid="gz2.:u5"
+                                                data-oid="8k8qkwg"
                                               />
                                               properties
                                             </span>
@@ -375,149 +375,149 @@ export const PackageStructure = () => {
                                       </ul>
                                     </div>
                                   </li>
-                                  <li className="py-2" data-oid="orhjb9v">
+                                  <li className="py-2" data-oid="zk9r:82">
                                     <div
                                       className="flex items-center gap-3"
-                                      data-oid="nr1_0ri"
+                                      data-oid="nbnklqm"
                                     >
                                       <p
                                         className="text-xl text-black dark:text-white/50"
-                                        data-oid="fia4c-l"
+                                        data-oid=":4_5zyx"
                                       >
                                         |—
                                       </p>
                                       <span
                                         className="font-medium text-dark dark:text-white/50"
-                                        data-oid="-pnpe2_"
+                                        data-oid="eo99adh"
                                       >
                                         <Icon
                                           icon="tabler:folder"
                                           className="text-primary text-base inline-block me-2"
-                                          data-oid="-06.wv-"
+                                          data-oid="ag-uf8p"
                                         />
                                         api
                                       </span>
                                     </div>
                                   </li>
-                                  <li className="py-2" data-oid="qegn6cy">
+                                  <li className="py-2" data-oid="mkjh0i8">
                                     <div
                                       className="flex items-center gap-3"
-                                      data-oid="2:tbi2j"
+                                      data-oid="a-7zz65"
                                     >
                                       <p
                                         className="text-xl text-black dark:text-white/50"
-                                        data-oid="6gx4d:o"
+                                        data-oid="mjjwg-2"
                                       >
                                         |—
                                       </p>
                                       <span
                                         className="font-medium text-dark dark:text-white/50"
-                                        data-oid="2swgvwf"
+                                        data-oid="su7lmc6"
                                       >
                                         <Icon
                                           icon="tabler:folder"
                                           className="text-primary text-base inline-block me-2"
-                                          data-oid="z345lgm"
+                                          data-oid="_k9rwof"
                                         />
                                         components (contains all the components)
                                       </span>
                                     </div>
                                   </li>
-                                  <li className="py-2" data-oid="420n_x-">
+                                  <li className="py-2" data-oid="l5jmmoi">
                                     <div
                                       className="flex items-center gap-3"
-                                      data-oid="7i0uovl"
+                                      data-oid="bdhy-t9"
                                     >
                                       <p
                                         className="text-xl text-black dark:text-white/50"
-                                        data-oid="3u4k9g_"
+                                        data-oid="s:j7a4g"
                                       >
                                         |—
                                       </p>
                                       <span
                                         className="font-medium text-dark dark:text-white/50"
-                                        data-oid="9xhbrdl"
+                                        data-oid="ufvf_37"
                                       >
                                         <Icon
                                           icon="tabler:folder"
                                           className="text-primary text-base inline-block me-2"
-                                          data-oid="k7mqr9v"
+                                          data-oid="xnfjlyy"
                                         />
                                         types
                                       </span>
                                     </div>
                                   </li>
-                                  <li className="py-2" data-oid="7pgix.x">
+                                  <li className="py-2" data-oid="epv1e3j">
                                     <div
                                       className="flex items-center gap-3"
-                                      data-oid="pf.bha7"
+                                      data-oid="47xdxro"
                                     >
                                       <p
                                         className="text-xl text-black dark:text-white/50"
-                                        data-oid="is291m7"
+                                        data-oid="yh-:jwp"
                                       >
                                         |—
                                       </p>
                                       <span
                                         className="font-medium text-dark dark:text-white/50"
-                                        data-oid="i3fso3k"
+                                        data-oid=".gvpiqi"
                                       >
                                         global.css
                                       </span>
                                     </div>
                                   </li>
-                                  <li className="py-2" data-oid="4pi-o7n">
+                                  <li className="py-2" data-oid="z83xc8b">
                                     <div
                                       className="flex items-center gap-3"
-                                      data-oid="9zr-9c."
+                                      data-oid="nzjkoij"
                                     >
                                       <p
                                         className="text-xl text-black dark:text-white/50"
-                                        data-oid="w5g_uqc"
+                                        data-oid="vkcykn4"
                                       >
                                         |—
                                       </p>
                                       <span
                                         className="font-medium text-dark dark:text-white/50"
-                                        data-oid="577hl6h"
+                                        data-oid="4frlfb9"
                                       >
                                         layout.tsx
                                       </span>
                                     </div>
                                   </li>
-                                  <li className="py-2" data-oid=".-pn99w">
+                                  <li className="py-2" data-oid="6:1ko0m">
                                     <div
                                       className="flex items-center gap-3"
-                                      data-oid="o9wu4q:"
+                                      data-oid="nevvl0x"
                                     >
                                       <p
                                         className="text-xl text-black dark:text-white/50"
-                                        data-oid="5y2:v7r"
+                                        data-oid="ph6uzq-"
                                       >
                                         |—
                                       </p>
                                       <span
                                         className="font-medium text-dark dark:text-white/50"
-                                        data-oid=":4_7kdg"
+                                        data-oid="ak40_rz"
                                       >
                                         not-found.tsx
                                       </span>
                                     </div>
                                   </li>
-                                  <li className="py-2" data-oid="1y2quvs">
+                                  <li className="py-2" data-oid="d9a4sjb">
                                     <div
                                       className="flex items-center gap-3"
-                                      data-oid="p3.-v08"
+                                      data-oid="4h6k-2c"
                                     >
                                       <p
                                         className="text-xl text-black dark:text-white/50"
-                                        data-oid=":khyd5:"
+                                        data-oid="r-dva1w"
                                       >
                                         |—
                                       </p>
                                       <span
                                         className="font-medium text-dark dark:text-white/50"
-                                        data-oid="k09lbi6"
+                                        data-oid="8lkjdax"
                                       >
                                         page.tsx
                                       </span>
@@ -526,49 +526,49 @@ export const PackageStructure = () => {
                                 </ul>
                               </div>
                             </li>
-                            <li className="py-2" data-oid="l7np9wg">
+                            <li className="py-2" data-oid="zw3dwqp">
                               <div
                                 className="flex items-center gap-3"
-                                data-oid="u0:d2s4"
+                                data-oid="s57zchn"
                               >
                                 <p
                                   className="text-xl text-black dark:text-white/50"
-                                  data-oid="1pl.6qq"
+                                  data-oid="wueeux."
                                 >
                                   |—
                                 </p>
                                 <span
                                   className="font-medium text-dark dark:text-white/50"
-                                  data-oid="rmznziw"
+                                  data-oid="ds98z7z"
                                 >
                                   <Icon
                                     icon="tabler:folder"
                                     className="text-primary text-base inline-block me-2"
-                                    data-oid="7ts-q_o"
+                                    data-oid="5hlu3j9"
                                   />
                                   lib
                                 </span>
                               </div>
                             </li>
-                            <li className="py-2" data-oid="_l0dwn6">
+                            <li className="py-2" data-oid="h-c8.8:">
                               <div
                                 className="flex items-center gap-3"
-                                data-oid="gqcste7"
+                                data-oid=".mbd:2e"
                               >
                                 <p
                                   className="text-xl text-black dark:text-white/50"
-                                  data-oid=".2uipy7"
+                                  data-oid="l1yzvkl"
                                 >
                                   |—
                                 </p>
                                 <span
                                   className="font-medium text-dark dark:text-white/50"
-                                  data-oid="_uw_4.x"
+                                  data-oid="34.jvua"
                                 >
                                   <Icon
                                     icon="tabler:folder"
                                     className="text-primary text-base inline-block me-2"
-                                    data-oid="7c0c6f1"
+                                    data-oid="_5_fpr2"
                                   />
                                   providers
                                 </span>
@@ -577,116 +577,116 @@ export const PackageStructure = () => {
                           </ul>
                         </div>
                       </li>
-                      <li className="py-2" data-oid="f7v.mkv">
+                      <li className="py-2" data-oid="ijh-ls3">
                         <div
                           className="flex items-center gap-3"
-                          data-oid="uzkd8xf"
+                          data-oid="-vygf0x"
                         >
                           <p
                             className="text-xl text-black dark:text-white/50"
-                            data-oid="qbbr.6-"
+                            data-oid="to3g:be"
                           >
                             |—
                           </p>
                           <span
                             className="font-medium text-dark dark:text-white/50"
-                            data-oid=".q25os0"
+                            data-oid="auu.-9u"
                           >
                             <i
                               className="ti ti-file me-2 text-primary font-bold"
-                              data-oid="af37:lh"
+                              data-oid="06h:w6h"
                             />
                             next.config.mjs
                           </span>
                         </div>
                       </li>
-                      <li className="py-2" data-oid="wybqv4w">
+                      <li className="py-2" data-oid="cl99s__">
                         <div
                           className="flex items-center gap-3"
-                          data-oid="03:n1d4"
+                          data-oid="7d9igza"
                         >
                           <p
                             className="text-xl text-black dark:text-white/50"
-                            data-oid=".zzf34_"
+                            data-oid="e-o3ktt"
                           >
                             |—
                           </p>
                           <span
                             className="font-medium text-dark dark:text-white/50"
-                            data-oid="gcgnf29"
+                            data-oid="h3ndxy0"
                           >
                             <i
                               className="ti ti-file me-2 text-primary font-bold"
-                              data-oid="zrmwa0d"
+                              data-oid="h2o2pay"
                             />
                             postcss.config.mjs
                           </span>
                         </div>
                       </li>
-                      <li className="py-2" data-oid=".ncx6jv">
+                      <li className="py-2" data-oid="ytzz30u">
                         <div
                           className="flex items-center gap-3"
-                          data-oid="dq0t-vo"
+                          data-oid="51k.ro2"
                         >
                           <p
                             className="text-xl text-black dark:text-white/50"
-                            data-oid="qh03e8m"
+                            data-oid="e:a-6-7"
                           >
                             |—
                           </p>
                           <span
                             className="font-medium text-dark dark:text-white/50"
-                            data-oid="mqlvtel"
+                            data-oid="4t65cjp"
                           >
                             <i
                               className="ti ti-file me-2 text-primary font-bold"
-                              data-oid="-1j9vet"
+                              data-oid="u_gc18j"
                             />
                             package.json
                           </span>
                         </div>
                       </li>
-                      <li className="py-2" data-oid="7-_k.9p">
+                      <li className="py-2" data-oid="_ah1426">
                         <div
                           className="flex items-center gap-3"
-                          data-oid="oqbn8.1"
+                          data-oid="x_:8nix"
                         >
                           <p
                             className="text-xl text-black dark:text-white/50"
-                            data-oid="c7_f7ry"
+                            data-oid="9t04i1."
                           >
                             |—
                           </p>
                           <span
                             className="font-medium text-dark dark:text-white/50"
-                            data-oid="tcozrgm"
+                            data-oid="-:_e6j-"
                           >
                             <i
                               className="ti ti-file me-2 text-primary font-bold"
-                              data-oid="e79pt.i"
+                              data-oid="e:ufb.g"
                             />
                             tailwind.config.ts
                           </span>
                         </div>
                       </li>
-                      <li className="py-2" data-oid="s:y0c2j">
+                      <li className="py-2" data-oid="43juwo_">
                         <div
                           className="flex items-center gap-3"
-                          data-oid="zmqp6ba"
+                          data-oid="0fsu3b5"
                         >
                           <p
                             className="text-xl text-black dark:text-white/50"
-                            data-oid="50u79.."
+                            data-oid="1vsdjeg"
                           >
                             |—
                           </p>
                           <span
                             className="font-medium text-dark dark:text-white/50"
-                            data-oid="dn0ttxa"
+                            data-oid=".l3f-7t"
                           >
                             <i
                               className="ti ti-file me-2 text-primary font-bold"
-                              data-oid="3top02q"
+                              data-oid="4n7xpko"
                             />
                             tsconfig.json
                           </span>

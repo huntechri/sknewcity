@@ -48,92 +48,92 @@ const RenovationCalculator = () => {
     <section
       id="calculator"
       className="py-10 bg-white dark:bg-black text-dark dark:text-white overflow-hidden relative transition-colors duration-300"
-      data-oid="b87537s"
+      data-oid="9pl4ynl"
     >
       {/* Background elements */}
       <div
         className="absolute top-0 right-0 w-96 h-96 bg-primary/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2 opacity-50"
-        data-oid="telb6h3"
+        data-oid="3gg:uwr"
       ></div>
       <div
         className="absolute bottom-0 left-0 w-96 h-96 bg-skyblue/10 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/2 opacity-30"
-        data-oid="78i148u"
+        data-oid="on.6qug"
       ></div>
 
       <div
         className="container max-w-8xl mx-auto px-5 relative z-10"
-        data-oid="2hwn:90"
+        data-oid="zmw9ma9"
       >
-        <div className="text-center mb-16" data-oid="ltd373-">
+        <div className="text-center mb-16" data-oid="pysaunc">
           <div
             className="flex gap-2.5 items-center justify-center mb-6"
-            data-oid="l05xo2m"
+            data-oid="kholp34"
           >
             <Icon
               icon="ph:house-simple-fill"
               className="text-2xl text-primary"
-              data-oid="rhjsyp7"
+              data-oid="0b0jr5q"
             />
 
             <p
               className="text-base font-semibold text-dark/75 dark:text-white/75 uppercase tracking-wider"
-              data-oid="yrwo6vm"
+              data-oid="le3.7xe"
             >
               Калькулятор стоимости
             </p>
           </div>
           <h2
             className="text-3xl sm:text-5xl font-bold text-dark dark:text-white mb-6 leading-tight"
-            data-oid="yl12odl"
+            data-oid="d1p2.zo"
           >
             Узнайте примерную стоимость{" "}
-            <br className="hidden sm:block" data-oid="wzhk0kc" /> вашего ремонта
+            <br className="hidden sm:block" data-oid="94jj-6w" /> вашего ремонта
             за 1 минуту
           </h2>
           <p
             className="text-dark/50 dark:text-white/50 text-lg max-w-2xl mx-auto leading-relaxed"
-            data-oid="vjkdqb7"
+            data-oid="9-wurr4"
           >
             Точная смета составляется инженером после замера.{" "}
-            <br className="hidden sm:block" data-oid="gcfg95x" /> Расчёт
+            <br className="hidden sm:block" data-oid="3._v8.0" /> Расчёт
             является предварительным и не включает материалы.
           </p>
         </div>
 
         <div
           className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start"
-          data-oid="o9ime5s"
+          data-oid="fgqxh:v"
         >
           <div
             className="lg:col-span-8 lg:h-[455px] flex flex-col justify-between bg-white dark:bg-white/5 backdrop-blur-sm p-5 sm:p-8 rounded-[32px] border border-dark/10 dark:border-white/10 shadow-2xl shadow-black/5 dark:shadow-none"
-            data-oid="ksdq_0s"
+            data-oid="v_daeve"
           >
             {/* Area Selector */}
-            <div className="space-y-4" data-oid="748_cr-">
+            <div className="space-y-4" data-oid="1g4fv1.">
               <div
                 className="flex justify-between items-end"
-                data-oid="gbnpof0"
+                data-oid="ir53:qx"
               >
                 <h4
                   className="text-lg sm:text-xl font-extrabold tracking-tight text-black dark:text-white"
-                  data-oid="qh2irep"
+                  data-oid="6n5xi41"
                 >
                   Площадь помещения
                 </h4>
                 <div
                   className="text-2xl sm:text-3xl font-black text-primary"
-                  data-oid="bnl-v:a"
+                  data-oid="1bszphm"
                 >
                   {area[0]}{" "}
                   <span
                     className="text-base sm:text-lg font-bold opacity-60 ml-1 text-black dark:text-white"
-                    data-oid="3bsh0.0"
+                    data-oid="q:-o9pu"
                   >
                     м²
                   </span>
                 </div>
               </div>
-              <div className="relative py-4" data-oid="7vudivm">
+              <div className="relative py-4" data-oid="zv9x353">
                 <Slider
                   defaultValue={[45]}
                   max={250}
@@ -141,23 +141,23 @@ const RenovationCalculator = () => {
                   step={1}
                   onValueChange={setArea}
                   className="relative flex items-center select-none touch-none w-full h-5"
-                  data-oid="26:84st"
+                  data-oid="-d43yzp"
                 />
               </div>
               <div
                 className="flex justify-between text-black dark:text-white text-[10px] sm:text-[11px] font-bold uppercase tracking-widest opacity-60"
-                data-oid="cc0ix2h"
+                data-oid="p1g0u6j"
               >
-                <span data-oid="r:oae0z">20 м²</span>
-                <span data-oid="91zrqcv">250 м²</span>
+                <span data-oid="p-ccs1h">20 м²</span>
+                <span data-oid="korf2nj">250 м²</span>
               </div>
             </div>
 
             {/* Renovation Type */}
-            <div className="space-y-4 mt-2 sm:mt-0" data-oid="73w0dor">
+            <div className="space-y-4 mt-2 sm:mt-0" data-oid="jna5uo3">
               <h4
                 className="text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] text-black dark:text-white opacity-60"
-                data-oid="lq6.6wg"
+                data-oid="spchzsb"
               >
                 Выбор типа ремонта
               </h4>
@@ -166,18 +166,18 @@ const RenovationCalculator = () => {
                 defaultValue="capital"
                 className="w-full"
                 onValueChange={setType}
-                data-oid="i2m14wz"
+                data-oid="vd_ura6"
               >
                 <TabsList
                   className="flex flex-row h-11 sm:h-12 p-1 bg-gray-200/50 dark:bg-white/10 rounded-full w-full border border-dark/5 dark:border-white/5"
-                  data-oid="bb_d8gb"
+                  data-oid="rvdikxu"
                 >
                   {renovationTypes.map((t) => (
                     <TabsTrigger
                       key={t.id}
                       value={t.id}
                       className="flex-1 rounded-full text-[10px] xs:text-[11px] sm:text-[13px] font-bold text-black dark:text-white data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:shadow-lg transition-all duration-500 px-1"
-                      data-oid="rzyte:x"
+                      data-oid="2fv2w3c"
                     >
                       {t.title}
                     </TabsTrigger>
@@ -187,21 +187,21 @@ const RenovationCalculator = () => {
 
               <div
                 className="relative flex items-center bg-gray-100 dark:bg-white/5 rounded-2xl p-3 sm:p-4 border border-dark/5 dark:border-white/10 transition-all duration-300"
-                data-oid="4uh-dpn"
+                data-oid="ffnrt.i"
               >
                 <div
                   className="p-2 bg-primary/10 rounded-xl mr-3 sm:mr-4 shrink-0"
-                  data-oid="ed6r2-_"
+                  data-oid="q52-zyg"
                 >
                   <Icon
                     icon="ph:info-fill"
                     className="text-primary text-xl sm:text-2xl"
-                    data-oid="5r4e4wo"
+                    data-oid="uo_2ty4"
                   />
                 </div>
                 <p
                   className="text-black dark:text-white text-[12px] sm:text-[13px] leading-snug font-bold italic"
-                  data-oid="t6poo6k"
+                  data-oid="ywty-:6"
                 >
                   {currentType.desc}
                 </p>
@@ -211,71 +211,71 @@ const RenovationCalculator = () => {
             {/* Quick features */}
             <div
               className="flex flex-wrap gap-x-4 sm:gap-x-8 gap-y-2 pt-4 sm:pt-5 border-t border-dark/10 dark:border-white/5 mt-4 sm:mt-0"
-              data-oid="h5juqob"
+              data-oid="ycbvfc6"
             >
               <div
                 className="flex items-center gap-1.5 sm:gap-2 text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] font-black text-black dark:text-white opacity-70"
-                data-oid="lxemeun"
+                data-oid="npyetgo"
               >
                 <Icon
                   icon="ph:check-circle-fill"
                   className="text-primary text-sm sm:text-base"
-                  data-oid="4mhzl0k"
+                  data-oid="6tt1zi."
                 />
 
-                <span data-oid="63apkug">Замер бесплатно</span>
+                <span data-oid="d8uvspq">Замер бесплатно</span>
               </div>
               <div
                 className="flex items-center gap-1.5 sm:gap-2 text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] font-black text-black dark:text-white opacity-70"
-                data-oid="1kw-1y1"
+                data-oid="qvm1-oh"
               >
                 <Icon
                   icon="ph:check-circle-fill"
                   className="text-primary text-sm sm:text-base"
-                  data-oid="g__fz.4"
+                  data-oid="t9j5rz2"
                 />
 
-                <span data-oid="idj3.33">Смета за 24ч</span>
+                <span data-oid="dho9:xp">Смета за 24ч</span>
               </div>
               <div
                 className="flex items-center gap-1.5 sm:gap-2 text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.2em] font-black text-black dark:text-white opacity-70"
-                data-oid=".kbzmfz"
+                data-oid="fo:dr2w"
               >
                 <Icon
                   icon="ph:check-circle-fill"
                   className="text-primary text-sm sm:text-base"
-                  data-oid=":2k2bu:"
+                  data-oid="lo:v2-3"
                 />
 
-                <span data-oid="sy7-4my">Фикс. сроки</span>
+                <span data-oid="rsy-h1d">Фикс. сроки</span>
               </div>
             </div>
           </div>
 
-          <div className="lg:col-span-4 lg:h-[455px]" data-oid="z_fpf3_">
+          <div className="lg:col-span-4 lg:h-[455px]" data-oid="9ufzxun">
             <Card
               className="bg-primary h-full p-6 sm:p-8 rounded-[32px] border-none text-white shadow-2xl shadow-primary/40 flex flex-col justify-between transform transition-transform hover:scale-[1.01]"
-              data-oid="td5zk6p"
+              data-oid="kwalomq"
             >
               <div
                 className="space-y-6 sm:space-y-8 flex-1 flex flex-col justify-between"
-                data-oid="na:0d00"
+                data-oid="jtajen0"
               >
-                <div data-oid=".o8vory">
+                <div data-oid="8rarcxa">
                   <span
                     className="text-white text-[10px] uppercase tracking-[0.3em] font-black italic mb-2 block"
-                    data-oid="x_b0tq0"
+                    data-oid="rqsqpee"
                   >
                     Ориентировочно
                   </span>
                   <div
                     className="text-4xl xs:text-5xl sm:text-6xl font-black tracking-tighter text-white break-words"
-                    data-oid="4s5ngqh"
+                    data-oid="q_tduzm"
                   >
                     {totalPrice.toLocaleString()}
                     <span
                       className="text-xl sm:text-2xl ml-1 font-bold opacity-80"
-                      data-oid="4cbxx4h"
+                      data-oid="87-zy5o"
                     >
                       ₽
                     </span>
@@ -284,48 +284,48 @@ const RenovationCalculator = () => {
 
                 <div
                   className="space-y-4 sm:space-y-5 border-t border-white/20 pt-6 sm:pt-8"
-                  data-oid="f39:1_-"
+                  data-oid="tofeps6"
                 >
                   <div
                     className="flex justify-between items-center text-sm font-bold"
-                    data-oid="v:46yge"
+                    data-oid="l:mle-t"
                   >
                     <span
                       className="text-white uppercase tracking-widest text-[9px] sm:text-[10px]"
-                      data-oid="ny83m-i"
+                      data-oid="mdauz-i"
                     >
                       Срок реализации
                     </span>
                     <span
                       className="bg-white text-primary px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[10px] sm:text-xs font-black shadow-lg"
-                      data-oid="u6cnod7"
+                      data-oid="0fhna6."
                     >
                       ~ {duration} дней
                     </span>
                   </div>
                   <div
                     className="flex justify-between items-center text-sm font-bold"
-                    data-oid="qz.z.wq"
+                    data-oid="-:9.rjd"
                   >
                     <span
                       className="text-white uppercase tracking-widest text-[9px] sm:text-[10px]"
-                      data-oid="1m9dhzd"
+                      data-oid="v-i:eoc"
                     >
                       Тип работ
                     </span>
                     <span
                       className="text-white text-sm sm:text-base font-black border-b-2 border-white/30"
-                      data-oid="7oxiu3s"
+                      data-oid="6pv7g-y"
                     >
                       {currentType.title}
                     </span>
                   </div>
                 </div>
 
-                <Link href="/contactus" className="w-full" data-oid="88-z_4h">
+                <Link href="/contactus" className="w-full" data-oid="pjhuw_e">
                   <button
                     className="w-full bg-white text-primary py-4 sm:py-5 rounded-2xl font-black text-xs uppercase tracking-[0.2em] hover:bg-black hover:text-white transition-all duration-500 shadow-2xl active:scale-[0.97] mt-6 lg:mt-0"
-                    data-oid="jqo4x-b"
+                    data-oid=":-qu-4v"
                   >
                     Получить смету
                   </button>
@@ -333,7 +333,7 @@ const RenovationCalculator = () => {
 
                 <p
                   className="text-center text-[10px] text-white/50 leading-relaxed italic uppercase tracking-tighter"
-                  data-oid="_dnv341"
+                  data-oid=":j2fgvz"
                 >
                   * Предварительный расчет, не является публичной офертой. Для
                   точного расчета пригласите инженера на замер.

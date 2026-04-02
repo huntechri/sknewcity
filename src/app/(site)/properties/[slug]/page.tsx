@@ -71,8 +71,8 @@ const page = async ({ params }: Props) => {
 
   return (
     <>
-      <StructuredData data={structuredData} data-oid="z-pb-nn" />
-      <Details item={item} testimonials={testimonials} data-oid="n0c..lk" />
+      <StructuredData data={structuredData} data-oid="ty.bhy6" />
+      <Details item={item} testimonials={testimonials} data-oid="t4flxfv" />
     </>
   );
 };

@@ -9,21 +9,21 @@ interface ProjectProps {
 
 const ModernFlatProject: React.FC<ProjectProps> = ({ item, testimonials }) => {
   return (
-    <div data-oid="9m4alhd">
+    <div data-oid="ia2a0fy">
       <BaseProjectLayout
         item={item}
         testimonials={testimonials}
-        data-oid=":jt:cf-"
+        data-oid="w5kximo"
       />
 
       {/* We could add more unique sections here */}
       <div
         className="container mx-auto mb-20 px-4 text-center sm:px-5"
-        data-oid="ke0j62b"
+        data-oid="am1wdae"
       >
         <p
           className="text-dark/50 dark:text-white/50 italic"
-          data-oid="ov-a9ot"
+          data-oid="xtl728w"
         >
           * Данный проект был реализован с использованием экологически чистых
           материалов.

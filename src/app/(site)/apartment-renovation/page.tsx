@@ -45,15 +45,15 @@ export default function ApartmentRenovationPage() {
   ];
 
   return (
-    <main className="bg-white dark:bg-dark" data-oid="6-wj:rq">
-      <StructuredData data={structuredData} data-oid="s8pbsho" />
-      <RenovationHero data-oid="f6k0yzr" />
-      <RenovationWorks data-oid="wu1e565" />
-      <RenovationCalculator data-oid=".-ntl.h" />
-      <RenovationTrust data-oid="upx2fgx" />
-      <RenovationMaterials data-oid="st_bwx8" />
-      <RenovationFAQ data-oid="hd6nbhy" />
-      <RenovationCTA data-oid="l6mqot5" />
+    <main className="bg-white dark:bg-dark" data-oid="1br_peq">
+      <StructuredData data={structuredData} data-oid="2kzp88w" />
+      <RenovationHero data-oid="fcp:msv" />
+      <RenovationWorks data-oid=":_qxznf" />
+      <RenovationCalculator data-oid="1dhne9m" />
+      <RenovationTrust data-oid="g:6i6:u" />
+      <RenovationMaterials data-oid="q7cjhus" />
+      <RenovationFAQ data-oid="vo2:.ha" />
+      <RenovationCTA data-oid="kokd7.t" />
     </main>
   );
 }
